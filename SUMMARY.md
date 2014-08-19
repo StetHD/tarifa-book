@@ -10,4 +10,4 @@
     * [Cordova app](project/cordova.md)
 * [Configuration](configuration/index.md)
 * [Usage](usage/index.md)
-* [Create your custom www template project](template/index.html)
+* [Create your custom www template project](template/index.md)
