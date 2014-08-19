@@ -8,6 +8,7 @@ Notes on installing cordova on windows8:
 
 hmm, I am not able to make cordova run working on windows wiaht an admin cmd:
 
-![admin stuff1](.1.png)
-![admin stuff2](./2.png)
-![admin stuff3](./3.png)
+[![admin stuff1](./1.png)](./1.png)
+[![admin stuff1](./2.png)](./2.png)
+[![admin stuff1](./3.png)](./3.png)
+
