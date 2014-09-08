@@ -5,27 +5,21 @@
 tarifa is a cli on top of [cordova](http://cordova.apache.org/),
 it aims to simplify the cordova workflow and allowing the following features:
 
-* **multiple configurations**
+* **multiple configurations** Be able to simply define a new configuration of your application.
 
-Be able to simply define a new configuration of your application.
-
-* **integration of your www build process**
-
-Be able to intregrate your specific js/html/css or whatever build process in the
+* **integration of your www build process** Be able to intregrate your specific js/html/css or whatever build process in the
 cordova workflow.
 
-* **project bootstrap with an interactive questions**
-
-No need to remember all the informations needed when creating a project, tarifa
+* **project bootstrap with an interactive questions** No need to remember all the informations needed when creating a project, tarifa
 asks you and validate your inputs
 
-* **deploy to hockeyapp from your terminal**
+* **deploy to hockeyapp from your terminal** No need to upload an binary file to hockeyapp, tarifa takes care of it
 
-No need to upload an binary file to hockeyapp, tarifa takes care of it
+## Resources
 
-## tarifa
-
-the source of tarifa is available on [https://github.com/peutetre/tarifa.git](https://github.com/peutetre/tarifa.git)
+* Repository [https://github.com/peutetre/tarifa.git](https://github.com/peutetre/tarifa.git).
+* Website [http://tarifa.tools](http://tarifa.tools).
+* This documentation [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html).
 
 ## Version
 
