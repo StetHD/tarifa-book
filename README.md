@@ -11,16 +11,23 @@ tarifa is a cli on top of cordova. It main features are:
 
 ## Quick install
 
-tarifa is available via npm:
-
-```
-npm install -g tarifa
-```
-
-## available Platforms
+you need at least one full working development environment of the following platforms:
 
 * ios
 * android
 * windows phone 8
 * windows 8
+
+and a working node.js environment. Install tarifa with npm:
+
+```
+npm install -g tarifa
+```
+
+## Available platforms
+
 * web
+* ios
+* android
+* windows phone 8
+* windows 8
