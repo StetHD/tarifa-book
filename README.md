@@ -1,4 +1,4 @@
-# Tarifa
+# Tarifa [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
 
 *Your friendly mobile-app development toolchain on top of Cordova!*
 
@@ -24,6 +24,10 @@ and a working node.js environment. Install tarifa with npm:
 npm install -g tarifa
 ```
 
+## Repository
+
+the source are available on [https://github.com/peutetre/tarifa.git](https://github.com/peutetre/tarifa.git)
+
 ## Currently available platforms
 
 * web
@@ -32,6 +36,14 @@ npm install -g tarifa
 * windows phone 8
 * windows 8
 
-# Sponsors
+## Version
+
+This document covers version 0.2.0 of tarifa.
+
+## License
+
+tarifa is licensed under Apache version 2.0
+
+## Sponsors
 
 * [zengularity](http://zengularity.com)
