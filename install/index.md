@@ -6,11 +6,11 @@ You can install tarifa on windows, linux or macosx. First you need a working
 Depending on your host, you will be able to support the following platforms:
 
 | platform/os                                | macosx | linux | win32 |
-| -------------------------------------------|:------:| -----:| -----:|
+| -------------------------------------------|:------:|:-----:|:-----:|
 | [ios](http://developer.apple.com/)         | ✔      | ✗     | ✗     |
 | [android](http://developer.android.com/)   | ✔      | ✔     | ✔     |
-| windows phone                              | ✗      | ✗     | ✔     |
-| windows8                                   | ✗      | ✗     | ✔     |
+| [windows phone](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔     |
+| [windows8](http://dev.windows.com/en-us/develop/downloads) | ✗      | ✗     | ✔     |
 
 You need to install the needed sdk in order to work with a given platform.
 
