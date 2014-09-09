@@ -7,30 +7,35 @@ path to keystore and so one.
 
 Here is a `tarifa.json` example:
 
-``` json
+``` javascript
 {
-  "name": "myapp",
-  "id": "org.tarifa.demo",
-  "description": "a simple app description",
-  "version": "1.0.0",
+  "name": "myapp", // the default app name (can not be changed right now)
+  "id": "org.tarifa.demo", // the default cordova app id (can not be changed right now)
+  "description": "a simple app description", // project description
+  "version": "1.0.0", // default version of app, it must have a 3 digits format
   "platforms": [
     "android",
     "web"
-  ],
+  ], // available platforms on project
   "plugins": [
     "org.apache.cordova.splashscreen"
-  ],
-  "configurations": {
+  ], // cordova plugins
+  "configurations": { // starting definitions of configurations:
     "android": {
       "default": {
+        // we can overwrite the default values
         "id": "org.tarifa.demo",
+        // the product name is the final name of the app, the one
+        // you read on the store
         "product_name": "demo",
+        // this is the name of the generated .apk file
         "product_file_name": "demo"
       },
       "dev": {
         "id": "org.tarifa.dev",
         "product_name": "demo dev",
         "product_file_name": "demo",
+        // we can overwrite general attributes
         "version": "2222.0.0"
       },
       "stage": {
@@ -43,12 +48,19 @@ Here is a `tarifa.json` example:
         "id": "org.tarifa.demo",
         "product_name": "demo prod",
         "product_file_name": "demo",
+        // we can add custom attributes for a given configuration
         "version_code": "1"
       }
     },
-    ...
+    "web": {
+      "default": {
+        "id": "org.tarifa.demo",
+        "product_name": "demo",
+        "product_file_name": "demo"
+      }/* ,  ... */
+    }
   },
-  "cordova": {
+  "cordova": { // default cordova settings
     "preferences": {
       "DisallowOverscroll": true,
       "EnableViewportScale": false,
@@ -74,11 +86,13 @@ Here is a `tarifa.json` example:
 
 and the according `private.json` file:
 
-``` json
+``` javascript
 {
   "configurations": {
     "android": {
       "prod": {
+        // information needed in order to sign the app in release mode
+        // to deploy to store
         "keystore_path": "/path/to/my/key.keystore",
         "keystore_alias": "myalias"
       }
