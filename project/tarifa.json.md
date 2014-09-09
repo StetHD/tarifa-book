@@ -46,28 +46,7 @@ Here is a `tarifa.json` example:
         "version_code": "1"
       }
     },
-    "web": {
-      "default": {
-        "id": "org.tarifa.demo",
-        "product_name": "demo",
-        "product_file_name": "demo"
-      },
-      "dev": {
-        "id": "org.tarifa.demo",
-        "product_name": "demo dev",
-        "product_file_name": "demo"
-      },
-      "stage": {
-        "id": "org.tarifa.demo",
-        "product_name": "demo stage",
-        "product_file_name": "demo"
-      },
-      "prod": {
-        "id": "org.tarifa.demo",
-        "product_name": "demo prod",
-        "product_file_name": "demo"
-      }
-    }
+    ...
   },
   "cordova": {
     "preferences": {
