@@ -12,22 +12,20 @@ cordova workflow.
 asks you and validate your inputs
 * **deploy to hockeyapp from your terminal**: no need to upload an binary file to hockeyapp, tarifa takes care of it
 
-## 
-
-## Resources
+### Resources
 
 * Repository [https://github.com/peutetre/tarifa.git](https://github.com/peutetre/tarifa.git).
 * Website [http://tarifa.tools](http://tarifa.tools).
 * This documentation [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html).
 
-## Version
+### Version
 
 This document covers version 0.2.0 of tarifa.
 
-## License
+### License
 
 tarifa-book is licensed under Apache version 2.0
 
-## Sponsors
+### Sponsors
 
 * [zengularity](http://zengularity.com)
