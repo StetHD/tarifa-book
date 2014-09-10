@@ -1,30 +1,12 @@
 # Configuration
 
-An app has always multiples configurations; for example, the dev configuration is different from the production one. On the dev
-configuration your code may need to talk to local API and may have some more debugging stuff. On the other side, the production configuration will allow access to production API.
+In tarifa, a configuration is a json object representing the settings of the app for a particular state of the project,
+like for example the staging or the production states. Each configuration is described `tarifa.json` file on the root
+of a tarifa project.
 
-When creating a tarifa project, the cli will generate the following configurations for each wanted platforms:
+When creating a tarifa project with `tarifa create`, tarifa will create the following configurations: **_default_**, **_dev_**, **_stage_**, **_prod_**.
+You can add or delete any configuration you like. The **_default_** configuration allows to call tarifa without specifying any name.
 
-* **_default_**
-* **_dev_**
-* **_stage_**
-* **_prod_**
+By default, the **_stage_** configuration is defined to be used for hockeyapp deployements (and ad-hoc distribution siging process on ios).
 
-These configurations are just naming conventions, you can add any configurations you need and each configuration allows the build
-of an unic app.
-
-## **_default_** configuration
-
-The default configuration is the configuration builded if any configuration is given to the tarifa cli.
-
-## **_dev_** configuration
-
-The developpement configuration, all watch stuff will be filled hier if needed.
-
-## **_stage_** configuration
-
-By default, this configuration is be made uploadable on hockeyapp by tarifa if wanted.
-
-## **_prod_** configuration
-
-By default, this configuration is the production one.
+These configurations are just naming conventions, you can add any configurations you need and each configuration allows the build an unic app.
