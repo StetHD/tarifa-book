@@ -1,6 +1,6 @@
 # Summary
 
-tarifa main reference
+tarifa reference
 
 * [README](README.md)
 * [Introduction](introduction/index.md)
@@ -16,5 +16,4 @@ tarifa main reference
     * [android](usage/android.md)
     * [windows phone 8](usage/wp8.md)
     * [windows 8](usage/windows8.md)
-* [Create your custom www template project](template/index.md)
 * [Roadmap](roadmap/index.md)

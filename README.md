@@ -1,6 +1,6 @@
 # tarifa-book [![experimental](http://hughsk.github.io/stability-badges/dist/experimental.svg)](http://github.com/hughsk/stability-badges)
 
-**This document is the main reference of tarifa**
+**This document is the reference of tarifa**
 
 tarifa is a cli on top of [cordova](http://cordova.apache.org/),
 it aims to simplify the cordova workflow and allowing the following features:
@@ -11,6 +11,8 @@ cordova workflow.
 * **project bootstrap with an interactive questions**: no need to remember all the informations needed when creating a project, tarifa
 asks you and validate your inputs
 * **deploy to hockeyapp from your terminal**: no need to upload an binary file to hockeyapp, tarifa takes care of it
+
+## 
 
 ## Resources
 
