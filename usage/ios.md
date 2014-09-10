@@ -2,7 +2,7 @@
 
 ## Configuration attributes
 
-In any ios configuation we need these 3 attributes in the `tarifa.json` file:
+In any ios configuation we need at least those 3 attributes in the `tarifa.json` file:
 
 ``` json
 {
