@@ -15,8 +15,9 @@ Depending on your host, you will be able to support the following platforms:
 You need to install the proper SDK in order to work with a given platform.
 
 All OS need [ImageMagick](http://www.imagemagick.org/) for icons and splash screens generation.
-[cupertino](https://github.com/nomad/cupertino) from nomad cli is needed on macosx in order to manage mobile provisioning files and to talk to
-[developer.apple.com](http://developer.apple.com/)
+[cupertino](https://github.com/nomad/cupertino) from nomad cli is needed on
+macosx in order to manage mobile provisioning files and to talk to
+[developer.apple.com](http://developer.apple.com/).
 
 When the SDKs are properly installed you can install tarifa with npm:
 
@@ -24,5 +25,5 @@ When the SDKs are properly installed you can install tarifa with npm:
 npm install -g tarifa
 ```
 
-Some optional dependencies should failed depending on your OS
+Some optional dependencies may fail depending on your OS
 (like, cordova-deploy-windows-phone fails to install on linux or macosx).
