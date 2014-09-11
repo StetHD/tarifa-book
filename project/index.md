@@ -122,14 +122,14 @@ the squeleton of a minimal `tarifa.json` file:
 It's the default app name, it the name used to create the cordova project on `tarifa create`. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
 
 ###### `id`
-It's the default cordova id. **_FIXME_** Can't be changed right now.
+It's the default cordova id. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
 
 ###### `description`
 It's a brief description of the app, it' will be replaced in the corodva `config.xml`
 
 ###### `version`
 It's the default version of the project and it's possible to overwrite it in a configuration. It must be a 3 digits style version number. On
-windows phone and windows8, 4 digits are mandatory, tarifa will append a `.0` to the version to match their spec. **_FIXME_** Still no validation in the version format.
+windows phone and windows8, 4 digits are mandatory, tarifa will append a `.0` to the version to match their spec. <span style="background:yellow;"><strong>FIXME</strong> Still no validation in the version format.</span>
 
 ###### `platforms`
 

@@ -1,7 +1,5 @@
 # tarifa-book
 
-**This document is the reference of tarifa**
-
 tarifa is a cli on top of [cordova](http://cordova.apache.org/),
 it aims to simplify the cordova workflow and to add features to complete the toolchain like:
 
@@ -19,9 +17,10 @@ asks you and validates your inputs.
 * Website [http://tarifa.tools](http://tarifa.tools).
 * This documentation [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html).
 
-### Version
+### Document
 
-This document covers version 0.2.0 of tarifa.
+This document covers version 0.2.0 of tarifa. You can contribute to this document on [peutetre/tarifa-book](https://github.com/peutetre/tarifa-book.git)
+This is a work in progress so don't be afraid to read some <span style="background:yellow;"><strong>TODO</strong></span> or <span style="background:yellow;"><strong>FIXME</strong></span>.
 
 ### License
 
