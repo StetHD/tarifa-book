@@ -1,20 +1,33 @@
 # Configuration
 
-In tarifa, a configuration is a json object representing the settings of the app for a particular state of the project,
-like for example the staging or the production states. Each configuration is described `tarifa.json` file on the root
-of a tarifa project.
+In tarifa, a configuration is a json representation of the application settings
+for a particular environment. It is described under the `configurations` key in
+  the `tarifa.json` file.
 
-When creating a tarifa project with `tarifa create`, tarifa will create the following configurations: **_default_**, **_dev_**, **_stage_**, **_prod_**.
-You can add or delete any configuration you like. The **_default_** configuration allows to call tarifa without specifying any name.
+When creating a tarifa project with `tarifa create`, tarifa will create the
+following configurations: **_default_**, **_dev_**, **_stage_**, **_prod_**.
 
-By default, the **_stage_** configuration is defined to be used for hockeyapp deployements (and ad-hoc distribution siging process on ios).
+You can add or delete any configuration you like. The **_default_** configuration
+allows to run tarifa commands without specifying any environment. For instance:
 
-These configurations are just naming conventions, you can add any configurations you need and each configuration allows the build an unic app.
+    $ tarifa run android
 
+will use the **_default_** configuration to run the app, whereas
+
+    $ tarifa run android dev
+
+will use the **_dev_** configuration where you can have settings specific to
+your dev environment.
+
+By default, the **_stage_** environment is configured for hockeyapp deployments
+(and ad-hoc distribution signing process on ios) as well, but you can change that.
+
+These configurations are just naming conventions, you can add any configuration
+you need and each one allows you to build a unique application.
 
 ## `tarifa.json`
 
-the squeleton of a minimal `tarifa.json` file:
+The skeleton of a minimal `tarifa.json` file:
 
 ``` json
 {
@@ -131,7 +144,8 @@ For example, on a project with only the web and the android platform, by default
 }
 ```
 
-Each platforms have a set of configurations name with and a minimum of 3 attributes:
+Each platforms have a set of configurations name with and a minimum of 3
+attributes:
 
 * `id` which allows to overwrite the default cordova app `id`
 * `product_name` which allows to overwrite the name of the app, the one you read on your device screen
@@ -157,8 +171,11 @@ The `author` defines the following properties:
 
 ## `private.json`
 
-The `private.json` contains all not commitable configurations informations. On a project with only the android platform and only handling the siging
-process of an apk, the `tarifa.json` file would looks like:
+The `private.json` contains all configurations informations that you don't want
+to expose in a source control software.
+
+For instance you can use it to set the path to your Android keystore (needed to
+sign apps for release):
 
 ``` json
 {
@@ -173,5 +190,6 @@ process of an apk, the `tarifa.json` file would looks like:
 }
 ```
 
-Defining `keystore_path` and `keystore_alias` in a configuration tells tarifa to compile this android configuration in release mode and to sign it with
+Defining `keystore_path` and `keystore_alias` in a configuration tells tarifa to
+compile this android configuration in release mode and to sign it with
 the given key alias and key store.

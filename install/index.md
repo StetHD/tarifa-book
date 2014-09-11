@@ -19,7 +19,7 @@ All OS need [ImageMagick](http://www.imagemagick.org/) for icons and splash scre
 macosx in order to manage mobile provisioning files and to talk to
 [developer.apple.com](http://developer.apple.com/).
 
-When the SDKs are properly installed you can install tarifa with npm:
+When the SDKs are properly installed you can install tarifa with *npm*:
 
 ```
 npm install -g tarifa
