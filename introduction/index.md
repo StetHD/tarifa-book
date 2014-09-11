@@ -20,7 +20,7 @@ first started with the idea to be a damn practical tool for me and my teammates
 and to lower the barrier of cordova development and projects sharing.
 
 Finally, tarifa introduces [configurations](../configuration/index.md). Those are
-an important concept and serve as the basis of every tarifa project; they allow
-to create multiple versions of the same application on the same platform (for
-instance one for each environment), which is currently pretty cumbersome to
+an important concept in tarifa as they modify the output of each command; they
+allow for instance to create multiple versions of the same application on the
+same platform (one for each environment), which is currently pretty hard to
 achieve with just cordova.
