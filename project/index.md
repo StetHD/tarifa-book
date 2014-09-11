@@ -119,7 +119,7 @@ the squeleton of a minimal `tarifa.json` file:
 ##### attributes
 
 ###### `name`
-It's the default app name, it the name used to create the cordova project on `tarifa create`. <span style="background:yellow;"><b>FIXME<b> Can't be changed right now.<span>
+It's the default app name, it the name used to create the cordova project on `tarifa create`. <span style="background:yellow;"><strong>FIXME<strong> Can't be changed right now.<span>
 
 ###### `id`
 It's the default cordova id. **_FIXME_** Can't be changed right now.
