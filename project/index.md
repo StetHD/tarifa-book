@@ -84,4 +84,4 @@ informations from configurations definitions to keystore paths. `tarifa.json` is
 main description and `private.json` contains all private stuff like the Apple ID
 or the hockeyapp token.
 
-More in [Configurations](configuration/index.md) chapter.
+More in [Configurations](../configuration/index.md) chapter.
