@@ -2,7 +2,7 @@
 
 tarifa commands are splitted in the following categories.
 
-## build and developpement tasks
+### build and developpement tasks
 
 * `prepare` launch the www project builder and copy/link it to the cordova app
 * `build` executing the cordova build chain (prepare and compile) with some hooks
@@ -11,7 +11,7 @@ allowing some change, like the name of the app, ...
 * `check` check current tarifa project after clone or host switch
 * `clean` clean project
 
-## project management tasks
+### project management tasks
 
 * `create` create interactively a tarifa project
 * `platform` manage platforms
@@ -19,6 +19,6 @@ allowing some change, like the name of the app, ...
 * `info` get general informations on your host and attached devices
 * `config` configure graphical assets and provisioning files
 
-## deploy tasks
+### deploy tasks
 
 * `hockeyapp` beta deployement with hockeyapp

@@ -25,7 +25,7 @@ By default, the **_stage_** environment is configured for hockeyapp deployments
 These configurations are just naming conventions, you can add any configuration
 you need and each one allows you to build a unique application.
 
-## `tarifa.json`
+### `tarifa.json`
 
 The skeleton of a minimal `tarifa.json` file:
 
@@ -66,30 +66,30 @@ The skeleton of a minimal `tarifa.json` file:
 }
 ```
 
-### attributes
+#### attributes
 
-#### `name`
+##### name
 It's the default app name, it the name used to create the cordova project on `tarifa create`. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
 
-#### `id`
+##### id
 It's the default cordova id. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
 
-#### `description`
+##### description
 It's a brief description of the app, it' will be replaced in the corodva `config.xml`
 
-#### `version`
+##### version
 It's the default version of the project and it's possible to overwrite it in a configuration. It must be a 3 digits style version number. On
 windows phone and windows8, 4 digits are mandatory, tarifa will append a `.0` to the version to match their spec. <span style="background:yellow;"><strong>FIXME</strong> Still no validation in the version format.</span>
 
-#### `platforms`
+##### platforms
 
 It's a list of all available platforms in the tarifa project.
 
-#### `plugins`
+##### plugins
 
 It's a list of all installed cordova plugins in the tarifa project.
 
-#### `configurations`
+##### configurations
 
 It's a definition of all available configurations. While creating a project with `tarifa create`, tarifa will add 4 defaults configurations for each platforms you want: **_default_**, **_dev_**, **_stage_** and **_prod_**.
 
@@ -151,12 +151,12 @@ attributes:
 * `product_name` which allows to overwrite the name of the app, the one you read on your device screen
 * `product_file_name` which allows to specify the name of the generated binary (in the case of android an .apk file)
 
-#### `cordova`
+##### cordova
 
 It contains a `preferences` attributes allowing to overwrite any cordova `config.xml` preferences and a `accessOrigin` attributes.
 By default `tarifa create` will generate the content of the `cordova` attribute like that:
 
-#### `author`
+##### author
 
 The `author` defines the following properties:
 
@@ -169,7 +169,7 @@ The `author` defines the following properties:
 ```
 
 
-## `private.json`
+### `private.json`
 
 The `private.json` contains all configurations informations that you don't want
 to expose in a source control software.

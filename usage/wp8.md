@@ -1,7 +1,7 @@
 # Windows Phone 8
 
 
-## Configuration attributes
+### Configuration attributes
 
 The `wp8` configuration needs at least those 4 following attributes in the `tarifa.json` file:
 
@@ -19,6 +19,6 @@ The `wp8` configuration needs at least those 4 following attributes in the `tari
 * `product_file_name` is the name of the compiled .xap file
 * `guid` is the guid of the application, this is needed for the uniqueness of the app (tarifa create will generate some for you)
 
-## Release
+### Release
 
 it's simple as adding a `release_mode` attribute with the value `true`.

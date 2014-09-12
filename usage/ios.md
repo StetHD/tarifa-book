@@ -1,6 +1,6 @@
 # iOS
 
-## Configuration attributes
+### Configuration attributes
 
 In any ios configuation we need at least those 3 attributes in the `tarifa.json` file:
 
@@ -31,6 +31,6 @@ the `create` command will add signing and deploy information on the stage config
 }
 ```
 
-## Limitations
+### Limitations
 
 * `tarifa run` will not be able to launch the app on the device, like other devices.
