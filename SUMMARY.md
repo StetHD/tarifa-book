@@ -13,4 +13,5 @@ tarifa reference
     * [android](usage/android.md)
     * [windows phone 8](usage/wp8.md)
     * [windows 8](usage/windows8.md)
+* [User settings](settings/index.md)
 * [Roadmap](roadmap/index.md)
