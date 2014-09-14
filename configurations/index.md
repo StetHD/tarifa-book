@@ -12,7 +12,7 @@ allows to run tarifa commands without specifying an environment. For instance:
 
     $ tarifa run android
 
-will use the **_default_** configuration to run the app, whereas
+will use the **_default_** configuration to run the app, whereas:
 
     $ tarifa run android dev
 
