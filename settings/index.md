@@ -37,7 +37,7 @@ plugins:
 
 #### www project templates
 
-You can also add custom www project template, `tarifa create` will show them:
+You can also add custom www project templates, `tarifa create` will show them:
 
 ``` yaml
 templates:
