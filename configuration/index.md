@@ -78,8 +78,8 @@ It's the default cordova id. <span style="background:yellow;"><strong>FIXME</str
 It's a brief description of the app, it' will be replaced in the corodva `config.xml`
 
 ##### version
-It's the version of the project and it's possible to overwrite it every configuration. It must be a 3 digits style version number.
-On windows phone and windows8, a 4 digits format is mandatory, tarifa will append `0` to the version to match the format.
+It's the version of the project and it's possible to overwrite it in every configuration. It must be a 3 digits style version number.
+On windows phone and windows8, a 4 digits format is mandatory, so tarifa will append `0` to the given version to match the format.
 
 ##### platforms
 
