@@ -21,7 +21,7 @@ As with the ios platform any android configuration needs at least the following
 
 To build the project in release mode, you need to tell tarifa where to find the
 keystore and the alias you want to use for signing the apk file. Each configuration
-having the `keystore_path` and `keystore_alias` attributes will be signed and build
+having the `keystore_path` and `keystore_alias` attributes will be signed and built
 in release mode. Usually this is stored in the `private.json` file:
 
 ```json

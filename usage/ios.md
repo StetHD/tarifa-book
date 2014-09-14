@@ -2,7 +2,7 @@
 
 ### Configuration attributes
 
-In any ios configuration we need at least these 3 attributes in the `tarifa.json`
+In any ios configuration we need at least the following 3 attributes in the `tarifa.json`
 file:
 
 ``` json
@@ -35,4 +35,5 @@ on the stage configuration in the `private.json` file.
 
 ### Limitations
 
-* `tarifa run` will not be able to launch the app on the device, like other devices.
+* `tarifa run` won't be able - like with other platforms - to automatically launch
+the app on the device.

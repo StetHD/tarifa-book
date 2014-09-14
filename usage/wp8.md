@@ -19,7 +19,7 @@ file:
 * `product_name` the final app name which is shown on your devices's OS.
 * `product_file_name` the name of the compiled .xap file.
 * `guid` the guid of the application, this is needed to uniquely identify the app
-(tarifa create will generate some for you) and hence being able to run multiple
+(tarifa create will generate some for you) and hence to be able to run multiple
 variations of it.
 
 ### Release
