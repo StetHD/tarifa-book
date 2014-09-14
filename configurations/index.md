@@ -82,7 +82,7 @@ file.
 
 ##### version
 The version of the project which can be overwritten in any configuration. It must
-be a 3 digits version number.
+be a 3 digits version number (e.g. `0.0.0`).
 On windows phone and windows8, 4 digits are mandatory, so tarifa will automatically
 append `0` to the specified version.
 
