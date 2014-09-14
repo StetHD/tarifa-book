@@ -1,6 +1,6 @@
 # Anatomy of a tarifa project
 
-This is how a tarifa project looks like:
+This is what a tarifa project looks like:
 
 ```
 |-- app
@@ -21,42 +21,42 @@ This is how a tarifa project looks like:
 `-- private.json
 ```
 
-A tarifa project root is composed of 3 folders:
+The root of a tarifa project is composed of 3 folders:
 
-* `app` folder with the cordova app
-* `images` folder containing all icons and splash screens
-* `project` folder containing the www project
+* `app` contains the cordova app.
+* `images` contains all icons and splash screens.
+* `project` contains the www project.
 
 and 2 json files:
 
-* `tarifa.json` containing the definition of the project and all configurations
-* `private.json` containing all private informations (typically tokens, IDs,
-  etc...) that you don't want to expose.
+* `tarifa.json` defines the project and every single configuration.
+* `private.json` consists of private data (typically tokens, IDs...) that you
+don't want to expose.
 
-### the raw cordova app
+### The raw cordova app
 
-The content of the `app` folder is a normal cordova application. Any cordova app
-(version 3.4.x) should work with tarifa, thus you can use an existing cordova
-app folder in a tarifa project.
+The `app` folder contains a regular cordova application. Any cordova app (version 3.4.x)
+should work with tarifa, thus you can use an existing cordova app folder in a
+tarifa project.
 
-At this time, the tarifa build performs settings replacement in various cordova
-files without undoing them. In a future version of tarifa this won't be the case
-anymore.
+At this time, the tarifa build process performs settings replacement in various
+cordova files without undoing them. In a future version of tarifa this won't be
+the case anymore.
 
 During the build process tarifa will copy or link the output of the `www` project
 folder to `app/www`.
 
 Currently, tarifa just wraps cordova plugins without any extra features.
 
-### www project
+### The www project
 
 It's a regular front-end project with the build system of your choice. It must
 satisfy the following interface:
 
-* having a `bin/build.js` node module exposing one function to launch the build
-* generating output in a folder named `www`
+* having a `bin/build.js` node module exposing one function to start the build process.
+* generating output in a folder named `www`.
 
-The `bin/build.js` module must have the following signature:
+More precisely, the `bin/build.js` module must have the following signature:
 
 ``` javascript
 var Q = require('q');
@@ -69,19 +69,23 @@ module.exports = function (platform, settings, configurationName) {
 
  where
 
-* `platform` is the platform chosen by the user
-* `settings` is an object containing all project settings (resulting from the
-merge of `tarifa.json` and `private.json`)
-* `configurationName` is the configuration name chosen by the user for the current build
+* `platform` is the platform chosen by the user for the current build.
+* `settings` is an object containing all the project settings (this object is
+  simply the result of merging `tarifa.json` and `private.json`).
+* `configurationName` is the name of the configuration chosen by the user (for
+  instance `dev` or `prod` ).
 
-In the default tarifa project template, *browserify* is used in order to embed the configuration settings as
-a global module named `settings` that you can require in your js code.
+In the default tarifa project template, *browserify* is used to embed the settings
+which are specific to a configuration as a global module - named `settings` - that
+you can require in your js code.
 
 ### `tarifa.json` and `private.json`
 
-Those two files are the description of a tarifa project and contains all needed
-informations from configurations definitions to keystore paths. `tarifa.json` is the
-main description and `private.json` contains all private stuff like the Apple ID
-or the hockeyapp token.
+These two files wholly describe a tarifa project and contain everything that is
+needed for building and managing it. This goes from the definitions of the various
+configurations to the keystore paths. `tarifa.json` defines most of the data and
+`private.json` contains all the private stuff, like the Apple ID or the hockeyapp
+token, that you don't want to share publicly.
 
-More in [Configurations](../configuration/index.md) chapter.
+A more detailed description may be found in the [Configurations](../configurations/index.md)
+chapter.

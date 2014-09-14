@@ -1,4 +1,4 @@
-# Install
+# Installation
 
 You can install tarifa on windows, linux or macosx. First you need a working
 [node.js](http://nodejs.org/) environment.
@@ -20,9 +20,9 @@ macosx in order to manage mobile provisioning files and to talk to
 [developer.apple.com](http://developer.apple.com/).
 
 On windows you'll have to ensure that the [PowerShell execution policy](http://technet.microsoft.com/library/hh847748.aspx)
-is not set to `Restricted` nor `AllSigned`. A good setting for tarifa is setting the policy to `RemoteSigned` for the
+is not set to `Restricted` nor `AllSigned`. A good value for tarifa is setting the policy to `RemoteSigned` for the
 `CurrentUser` scope and this can be achieved by running
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` as an administrator in a PowerShell.
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` as an administrator in some PowerShell.
 
 When the SDKs are properly installed you can install tarifa with *npm*:
 
