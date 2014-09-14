@@ -2,7 +2,8 @@
 
 ### Configuration attributes
 
-like the ios platform any android configuration needs at least those 3 following attributes in the `tarifa.json` file:
+As with the ios platform any android configuration needs at least the following
+3 attributes in the `tarifa.json` file:
 
 ``` json
 {
@@ -12,15 +13,16 @@ like the ios platform any android configuration needs at least those 3 following
 }
 ```
 
-* `id` is the java package of the application.
-* `product_name` is the final app name, the one you read on the screen
-* `product_file_name` is the name of the compiled .apk file
+* `id` the java package of the application.
+* `product_name` the final app name which is shown on your devices's OS.
+* `product_file_name` the name of the compiled .apk file.
 
 ### Release
 
-To build the project in release mode, you need to tell tarifa where to find the keystore and the alias
-you want to use for signing the apk file. Each configuration having the both following attributes will be signed and
-build in release mode. Usually, this informations are stored in the `private.json` file:
+To build the project in release mode, you need to tell tarifa where to find the
+keystore and the alias you want to use for signing the apk file. Each configuration
+having the `keystore_path` and `keystore_alias` attributes will be signed and build
+in release mode. Usually this is stored in the `private.json` file:
 
 ```json
 {
@@ -35,13 +37,15 @@ build in release mode. Usually, this informations are stored in the `private.jso
 }
 ```
 
-In addition of signing the apk, on android, you need to bump the `android:versionCode` attributes of `AndroidManifest.xml` file.
-Specifying an `version_code` attributes in a configuration will be reflected in the `AndroidManifest.xml` file.
+In addition to signing the apk, on android, you need to bump the `android:versionCode`
+attribute of the `AndroidManifest.xml` file.
+Specifying a `version_code` attributes in a configuration will be reflected in the
+`AndroidManifest.xml` file.
 
 ### Deploy with hockeyapp
 
 In order to deploy a configuration on hockeyapp, you need to add the `hockeyapp_id`
-to the given configuration. for example in a `private.json` file.
+to the given configuration. For example in a `private.json` file:
 
 ``` json
 {

@@ -3,7 +3,8 @@
 
 ### Configuration attributes
 
-The `wp8` configuration needs at least those 4 following attributes in the `tarifa.json` file:
+The `wp8` configuration needs at least the following 4 attributes in the `tarifa.json`
+file:
 
 ``` json
 {
@@ -14,11 +15,13 @@ The `wp8` configuration needs at least those 4 following attributes in the `tari
 }
 ```
 
-* `id` is the C# namespace of the application.
-* `product_name` is the final app name, the one you read on the screen
-* `product_file_name` is the name of the compiled .xap file
-* `guid` is the guid of the application, this is needed for the uniqueness of the app (tarifa create will generate some for you)
+* `id` the C# namespace of the application.
+* `product_name` the final app name which is shown on your devices's OS.
+* `product_file_name` the name of the compiled .xap file.
+* `guid` the guid of the application, this is needed to uniquely identify the app
+(tarifa create will generate some for you) and hence being able to run multiple
+variations of it.
 
 ### Release
 
-it's simple as adding a `release_mode` attribute with the value `true`.
+It's as simple as adding a `release_mode` attribute with the value `true`.

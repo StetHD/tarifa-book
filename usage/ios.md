@@ -2,7 +2,8 @@
 
 ### Configuration attributes
 
-In any ios configuation we need at least those 3 attributes in the `tarifa.json` file:
+In any ios configuration we need at least these 3 attributes in the `tarifa.json`
+file:
 
 ``` json
 {
@@ -12,13 +13,14 @@ In any ios configuation we need at least those 3 attributes in the `tarifa.json`
 }
 ```
 
-* `id` is the bundleid of the application.
-* `product_name` is the final app name, the one you read on the screen
-* `product_file_name` is the name of the compiled .ipa file
+* `id` the bundleid of the application.
+* `product_name` the final app name which is shown on your devices's OS.
+* `product_file_name` the name of the compiled .ipa file.
 
-On iOS, it's possible to deploy an app via ad-hoc distribution which needs to sign
-the app with a certificat and a mobile provisioning file. When creating a tarifa project,
-the `create` command will add signing and deploy information on the stage configuration in the `private.json` file.
+On iOS, it's possible to deploy an app via ad-hoc distribution but this requires
+the app to be signed with a certificate and a mobile provisioning file. When
+creating a tarifa project, the `create` command will add signing and deploy information
+on the stage configuration in the `private.json` file.
 
 ``` json
 {
