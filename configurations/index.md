@@ -1,23 +1,23 @@
-# Configuration
+# Configurations
 
 In tarifa, a configuration is a json representation of the application settings
 for a particular environment. It is described under the `configurations` key in
   the `tarifa.json` file.
 
 When creating a tarifa project with `tarifa create`, tarifa will create the
-following configurations: **_default_**, **_dev_**, **_stage_**, **_prod_**.
+following configurations: **_default_**, **_dev_**, **_stage_** and **_prod_**.
 
 You can add or delete any configuration you like. The **_default_** configuration
-allows to run tarifa commands without specifying any environment. For instance:
+allows to run tarifa commands without specifying an environment. For instance:
 
     $ tarifa run android
 
-will use the **_default_** configuration to run the app, whereas
+will use the **_default_** configuration to run the app, whereas:
 
     $ tarifa run android dev
 
-will use the **_dev_** configuration where you can have settings specific to
-your dev environment.
+will use the **_dev_** configuration where you can have settings which are specific
+to your dev environment.
 
 By default, the **_stage_** environment is configured for hockeyapp deployments
 (and ad-hoc distribution signing process on ios) as well, but you can change that.
@@ -27,7 +27,7 @@ you need and each one allows you to build a unique application.
 
 ### `tarifa.json`
 
-The skeleton of a minimal `tarifa.json` file:
+Here is the skeleton of a minimal `tarifa.json` file:
 
 ``` json
 {
@@ -69,31 +69,39 @@ The skeleton of a minimal `tarifa.json` file:
 #### attributes
 
 ##### name
-It's the default app name, it the name used to create the cordova project on `tarifa create`. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
+The default app name which is chosen when running `tarifa create`. <span style="background:yellow;"><strong>FIXME</strong>
+Can't be changed right now.</span>
 
 ##### id
-It's the default cordova id. <span style="background:yellow;"><strong>FIXME</strong> Can't be changed right now.</span>
+The default cordova id. <span style="background:yellow;"><strong>FIXME</strong>
+Can't be changed right now.</span>
 
 ##### description
-It's a brief description of the app, it' will be replaced in the corodva `config.xml`
+A brief description of the app, it will be inserted into the cordova `config.xml`
+file.
 
 ##### version
-It's the version of the project and it's possible to overwrite it in every configuration. It must be a 3 digits style version number.
-On windows phone and windows8, a 4 digits format is mandatory, so tarifa will append `0` to the given version to match the format.
+The version of the project which can be overwritten in any configuration. It must
+be a 3 digits version number (e.g. `0.0.0`).
+On windows phone and windows8, 4 digits are mandatory, so tarifa will automatically
+append `0` to the specified version.
 
 ##### platforms
 
-It's a list of all available platforms in the tarifa project.
+A list of the platforms which are available for that tarifa project.
 
 ##### plugins
 
-It's a list of all installed cordova plugins in the tarifa project.
+A list of the currently installed cordova plugins.
 
 ##### configurations
 
-It's a definition of all available configurations. While creating a project with `tarifa create`, tarifa will add 4 defaults configurations for each platforms you want: **_default_**, **_dev_**, **_stage_** and **_prod_**.
+A definition of the various configurations. When creating a project with `tarifa create`,
+tarifa will add 4 default configurations for each platform you selected: **_default_**,
+**_dev_**, **_stage_** and **_prod_**.
 
-For example, on a project with only the web and the android platform, by default `configurations` should look like that:
+For instance, the configurations attribute will look like the following on a project
+for which you selected the web and android as platforms:
 
 ```json
 {
@@ -144,21 +152,43 @@ For example, on a project with only the web and the android platform, by default
 }
 ```
 
-Each platforms have a set of configurations name with and a minimum of 3
-attributes:
+Each platform has a minimum of 3 attributes:
 
-* `id` which allows to overwrite the default cordova app `id`
-* `product_name` which allows to overwrite the name of the app, the one you read on your device screen
-* `product_file_name` which allows to specify the name of the generated binary (in the case of android an .apk file)
+* `id` allows to overwrite the default cordova app `id`.
+* `product_name` allows to overwrite the name of the app: the one you read on your
+device's screen.
+* `product_file_name` allows to specify the name of the generated binary (in the
+case of android, a .apk file).
 
 ##### cordova
 
-It contains a `preferences` attributes allowing to overwrite any cordova `config.xml` preferences and a `accessOrigin` attributes.
-By default `tarifa create` will generate the content of the `cordova` attribute like that:
+Contains a `preferences` attribute allowing to overwrite any cordova `config.xml`
+preference and an `accessOrigin` attribute.
+By default `tarifa create` will generate the contents of the `cordova` attribute
+as:
+
+```json
+{
+  "preferences": {
+    "DisallowOverscroll": true,
+    "EnableViewportScale": false,
+    "KeyboardDisplayRequiresUserAction": false,
+    "ShowSplashScreenSpinner": false,
+    "HideKeyboardFormAccessoryBar": false,
+    "SplashScreen": "screen",
+    "AutoHideSplashScreen": true,
+    "KeyboardShrinksView": true,
+    "KeepRunning": true
+  },
+  "accessOrigin": [
+    "*"
+  ]
+}
+```
 
 ##### author
 
-The `author` defines the following properties:
+Defines the following properties:
 
 ```json
 {
@@ -168,11 +198,9 @@ The `author` defines the following properties:
 }
 ```
 
-
 ### `private.json`
 
-The `private.json` contains all configurations informations that you don't want
-to expose in a source control software.
+Contains configuration data that you don't want to expose in a source control software.
 
 For instance you can use it to set the path to your Android keystore (needed to
 sign apps for release):
@@ -191,5 +219,5 @@ sign apps for release):
 ```
 
 Defining `keystore_path` and `keystore_alias` in a configuration tells tarifa to
-compile this android configuration in release mode and to sign it with
-the given key alias and key store.
+compile this android configuration in release mode and to sign it with the given
+key alias and key store.

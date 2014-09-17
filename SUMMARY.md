@@ -4,9 +4,9 @@ tarifa reference
 
 * [README](README.md)
 * [Introduction](introduction/index.md)
-* [Install](install/index.md)
+* [Installation](installation/index.md)
 * [Project structure](project/index.md)
-* [Configurations](configuration/index.md)
+* [Configurations](configurations/index.md)
 * [Workflow](usage/index.md)
     * [web](usage/web.md)
     * [ios](usage/ios.md)
