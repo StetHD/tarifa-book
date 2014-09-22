@@ -53,7 +53,7 @@ Currently, tarifa just wraps cordova plugins without any extra features.
 It's a regular front-end project with the build system of your choice. It must
 satisfy the following interface:
 
-* having a `bin/build.js` node module exposing one function to start the build process.
+* having a `bin/build.js` node module exposing a `build` function starting the build process.
 * generating output in a folder named `www`.
 
 More precisely, the `bin/build.js` module must have the following signature:
@@ -61,7 +61,7 @@ More precisely, the `bin/build.js` module must have the following signature:
 ``` javascript
 var Q = require('q');
 
-module.exports = function (platform, settings, configurationName) {
+module.exports.build = function (platform, settings, configurationName) {
     // do async stuff then
     return Q.resolve();
 }
