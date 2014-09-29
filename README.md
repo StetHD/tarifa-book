@@ -1,6 +1,6 @@
 # tarifa-book
 
-tarifa is a CLI on top of [cordova](http://cordova.apache.org/).
+tarifa is a CLI based on [Cordova](http://cordova.apache.org/).
 It aims at simplifying the cordova workflow and adding features to complete the cordova toolchain such as:
 
 * **multiple configurations**: simply produce multiple unique apps on a given platform within a single project.
@@ -13,7 +13,7 @@ asks questions and validates user input.
 
 * Repository: [https://github.com/peutetre/tarifa.git](https://github.com/peutetre/tarifa.git).
 * Issues: [https://github.com/peutetre/tarifa/issues](https://github.com/peutetre/tarifa/issues).
-* <span style="background:yellow;"><strong>TODO</strong></span> Website: [http://tarifa.tools](http://tarifa.tools).
+* Website: [http://tarifa.tools](http://tarifa.tools).
 * This documentation: [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html).
 
 ### Document
