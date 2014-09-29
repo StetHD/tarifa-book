@@ -186,6 +186,36 @@ as:
 }
 ```
 
+##### check
+
+Defines user scripts executed during `tarifa check` for each platform. By default `tarifa create`
+will generate:
+
+```json
+"check": {
+  "android": "./bin/check_android.js",
+  "ios": "./bin/check_ios.js"
+}
+```
+
+A user script is a node module exporting a function:
+
+``` javascript
+module.exports = function (msg) {
+
+    // if async task
+    // return Q(msg);
+    // else
+    return msg;
+
+    // where `msg` is an object with 2 attributes:
+    // • the object representing the tarifa.json and the private.json file
+    // msg.settings
+    // • a boolean
+    // msg.verbose
+};
+```
+
 ##### author
 
 Defines the following properties:
