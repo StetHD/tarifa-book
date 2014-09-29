@@ -192,9 +192,11 @@ Defines user scripts executed during `tarifa check` for each platform. By defaul
 will generate:
 
 ```json
-"check": {
-  "android": "./bin/check_android.js",
-  "ios": "./bin/check_ios.js"
+{
+  "check": {
+    "android": "./project/bin/check_android.js",
+    "ios": "./project/bin/check_ios.js"
+  }
 }
 ```
 
