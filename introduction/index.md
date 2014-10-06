@@ -1,13 +1,13 @@
 # Introduction
-#### Why wrapping cordova with another CLI?
+#### Why wrapping Apache Cordova with another CLI?
 
-To use cordova you must know enough about each platform you work with:
+Using Apache Cordova means having basic knowledge of each platform you work with:
 
-* how to build/debug the *common* way (with an IDE like Xcode, Visual Studio...)
-* how to build for release and publish your app to a store (iOS, Android, WP, Windows8...)
+* how to build and debug the *common* way (with an IDE like Xcode, Visual Studio...)
+* release and publish your app to stores (iOS, Android, WP...)
 * how to distribute your app to testers (hockeyapp, iOS ad-hoc distribution...)
 
-You may also need to change or add stuff in the native part of the cordova project
+You may also need to change or add stuff in the native part of the Apache Cordova project
 depending on the platform. For example, to update an Android app, you need to
 bump the integer value of the `android:versionCode` attribute in the `AndroidManifest.xml` file.
 Likewise, with iOS, adding a custom url scheme is only possible by adding some values
@@ -15,8 +15,8 @@ in the Xcode project plist as cordova does not take care of it in the `config.xm
 
 Tarifa aims at taking care of all the little things you need to know/do to build
 a cordova app, so you can concentrate on creating actual content. We started the
-project with the idea of making a practical tool for our dev teams and to
-lower the barrier of development and projects sharing with cordova.
+project with the idea of making a practical tool for our dev team and to
+lower the barrier of development and project sharing with cordova.
 
 Finally, tarifa introduces [configurations](../configuration/index.md). These are
 an important concept in tarifa as they modify the output of each command; they

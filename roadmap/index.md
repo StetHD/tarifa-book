@@ -7,7 +7,7 @@ Major features:
 * windows 8.1 (universal apps)
 * tarifa watch
 
-### Future
+### Next
 
 * be able to deploy to anywhere (remove hockeyapp cmd)
 * be able to build to production with ios

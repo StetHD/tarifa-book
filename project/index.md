@@ -14,6 +14,8 @@ This is what a tarifa project looks like:
 |-- project
 |   |-- bin
 |   |   |-- build.js
+|   |   |-- check_web.js
+|   |   |-- check_android.js
 |   |   `-- mapping.json
 |   |-- package.json
 |   `-- www
@@ -35,22 +37,22 @@ don't want to expose.
 
 ### The raw cordova app
 
-The `app` folder contains a regular cordova application. Any cordova app (version 3.4.x)
+The `app` folder contains a regular cordova application. Any cordova app (version 3.6.x)
 should work with tarifa, thus you can use an existing cordova app folder in a
 tarifa project.
 
-At this time, the tarifa build process performs settings replacement in various
+At this time, the tarifa build process performs setting replacements in various
 cordova files without undoing them. In a future version of tarifa this won't be
 the case anymore.
 
-During the build process tarifa will copy or link the output of the `www` project
+During the build process, tarifa will copy or link the output of the `www` project
 folder to `app/www`.
 
 Currently, tarifa just wraps cordova plugins without any extra features.
 
 ### The www project
 
-It's a regular front-end project with the build system of your choice. It must
+The `project` folder is a regular front-end project with the build system of your choice. It must
 satisfy the following interface:
 
 * having a `bin/build.js` node module exposing a `build` function starting the build process.
@@ -82,9 +84,9 @@ you can require in your js code.
 ### `tarifa.json` and `private.json`
 
 These two files wholly describe a tarifa project and contain everything that is
-needed for building and managing it. This goes from the definitions of the various
+needed for building and managing it. This goes from the definition of the various
 configurations to the keystore paths. `tarifa.json` defines most of the data and
-`private.json` contains all the private stuff, like the Apple ID or the hockeyapp
+`private.json` contains all the private stuff, such as the Apple ID or the hockeyapp
 token, that you don't want to share publicly.
 
 A more detailed description may be found in the [Configurations](../configurations/index.md)

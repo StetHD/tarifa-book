@@ -2,7 +2,7 @@
 
 ### Configuration attributes
 
-As with the ios platform any android configuration needs at least the following
+As with the ios platform, any android configuration needs at least the following
 3 attributes in the `tarifa.json` file:
 
 ``` json
@@ -14,14 +14,14 @@ As with the ios platform any android configuration needs at least the following
 ```
 
 * `id` the java package of the application.
-* `product_name` the final app name which is shown on your devices's OS.
+* `product_name` the final app name which is shown on your devices' OS.
 * `product_file_name` the name of the compiled .apk file.
 
 ### Release
 
 To build the project in release mode, you need to tell tarifa where to find the
 keystore and the alias you want to use for signing the apk file. Each configuration
-having the `keystore_path` and `keystore_alias` attributes will be signed and built
+with the `keystore_path` and `keystore_alias` attributes will be signed and built
 in release mode. Usually this is stored in the `private.json` file:
 
 ```json
@@ -39,7 +39,7 @@ in release mode. Usually this is stored in the `private.json` file:
 
 In addition to signing the apk, on android, you need to bump the `android:versionCode`
 attribute of the `AndroidManifest.xml` file.
-Specifying a `version_code` attributes in a configuration will be reflected in the
+Specifying a `version_code` attribute in a configuration will be reflected in the
 `AndroidManifest.xml` file.
 
 ### Deploy with hockeyapp

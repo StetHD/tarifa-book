@@ -20,9 +20,9 @@ will use the **_dev_** configuration where you can have settings which are speci
 to your dev environment.
 
 By default, the **_stage_** environment is configured for hockeyapp deployments
-(and ad-hoc distribution signing process on ios) as well, but you can change that.
+(and ad-hoc distribution signing process on ios as well), but you can change that.
 
-These configurations are just naming conventions, you can add any configuration
+These configurations are just naming conventions. You can add any configuration
 you need and each one allows you to build a unique application.
 
 ### `tarifa.json`
@@ -77,22 +77,31 @@ The default cordova id. <span style="background:yellow;"><strong>FIXME</strong>
 Can't be changed right now.</span>
 
 ##### description
-A brief description of the app, it will be inserted into the cordova `config.xml`
+A brief description of the app, which will be inserted into the cordova `config.xml`
 file.
 
 ##### version
-The version of the project which can be overwritten in any configuration. It must
+The version of the project can be overwritten in any configuration. It must
 be a 3 digits version number (e.g. `0.0.0`).
-On windows phone and windows8, 4 digits are mandatory, so tarifa will automatically
+On windows phone, 4 digits are mandatory, so tarifa will automatically
 append `0` to the specified version.
 
 ##### platforms
 
-A list of the platforms which are available for that tarifa project.
+A list of platforms which are available for the tarifa project.
 
 ##### plugins
 
-A list of the currently installed cordova plugins.
+An object mapping plugin ids to plugin uris like:
+
+```json
+{
+  "plugins": {
+    "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.3",
+    "org.apache.cordova.console": "https://github.com/apache/cordova-plugin-console.git#r0.2.11"
+  }
+}
+```
 
 ##### configurations
 
@@ -100,7 +109,7 @@ A definition of the various configurations. When creating a project with `tarifa
 tarifa will add 4 default configurations for each platform you selected: **_default_**,
 **_dev_**, **_stage_** and **_prod_**.
 
-For instance, the configurations attribute will look like the following on a project
+For instance, the configuration attribute will look like the following on a project
 for which you selected the web and android as platforms:
 
 ```json
@@ -232,7 +241,7 @@ Defines the following properties:
 
 ### `private.json`
 
-Contains configuration data that you don't want to expose in a source control software.
+Contains configuration data that you do not want to expose in a source control software.
 
 For instance you can use it to set the path to your Android keystore (needed to
 sign apps for release):
@@ -250,6 +259,6 @@ sign apps for release):
 }
 ```
 
-Defining `keystore_path` and `keystore_alias` in a configuration tells tarifa to
+Defining `keystore_path` and `keystore_alias` in a configuration allows tarifa to
 compile this android configuration in release mode and to sign it with the given
 key alias and key store.

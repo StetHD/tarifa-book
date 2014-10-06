@@ -1,6 +1,6 @@
 # web
 
-The web is a `tarifa` platform like any other one, except that it's way more simple.
+The web is a `tarifa` platform like any other, except that it is way more simple.
 Running
 
 ```

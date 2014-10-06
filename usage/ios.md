@@ -13,11 +13,11 @@ file:
 }
 ```
 
-* `id` the bundleid of the application.
-* `product_name` the final app name which is shown on your devices's OS.
+* `id` the `bundleid` of the application.
+* `product_name` the final app name which is shown on your devices' OS.
 * `product_file_name` the name of the compiled .ipa file.
 
-On iOS, it's possible to deploy an app via ad-hoc distribution but this requires
+On iOS, it is possible to deploy an app via ad-hoc distribution but this requires
 the app to be signed with a certificate and a mobile provisioning file. When
 creating a tarifa project, the `create` command will add signing and deploy information
 on the stage configuration in the `private.json` file.
