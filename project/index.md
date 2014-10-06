@@ -45,7 +45,7 @@ At this time, the tarifa build process performs setting replacements in various
 cordova files without undoing them. In a future version of tarifa this won't be
 the case anymore.
 
-During the build process, tarifa will copy or link the output of the `www` project
+During the build process, tarifa will copy or link (depending on the OS) the output of the `www` project
 folder to `app/www`.
 
 Currently, tarifa just wraps cordova plugins without any extra features.

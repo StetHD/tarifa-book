@@ -1,7 +1,7 @@
 # tarifa-book
 
 tarifa is a CLI based on [Apache Cordova](http://cordova.apache.org/).
-It aims at simplifying the Apache Cordova workflow and adding features to complete cordova toolchain such as:
+It aims at simplifying the Apache Cordova workflow and adding features to complete the cordova toolchain such as:
 
 * **multiple configurations**: produce multiple unique apps easily on a given platform within a single project.
 * **integration of any front-end build system**: integrate your build process in the cordova workflow.
@@ -11,14 +11,14 @@ with adequate questions and save the answers in the project files.
 
 ### Resources
 
-* Repository: [https://github.com/TarifaMobileApps/tarifa.git](https://github.com/TarifaMobileApps/tarifa.git).
-* Issues: [https://github.com/TarifaMobileApps/tarifa/issues](https://github.com/TarifaMobileApps/tarifa/issues).
+* Repository: [https://github.com/TarifaTools/tarifa.git](https://github.com/TarifaTools/tarifa.git).
+* Issues: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues).
 * Website: [http://tarifa.tools](http://tarifa.tools).
 * Documentation: [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html).
 
 ### Document
 
-This document covers version 0.2.0 of tarifa. You can contribute to this document on [TarifaMobileApps/tarifa-book](https://github.com/TarifaMobileApps/tarifa-book.git).
+This document covers version 0.2.0 of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
 This is a work in progress so don't be afraid if you come across <span style="background:yellow;"><strong>TODO</strong></span> or <span style="background:yellow;"><strong>FIXME</strong></span>.
 
 ### License
