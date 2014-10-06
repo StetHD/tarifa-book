@@ -5,8 +5,7 @@ It aims at simplifying the cordova workflow and adding features to complete the 
 
 * **multiple configurations**: simply produce multiple unique apps on a given platform within a single project.
 * **integration of any www build process**: integrate any www build process in the cordova workflow.
-* **interactive project bootstrap**: no need to remember every required information when creating a project, tarifa
-asks questions and validates user input.
+* **interactive project bootstrap**: no need to remember every required information while creating a project, tarifa will guide you with adequate questions and save the answers in the project files.
 * **deployment to hockeyapp from the terminal**: no need to launch a browser to upload a binary file to hockeyapp, tarifa handles it.
 
 ### Resources
