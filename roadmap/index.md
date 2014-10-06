@@ -1,12 +1,11 @@
 # Roadmap
 
-### 0.2.0
+### 0.3.0
 
-major features:
+Major features:
 
-* windows 8.1
+* windows 8.1 (universal apps)
 * tarifa watch
-* upgrade 3.5
 
 ### Future
 
