@@ -3,7 +3,7 @@
 tarifa is a CLI based on [Apache Cordova](http://cordova.apache.org/).
 It aims at simplifying the Apache Cordova workflow and adding features to complete the cordova toolchain such as:
 
-* **multiple configurations**: produce multiple unique apps easily on a given platform within a single project.
+* **multiple configurations**: Produce unique apps for multiple platforms within a single project.
 * **integration of any front-end build system**: integrate your build process in the cordova workflow.
 * **interactive project bootstrap**: no need to remember every required information while creating a project, tarifa will guide you
 with adequate questions and save the answers in the project files.

@@ -1,33 +1,40 @@
 # Anatomy of a tarifa project
 
-This is what a tarifa project looks like:
+This is what a tarifa project with ios and android platforms looks like:
 
-```
+<pre>
 |-- app
 |   |-- config.xml
 |   |-- hooks
-|   |-- merges
 |   |-- platforms
 |   |-- plugins
 |   `-- www
 |-- images
+|   |-- android
+|   `-- ios
+|-- private.json
 |-- project
 |   |-- bin
-|   |   |-- build.js
-|   |   |-- check_web.js
-|   |   |-- check_android.js
-|   |   `-- mapping.json
-|   |-- package.json
+|   |   |-- <b>build.js</b>
+|   |   |-- <b>check_android.js</b>
+|   |   |-- <b>check_ios.js</b>
+|   |   |-- <b>check_web.js</b>
+|   |   `-- <b>mapping.json</b>
+|   |-- html
+|   |   `-- <b>index.html</b>
+|   |-- node_modules
+|   |-- <b>package.json</b>
+|   |-- src
+|   |   `-- <b>app.js</b>
 |   `-- www
-|-- tarifa.json
-`-- private.json
-```
+`-- tarifa.json
+<pre>
 
 The root of a tarifa project is composed of 3 folders:
 
 * `app` contains the cordova app.
 * `images` contains all icons and splash screens.
-* `project` contains the www project.
+* `project` contains the www project. (bold for editable files)
 
 and 2 json files:
 
