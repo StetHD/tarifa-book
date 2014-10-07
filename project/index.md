@@ -28,7 +28,7 @@ This is what a tarifa project with ios and android platforms looks like:
 |   |   `-- <b>app.js</b>
 |   `-- www
 `-- tarifa.json
-<pre>
+</pre>
 
 The root of a tarifa project is composed of 3 folders:
 
