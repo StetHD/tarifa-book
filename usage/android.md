@@ -37,11 +37,6 @@ in release mode. Usually this is stored in the `private.json` file:
 }
 ```
 
-In addition to signing the apk, on android, you need to bump the `android:versionCode`
-attribute of the `AndroidManifest.xml` file.
-Specifying a `version_code` attribute in a configuration will be reflected in the
-`AndroidManifest.xml` file.
-
 ### Deploy with hockeyapp
 
 In order to deploy a configuration on hockeyapp, you need to add the `hockeyapp_id`
