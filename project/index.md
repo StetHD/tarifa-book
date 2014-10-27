@@ -17,8 +17,8 @@ This is what a tarifa project with ios and android platforms looks like:
 |   |-- bin
 |   |   |-- <b>build.js</b>
 |   |   |-- <b>check_android.js</b>
+|   |   |-- <b>check_browser.js</b>
 |   |   |-- <b>check_ios.js</b>
-|   |   |-- <b>check_web.js</b>
 |   |   `-- <b>mapping.json</b>
 |   |-- html
 |   |   `-- <b>index.html</b>

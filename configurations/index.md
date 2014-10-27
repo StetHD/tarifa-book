@@ -37,7 +37,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
   "version": "1.0.0",
   "platforms": [
     "android",
-    "web"
+    "browser"
   ],
   "plugins": [
     "org.apache.cordova.splashscreen"
@@ -50,7 +50,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
         "product_file_name": "demo"
       }
     },
-    "web": {
+    "browser": {
       "default": {
         "id": "org.tarifa.demo",
         "product_name": "demo",
@@ -110,7 +110,7 @@ tarifa will add 4 default configurations for each platform you selected: **_defa
 **_dev_**, **_stage_** and **_prod_**.
 
 For instance, the configuration attribute will look like the following on a project
-for which you selected the web and android as platforms:
+for which you selected browser and android as platforms:
 
 ```json
 {
@@ -136,7 +136,7 @@ for which you selected the web and android as platforms:
       "product_file_name": "demo-prod"
     }
   },
-  "web": {
+  "browser": {
     "default": {
       "id": "org.tarifa.demo",
       "product_name": "demo",
