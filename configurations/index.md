@@ -69,7 +69,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
 #### attributes
 
 ##### name
-The default app name which is chosen when running `tarifa create`. Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project).
+The default app name which is chosen when running `tarifa create`. Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project and if the names differ tarifa won't run).
 
 ##### id
 The default cordova id. If you do not overwrite the id in some configuration tarifa will fallback to using this id.
