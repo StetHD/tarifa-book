@@ -44,7 +44,7 @@ don't want to expose.
 
 ### The raw cordova app
 
-The `app` folder contains a regular cordova application. Any cordova app (version 3.6.x)
+The `app` folder contains a regular cordova application. Any cordova app (version 4.0.x)
 should work with tarifa, thus you can use an existing cordova app folder in a
 tarifa project.
 
