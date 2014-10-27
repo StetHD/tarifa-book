@@ -237,6 +237,16 @@ Defines the following properties:
 }
 ```
 
+#### Optional attributes
+
+##### project_output
+
+Allows you to overwrite the web project output directory, which by default is `project/www`.
+
+##### assets_path
+
+Allows you to overwrite the assets directory, which contains the generated images and splashscreens. By default the `images` directory is used.
+
 ### `private.json`
 
 Contains configuration data that you do not want to expose in a source control software.
