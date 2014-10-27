@@ -237,8 +237,6 @@ Defines the following properties:
 }
 ```
 
-#### Optional attributes
-
 ##### project_output
 
 Allows you to overwrite the web project output directory, which by default is `project/www`.
