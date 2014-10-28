@@ -193,6 +193,8 @@ as:
 }
 ```
 
+You may also define this attribute in any configuration.
+
 ##### check
 
 Defines user scripts executed during `tarifa check` for each platform. By default `tarifa create`
