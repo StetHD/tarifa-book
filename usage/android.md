@@ -37,6 +37,8 @@ in release mode. Usually this is stored in the `private.json` file:
 }
 ```
 
+By default, `tarifa create` will add `keystore_path` and `keystore_alias` to the `prod` configuration.
+
 ### Deploy with hockeyapp
 
 In order to deploy a configuration on hockeyapp, you need to add the `hockeyapp_id`

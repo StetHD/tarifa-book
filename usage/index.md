@@ -19,7 +19,7 @@ one is available.
 * `plugin` manages plugins.
 * `info` gets general data on your host and attached devices.
 * `config` configures graphical assets and provisioning files.
-* `update` updates an existing tarifa project.
+* `update` update default cordova plugins and cordova platforms.
 
 ### deploy tasks
 

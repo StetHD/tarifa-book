@@ -2,7 +2,7 @@
 
 tarifa uses [configstore](https://www.npmjs.org/package/configstore) to get user settings.
 User settings are used in `tarifa create` to prefill questions with default values,
-for extending cordova plugins and www project templates lists.
+for extending cordova plugins list and www project templates list.
 
 `~/.config/configstore/tarifa.yml` can be edited and has the following items:
 
@@ -31,9 +31,13 @@ You can add some custom cordova plugins, `tarifa create` will show them:
 plugins:
   - name: cordova-plugin-hockeyapp
     value: "https://github.com/peutetre/cordova-plugin-hockeyapp.git"
+    version: 0.0.0
   - name: PhoneGap-ios-PhoneDialer
     value: "https://github.com/gaetansenn/PhoneGap-ios-PhoneDialer.git"
+    version: 0.2.0
 ```
+
+`tarifa update` will also integrate them into the update process.
 
 #### www project templates
 
@@ -47,10 +51,10 @@ templates:
     value: /Users/peutetre/code/react-bootstrap
 ```
 
-#### Chrome
+#### chrome path
 
-On Linux and Windows you can overwrite **Chrome** location as follows:
+On linux or windows, it's possible to set the chrome path used in `tarifa run  browser`:
+
 ``` yaml
-chrome: /path/to/chrome/binary
+chrome:/usr/bin/chromium-browser
 ```
-By default `chrome-browser` (resp. `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`) is used on Linux (resp. Windows).

@@ -18,7 +18,7 @@ a cordova app, so you can focus on creating content. We started the
 project with the idea of making a practical tool for our dev team and to
 lower the barrier of development and project sharing with cordova.
 
-Finally, tarifa introduces [configurations](../configuration/index.md). These are
+Finally, tarifa introduces [configurations](../configurations/index.md). These are
 an important concept in tarifa as they modify the output of each command; they
 allow for instance to create multiple versions of the same application on a given
 platform (one for each environment), which is currently pretty hard to achieve
