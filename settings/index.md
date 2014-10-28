@@ -46,3 +46,10 @@ templates:
   - name: react.js bootstrap
     value: /Users/peutetre/code/react-bootstrap
 ```
+
+#### Chrome
+
+On Linux and Windows you can overwrite **Chrome** location as follows:
+``` yaml
+chrome: /path/to/chrome/binary
+```
