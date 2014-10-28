@@ -15,4 +15,4 @@ Right now, when you execute the `tarifa update` command in an existing tarifa pr
 1. Each installed platform and plugin gets updated to the latest available version.
 2. The `.tarifa.json` file is overwritten with an updated `current` attribute.
 
-The various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's `CHANGES.md` file.
+Note that the various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's `CHANGES.md` file.
