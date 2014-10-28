@@ -1,6 +1,6 @@
 # tarifa-book
 
-tarifa is a CLI on top of Apache Cordova [Apache Cordova](http://cordova.apache.org/).
+tarifa is a CLI on top of [Apache Cordova](http://cordova.apache.org/).
 It aims at simplifying the Apache Cordova workflow and adding features to complete the cordova toolchain such as:
 
 * **multiple configurations**: Produce unique apps for multiple platforms within a single project.
