@@ -13,3 +13,4 @@ tarifa reference
     * [android](usage/android.md)
     * [windows phone 8](usage/wp8.md)
 * [User settings](settings/index.md)
+* [Updating an existing project](update/index.md)
