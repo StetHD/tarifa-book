@@ -53,3 +53,4 @@ On Linux and Windows you can overwrite **Chrome** location as follows:
 ``` yaml
 chrome: /path/to/chrome/binary
 ```
+By default `chrome-browser` (resp. `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`) is used on Linux (resp. Windows).
