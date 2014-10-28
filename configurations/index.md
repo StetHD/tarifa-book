@@ -37,7 +37,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
   "version": "1.0.0",
   "platforms": [
     "android",
-    "web"
+    "browser"
   ],
   "plugins": [
     "org.apache.cordova.splashscreen"
@@ -50,7 +50,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
         "product_file_name": "demo"
       }
     },
-    "web": {
+    "browser": {
       "default": {
         "id": "org.tarifa.demo",
         "product_name": "demo",
@@ -69,12 +69,10 @@ Here is the skeleton of a minimal `tarifa.json` file:
 #### attributes
 
 ##### name
-The default app name which is chosen when running `tarifa create`. <span style="background:yellow;"><strong>FIXME</strong>
-Can't be changed right now.</span>
+The default app name which is chosen when running `tarifa create`. Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project and if the names differ tarifa won't run).
 
 ##### id
-The default cordova id. <span style="background:yellow;"><strong>FIXME</strong>
-Can't be changed right now.</span>
+The default cordova id. If you do not overwrite the id in some configuration tarifa will fallback to using this id.
 
 ##### description
 A brief description of the app, which will be inserted into the cordova `config.xml`
@@ -110,7 +108,7 @@ tarifa will add 4 default configurations for each platform you selected: **_defa
 **_dev_**, **_stage_** and **_prod_**.
 
 For instance, the configuration attribute will look like the following on a project
-for which you selected the web and android as platforms:
+for which you selected browser and android as platforms:
 
 ```json
 {
@@ -136,7 +134,7 @@ for which you selected the web and android as platforms:
       "product_file_name": "demo-prod"
     }
   },
-  "web": {
+  "browser": {
     "default": {
       "id": "org.tarifa.demo",
       "product_name": "demo",
@@ -242,6 +240,14 @@ Defines the following properties:
   "href": "http://tarifa.tools"
 }
 ```
+
+##### project_output
+
+Allows you to overwrite the web project output directory, which by default is `project/www`.
+
+##### assets_path
+
+Allows you to overwrite the assets directory, which contains the generated images and splashscreens. By default the `images` directory is used.
 
 ### `private.json`
 

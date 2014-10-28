@@ -8,7 +8,7 @@ tarifa reference
 * [Project structure](project/index.md)
 * [Configurations](configurations/index.md)
 * [Workflow](usage/index.md)
-    * [web](usage/web.md)
+    * [browser](usage/browser.md)
     * [ios](usage/ios.md)
     * [android](usage/android.md)
     * [windows phone 8](usage/wp8.md)

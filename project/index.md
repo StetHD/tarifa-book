@@ -17,8 +17,8 @@ This is what a tarifa project with ios and android platforms looks like:
 |   |-- bin
 |   |   |-- <b>build.js</b>
 |   |   |-- <b>check_android.js</b>
+|   |   |-- <b>check_browser.js</b>
 |   |   |-- <b>check_ios.js</b>
-|   |   |-- <b>check_web.js</b>
 |   |   `-- <b>mapping.json</b>
 |   |-- html
 |   |   `-- <b>index.html</b>
@@ -44,7 +44,7 @@ don't want to expose.
 
 ### The raw cordova app
 
-The `app` folder contains a regular cordova application. Any cordova app (version 3.6.x)
+The `app` folder contains a regular cordova application. Any cordova app (version 4.0.x)
 should work with tarifa, thus you can use an existing cordova app folder in a
 tarifa project.
 
