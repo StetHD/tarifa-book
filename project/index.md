@@ -1,8 +1,10 @@
 # Anatomy of a tarifa project
 
-This is what a tarifa project with ios and android platforms looks like:
+This is what a tarifa project for ios and android using the default project template looks like:
 
 <pre>
+|-- tarifa.json
+|-- private.json
 |-- app
 |   |-- config.xml
 |   |-- hooks
@@ -12,22 +14,19 @@ This is what a tarifa project with ios and android platforms looks like:
 |-- images
 |   |-- android
 |   `-- ios
-|-- private.json
-|-- project
-|   |-- bin
-|   |   |-- <b>build.js</b>
-|   |   |-- <b>check_android.js</b>
-|   |   |-- <b>check_browser.js</b>
-|   |   |-- <b>check_ios.js</b>
-|   |   `-- <b>mapping.json</b>
-|   |-- html
-|   |   `-- <b>index.html</b>
-|   |-- node_modules
-|   |-- <b>package.json</b>
-|   |-- src
-|   |   `-- <b>app.js</b>
-|   `-- www
-`-- tarifa.json
+`-- project
+    |-- bin
+    |   |-- <b>build.js</b>
+    |   |-- <b>check_android.js</b>
+    |   |-- <b>check_ios.js</b>
+    |   `-- <b>mapping.json</b>
+    |-- html
+    |   `-- <b>index.html</b>
+    |-- node_modules
+    |-- <b>package.json</b>
+    |-- src
+    |   `-- <b>app.js</b>
+    `-- www
 </pre>
 
 The root of a tarifa project is composed of 3 folders:
@@ -76,7 +75,7 @@ module.exports.build = function (platform, settings, configurationName) {
 }
 ```
 
- where
+where
 
 * `platform` is the platform chosen by the user for the current build.
 * `settings` is an object containing all the project settings (this object is

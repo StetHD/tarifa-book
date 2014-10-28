@@ -225,6 +225,10 @@ module.exports = function (msg) {
 };
 ```
 
+##### project_output
+
+Overwrite the default www project output folder. It is relative to the project `tarifa.json` file. It is an optional attribute.
+
 ##### author
 
 Defines the following properties:

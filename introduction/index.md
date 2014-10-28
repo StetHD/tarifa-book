@@ -5,7 +5,7 @@ Using Apache Cordova means having basic knowledge of each platform you work with
 
 * how to build and debug the *common* way (with an IDE like Xcode, Visual Studio...)
 * release and publish your app to stores (iOS, Android, WP...)
-* how to distribute your app to testers (hockeyapp, iOS ad-hoc distribution...)
+* how to sign and distribute your app to testers (hockeyapp, iOS ad-hoc distribution...)
 
 You may also need to change or add stuff in the native part of your Apache Cordova project
 depending on the platform. For example, to produce a signed android apk, you need
@@ -14,7 +14,7 @@ keystore alias. Or on ios, to produce a signed ipa for adhoc distribution, you n
 change the `CODE_SIGN_IDENTITY` in your `build.xcconfig` file.
 
 Tarifa aims at taking care of all the little things you need to know/do to build
-a cordova app, so you can focus on creating actual content. We started the
+a cordova app, so you can focus on creating content. We started the
 project with the idea of making a practical tool for our dev team and to
 lower the barrier of development and project sharing with cordova.
 

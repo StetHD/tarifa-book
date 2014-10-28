@@ -1,7 +1,8 @@
 # Installation
 
-You can install tarifa on windows or macosx (should work on linux, but currently not tested). You need a working
+You can install tarifa on windows, macosx or linux. You need a working
 [node.js](http://nodejs.org/) environment.
+It is recommended to install node.js via [nvm](https://github.com/creationix/nvm).
 
 Depending on your host, you will be able to support the following platforms:
 
