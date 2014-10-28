@@ -11,5 +11,6 @@ Here is an example `.tarifa.json` file:
 ```
 
 Right now, when you execute the `tarifa update` command in an existing tarifa project:
+
 1. Each installed platform and plugin gets updated to the latest available version.
 2. The `.tarifa.json` file is overwritten with an updated `current` attribute.
