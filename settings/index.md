@@ -53,7 +53,7 @@ templates:
 
 #### chrome path
 
-On linux or windows, it's possible to set the chrome path used in `tarifa run  browser`:
+On linux or windows, it's possible to set the chrome path used in `tarifa run browser`:
 
 ``` yaml
 chrome:/usr/bin/chromium-browser
