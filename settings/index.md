@@ -30,10 +30,10 @@ You can add some custom cordova plugins, `tarifa create` will show them:
 ``` yaml
 plugins:
   - name: cordova-plugin-hockeyapp
-    value: "https://github.com/peutetre/cordova-plugin-hockeyapp.git"
+    uri: "https://github.com/peutetre/cordova-plugin-hockeyapp.git"
     version: 0.0.0
   - name: PhoneGap-ios-PhoneDialer
-    value: "https://github.com/gaetansenn/PhoneGap-ios-PhoneDialer.git"
+    uri: "https://github.com/gaetansenn/PhoneGap-ios-PhoneDialer.git"
     version: 0.2.0
 ```
 
