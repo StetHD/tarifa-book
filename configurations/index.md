@@ -40,7 +40,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
     "browser"
   ],
   "plugins": [
-    "org.apache.cordova.splashscreen"
+    "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.4"
   ],
   "configurations": {
     "android": {
