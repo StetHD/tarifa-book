@@ -14,7 +14,7 @@ with adequate questions and save the answers in the project files.
 * Repository: [https://github.com/TarifaTools/tarifa.git](https://github.com/TarifaTools/tarifa.git).
 * Issues: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues).
 * Website: [http://tarifa.tools](http://tarifa.tools).
-* Documentation: [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html)
+* Documentation: [http://42loops.gitbooks.io/tarifa/content/index.html](http://42loops.gitbooks.io/tarifa/content/index.html)
 * Changes: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md)
 
 ### Document
