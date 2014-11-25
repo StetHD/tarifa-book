@@ -15,6 +15,7 @@ with adequate questions and save the answers in the project files.
 * Issues: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues).
 * Website: [http://tarifa.tools](http://tarifa.tools).
 * Documentation: [https://www.gitbook.io/content/book/42loops/tarifa/index.html](https://www.gitbook.io/content/book/42loops/tarifa/index.html)
+* Changes: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md)
 
 ### Document
 
