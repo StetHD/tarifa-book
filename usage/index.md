@@ -1,4 +1,34 @@
-# Usage and workflow
+# Workflow and Usage
+
+the main tarifa workflow:
+
+```
+
+ +----------------------+
+ |     configuration    |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ | project/bin/build.js |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ |        prepare       |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ |        compile       |
+ +----------------------+
+             |
+             v
+ +----------------------+
+ |          run         |
+ +----------------------+
+
+```
 
 tarifa commands may be splitted into the following categories:
 
