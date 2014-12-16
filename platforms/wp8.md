@@ -1,7 +1,5 @@
 # Windows Phone 8
 
-// TODO wp8 company app distribution] replace sign_mode in tarifa.json with certificate_path
-
 ### Configuration attributes
 
 The `wp8` configuration requires at least the following 4 attributes in the `tarifa.json`
@@ -25,11 +23,12 @@ variations of it.
 
 ### Release
 
-Add `release_mode` attribute with the value `true` to your release configuration.
+to build the app in release mode, add the `release_mode` attribute with the value `true` to your release configuration.
 
-### Deploy with hockeyapp
+### Sign and Deploy with hockeyapp
 
-To deploy to hockeyapp, wp8 apps need to be signed and you need an application enrollment token (AET).
-See [http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx](http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx)
-to create an AET file. To sign the build of a configuration for Company app distribution,
-you need to set the `sign_mode` and `release_mode` attributes to true.
+To deploy to hockeyapp, wp8 apps need to be signed with a certificate in PFX format and you need an application enrollment token (AET).
+See [http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx](http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx) for more informations.
+
+To sign the build of a configuration for Company app distribution,
+you need to set the configuration attributes `certificate_path` with the path of the certificate and `release_mode` to true.

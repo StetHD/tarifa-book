@@ -33,7 +33,4 @@ on the stage configuration in the `private.json` file.
 }
 ```
 
-### Limitations
-
-* `tarifa run` won't be able - like with other platforms - to automatically launch
-the app on the device.
+See [`tarifa config`](../usage/config.md) to find commands helping management of provisioning files and attached devices.
