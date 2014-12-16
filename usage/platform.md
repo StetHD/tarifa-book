@@ -1,5 +1,7 @@
 # platform
 
+`tarifa platform` wrapps `cordova platform` and edit the project `tarifa.json` according to the sub command.
+
 ```
 Usage: tarifa platform <cmd> [platform]
 

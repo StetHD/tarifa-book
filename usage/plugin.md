@@ -1,5 +1,7 @@
 # plugin
 
+`tarifa platform` wrapps `cordova plugin` and edit the project `tarifa.json` according to the sub command.
+
 ```
 Usage: tarifa plugin <cmd> [platform]
 

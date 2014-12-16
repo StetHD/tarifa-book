@@ -1,5 +1,7 @@
 # clean
 
+`tarifa clean` allows to clean all generated files accross platforms.
+
 ```
 Usage: tarifa clean <platform>
 

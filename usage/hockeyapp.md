@@ -1,5 +1,7 @@
 # hockeyapp
 
+`tarifa hockeyapp` allows to interact with [http://hockeyapp.net](hockeyapp.net) for publishing apps to testers.
+
 ```
 Usage: tarifa hockeyapp <command>
 
@@ -14,7 +16,7 @@ Commands:
         See http://support.hockeyapp.net/kb/api/api-versions#upload-version for details.
 
     version update <platform> <config> [options]
-        Modify last version of given platform for <config> env. You can only 
+        Modify last version of given platform for <config> env. You can only
         modify metadatas; you can't upload a new package.
         Options can be any of 'notes', 'notify', 'status', 'tags', 'teams', 'users'.
         See http://support.hockeyapp.net/kb/api/api-versions#update-version for details.

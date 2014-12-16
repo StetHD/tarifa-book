@@ -4,10 +4,10 @@ In tarifa, a configuration is a json representation of the application settings
 for a particular environment. It is described under the `configurations` key in
   the `tarifa.json` file.
 
-When creating a tarifa project with `tarifa create`, tarifa will create the
+When creating a tarifa project with [`tarifa create`](../usage/create.md), tarifa will create the
 following configurations: **_default_**, **_dev_**, **_stage_** and **_prod_**.
 
-You can add or delete any configuration you like. The **_default_** configuration
+Aside **_default_**, you can add or delete any configuration you like. The **_default_** configuration
 allows to run tarifa commands without specifying an environment. For instance:
 
     $ tarifa run android
@@ -20,7 +20,7 @@ will use the **_dev_** configuration where you can have settings which are speci
 to your dev environment.
 
 By default, the **_stage_** environment is configured for hockeyapp deployments
-(and ad-hoc distribution signing process on ios as well), but you can change that.
+(and ad-hoc distribution signing process on ios as well) and the **_prod_** one is configured for release and signing process, but you can change that.
 
 These configurations are just naming conventions. You can add any configuration
 you need and each one allows you to build a unique application.
@@ -103,7 +103,7 @@ An object mapping plugin ids to plugin uris like:
 
 ##### configurations
 
-A definition of the various configurations. When creating a project with `tarifa create`,
+A definition of the various configurations. When creating a project with [`tarifa create`](../usage/create.md),
 tarifa will add 4 default configurations for each platform you selected: **_default_**,
 **_dev_**, **_stage_** and **_prod_**.
 

@@ -1,5 +1,7 @@
 # check
 
+`tarifa check` needs to be executed after cloning a tarifa project. It will initialize the android platform, your front-end project - by calling `npm install` in the `project` folder - and execute each possible [user scripts](../configurations/index.md#check) defined in `tarifa.json`  scripts.
+
 ```
 Usage: tarifa check
 
