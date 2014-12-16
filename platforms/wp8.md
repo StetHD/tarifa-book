@@ -1,5 +1,6 @@
 # Windows Phone 8
 
+// TODO wp8 company app distribution] replace sign_mode in tarifa.json with certificate_path
 
 ### Configuration attributes
 

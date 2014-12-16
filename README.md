@@ -16,10 +16,15 @@ with adequate questions and save the answers in the project files.
 * Website: [http://tarifa.tools](http://tarifa.tools).
 * Documentation: [http://42loops.gitbooks.io/tarifa/content/index.html](http://42loops.gitbooks.io/tarifa/content/index.html)
 * Changes: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md)
+* Continuous Integration: [http://ci.tarifa.tools](http://ci.tarifa.tools)
 
 ### Document
 
-This document covers version **0.3.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+This document covers version **0.4.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+
+### History
+
+* [documentation for version **0.3.x**](https://github.com/TarifaTools/tarifa-book/tree/0.3.0)
 
 ### License
 
