@@ -2,7 +2,7 @@
 
 `tarifa hockeyapp` allows to interact with [http://hockeyapp.net](hockeyapp.net) for publishing apps to testers.
 
-General hockeyapp configuration goes under the `hockeyapp` key:
+General hockeyapp configuration goes under the `hockeyapp` root key in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {
@@ -13,7 +13,7 @@ General hockeyapp configuration goes under the `hockeyapp` key:
 }
 ```
 
-This is the minimal configuration to be able to interact with hockeyapp. Of course we suggest to use `private.json` to store sensitive data like hockeyapp token.
+This is the minimal configuration to be able to interact with hockeyapp. Of course we suggest to use [`private.json`](../project/index.md#tarifajson-and-privatejson) to store sensitive data like hockeyapp token.
 
 The command `version upload` will perform differenlty depending on what you have in your configuration.
 
