@@ -14,7 +14,7 @@ As with the ios platform, any android configuration needs at least the following
 ```
 
 * `id` the java package of the application.
-* `product_name` the final app name which is shown on your devices' OS.
+* `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .apk file.
 
 ### Release

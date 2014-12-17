@@ -14,7 +14,7 @@ The `wp8` configuration requires at least the following 4 attributes in the [`ta
 ```
 
 * `id` is the C# namespace of the application.
-* `product_name` is the final app name which is shown on your devices' OS.
+* `product_name` is the final app name which is shown on your device's OS.
 * `product_file_name` is the name of the compiled .xap file.
 * `guid` is the guid of the application, needed to uniquely identify the app
 (tarifa create will generate some for you) and hence to be able to run multiple
@@ -22,7 +22,7 @@ variations of it.
 
 ### Release
 
-to build the app in release mode, add the `release_mode` attribute with the value `true` to your release configuration.
+To build the app in release mode, add the `release_mode` attribute with the value `true` to your release configuration.
 
 ### Sign and Deploy with hockeyapp
 

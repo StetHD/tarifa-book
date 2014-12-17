@@ -1,6 +1,6 @@
 # Anatomy of a tarifa project
 
-This is what a tarifa project for ios and android using the default project template looks like - **bold for editable files** -
+This is what a tarifa project for ios and android — using the default project template — looks like (**bold for editable files**):
 
 <pre>
 |-- <b>tarifa.json</b>                     /* project definition */
@@ -17,7 +17,7 @@ This is what a tarifa project for ios and android using the default project temp
 `-- project                         /* front-end project */
     |-- bin
     |   |-- <b>build.js</b>                /* front-end project's build interface to tarifa */
-    |   |-- <b>check_android.js</b>        /* add specifics steps to `tarifa check` */
+    |   |-- <b>check_android.js</b>        /* custom user scripts ran by `tarifa check` */
     |   |-- <b>check_ios.js</b>
     |-- node_modules
     |   `-- ...
@@ -53,8 +53,6 @@ the case anymore.
 
 During the build process and before finishing the [prepare step](../usage/prepare.md), tarifa will copy or link (depending on the OS) the output of the `www` project folder to `app/www`.
 
-Currently, tarifa just wraps cordova plugins without any extra features.
-
 ### The www project
 
 The `project` folder is a regular front-end project with the build system of your choice. It must
@@ -62,7 +60,7 @@ satisfy the following interface:
 
 * having a `package.json`.
 * having a `bin/build.js` node module exposing `build` function starting the build process, `watch` and `close` function to start and stop live reload.
-* generating output in a folder named `www` or if available, at the path given by the `project_output` attribute in `tarifa.json`.
+* generating output in a folder named `www` or if defined, at the path given by the `project_output` attribute in `tarifa.json`.
 
 More precisely, the `bin/build.js` module must have the following signature:
 
@@ -76,12 +74,12 @@ module.exports.build = function (platform, settings, config) {
 
 module.exports.watch = function watch(f, settings, platform, config) {
     // init front-end watch
-    // then call `f('changed file path')`
+    // then call `f(<changed file path>)`
     // each time the live reload needs to be triggered
 }
 
 module.exports.close = function close() {
-    // close all watch handler used in `watch()`
+    // close all watch handlers used in `watch()`
     // called by tarifa on ^C
 }
 
@@ -93,11 +91,10 @@ where
 * `settings` is an object containing all the project settings (this object is
   simply the result of merging `tarifa.json` and `private.json`).
 * `config` is the name of the configuration chosen by the user.
-* `f` is a function which needs to be called each time a file needs to be reload. it takes the path of the changed file as argument.
+* `f` is a function which needs to be called each time a file needs to be reloaded. It takes the path of the changed file as an argument.
 
 In the default tarifa project template, *browserify* is used to embed the settings
-which are specific to a configuration as a global module - named `settings` - that
-you can require in your js code.
+which are specific to a configuration as a global module — named `settings` — that you can require in your js code.
 
 See the [default template www project build script](https://github.com/TarifaTools/tarifa/blob/master/template/project/bin/build.js) for a full example.
 

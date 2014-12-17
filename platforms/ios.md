@@ -13,7 +13,7 @@ In any ios configuration we need at least the following 3 attributes in the [`ta
 ```
 
 * `id` the `bundleid` of the application.
-* `product_name` the final app name which is shown on your devices' OS.
+* `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .ipa file.
 
 On iOS, it is possible to deploy an app via ad-hoc distribution but this requires
@@ -32,4 +32,4 @@ on the stage configuration in the `private.json` file.
 }
 ```
 
-See [`tarifa config`](../usage/config.md) to find commands helping management of provisioning files and attached devices.
+See [`tarifa config`](../usage/config.md) to find commands to help you manage provisioning files and attached devices.

@@ -1,6 +1,6 @@
 # run
 
-`tarifa run` executes the complet buildchain [build chain](../workflow/index.md): prepares the `www` folder, build the final app and run it on any attached devices according to the given platform and configuration.
+`tarifa run` executes the complete [build chain](../workflow/index.md). It prepares the `www` folder, builds the final app and runs it on any attached devices according to the given platform and configuration.
 
 ```
 Usage: tarifa run <platform> [configuration]

@@ -271,4 +271,4 @@ sign apps for release):
 Defining `keystore_path` and `keystore_alias` in a configuration allows tarifa to
 compile this android configuration in release mode and to sign it with the given
 key alias and key store. The [platforms section](../platforms/index.html) details
-all pre defined configurations attributes accross platforms.
+all predefined configurations attributes across platforms.
