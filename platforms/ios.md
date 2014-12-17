@@ -33,3 +33,8 @@ on the stage configuration in the `private.json` file.
 ```
 
 See [`tarifa config`](../usage/config.md) to find commands to help you manage provisioning files and attached devices.
+
+### Limitations
+
+* [`tarifa run`](../usage/run.md) won't be able - like with other platforms - to automatically launch
+the app on the device.
