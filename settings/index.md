@@ -1,7 +1,7 @@
 # User settings
 
 tarifa uses [configstore](https://www.npmjs.org/package/configstore) to get user settings.
-User settings are used in `tarifa create` to prefill questions with default values,
+User settings are used in [`tarifa create`](../usage/create.md) to prefill questions with default values,
 for extending cordova plugins list and www project templates list.
 
 `~/.config/configstore/tarifa.yml` can be edited and has the following items:
@@ -25,7 +25,7 @@ apple_developer_team: XXXXXXXXXX
 
 #### cordova plugins
 
-You can add some custom cordova plugins, `tarifa create` will show them:
+You can add some custom cordova plugins, [`tarifa create`](../usage/create.md) will show them:
 
 ``` yaml
 plugins:
@@ -39,11 +39,11 @@ plugins:
     version: 0.2.0
 ```
 
-`tarifa update` will also integrate them into the update process.
+[`tarifa update`](../usage/update.md) will also integrate them into the update process.
 
 #### www project templates
 
-You can also add custom www project templates, `tarifa create` will show them:
+You can also add custom www project templates, [`tarifa create`](../usage/create.md) will show them:
 
 ``` yaml
 templates:

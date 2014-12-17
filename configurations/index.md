@@ -1,6 +1,6 @@
 # Configurations
 
-In tarifa, a configuration is a json representation of the application settings
+In tarifa, a configuration is a JSON representation of the application settings
 for a particular environment. It is described under the `configurations` key in
   the `tarifa.json` file.
 
@@ -19,7 +19,7 @@ will use the **_default_** configuration to run the app, whereas:
 will use the **_dev_** configuration where you can have settings which are specific
 to your dev environment.
 
-By default, the **_stage_** environment is configured for hockeyapp deployments
+By default, the **_stage_** environment is configured for [hockeyapp deployments](../usage/hockeyapp.md)
 (and ad-hoc distribution signing process on ios as well) and the **_prod_** one is configured for release and signing process, but you can change that.
 
 These configurations are just naming conventions. You can add any configuration
@@ -69,7 +69,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
 #### attributes
 
 ##### name
-The default app name which is chosen when running `tarifa create`. Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project and if the names differ tarifa won't run).
+The default app name which is chosen when running [`tarifa create`](../usage/create.md). Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project and if the names differ tarifa won't run).
 
 ##### id
 The default cordova id. If you do not overwrite the id in some configuration tarifa will fallback to using this id.
@@ -171,7 +171,7 @@ case of android, a .apk file).
 
 Contains a `preferences` attribute allowing to overwrite any cordova `config.xml`
 preference and an `accessOrigin` attribute.
-By default `tarifa create` will generate the contents of the `cordova` attribute
+By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute
 as:
 
 ```json
@@ -197,7 +197,8 @@ You may also define this attribute in any configuration.
 
 ##### check
 
-Defines user scripts executed during `tarifa check` for each platform. By default `tarifa create`
+Defines user scripts executed during [`tarifa check`](../usage/check.md) for each platform.
+By default [`tarifa create`](../usage/create.md)
 will generate:
 
 ```json
@@ -251,7 +252,7 @@ This optional attribute allows you to overwrite the assets directory, which cont
 
 Contains configuration data that you do not want to expose in a source control software.
 
-For instance you can use it to set the path to your Android keystore (needed to
+For instance it is used to set the path to your Android keystore (needed to
 sign apps for release):
 
 ``` json
@@ -269,4 +270,5 @@ sign apps for release):
 
 Defining `keystore_path` and `keystore_alias` in a configuration allows tarifa to
 compile this android configuration in release mode and to sign it with the given
-key alias and key store.
+key alias and key store. The [platforms section](../platforms/index.html) details
+all pre defined configurations attributes accross platforms.

@@ -1,6 +1,6 @@
 # platform
 
-`tarifa platform` wrapps `cordova platform` and edit the project `tarifa.json` according to the sub command.
+`tarifa platform` wrapps `cordova platform` and edit [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) according to the sub command.
 
 ```
 Usage: tarifa platform <cmd> [platform]

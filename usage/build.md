@@ -1,6 +1,6 @@
 # build
 
-`tarifa build` executes all the [build chain](../workflow/index.md) except the `run` step: prepares the `www` folder and build the final app according to the given platform and configuration.
+`tarifa build` executes all the [build chain](../workflow/index.md) except the `run` step: prepares the `www` folder by calling [front-end project](../project/index.md#the-www-project) `project/bin/build.js` and build the final app according to the given platform and configuration.
 
 ```
 Usage: tarifa build <platform> [configuration]

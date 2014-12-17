@@ -1,6 +1,6 @@
 # plugin
 
-`tarifa platform` wrapps `cordova plugin` and edit the project `tarifa.json` according to the sub command.
+`tarifa platform` wrapps `cordova plugin` and edit [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) according to the sub command.
 
 ```
 Usage: tarifa plugin <cmd> [platform]

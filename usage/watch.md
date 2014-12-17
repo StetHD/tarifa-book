@@ -1,8 +1,8 @@
 # watch
 
-`tarifa watch` wrapps `tarifa run` and features live reload.
+`tarifa watch` wrapps `tarifa run` to enable live reload.
 
-The [front-end project](../project/index.md#the-www-project) build script needs to expose the functions `watch()` and `close()`. The default template provides an example with [watchify](https://www.npmjs.com/package/watchify) and [chokidar](https://www.npmjs.com/package/chokidar).
+The [front-end project](../project/index.md#the-www-project) build script needs to expose the functions `watch()` and `close()`. An example is provided in the default template using [watchify](https://www.npmjs.com/package/watchify) and [chokidar](https://www.npmjs.com/package/chokidar) (See: [build.js](https://github.com/TarifaTools/tarifa/blob/master/template/project/bin/build.js)).
 
 The default port which serves the app is `7042`. The livereload server use a self assigned port between `35729` and `35829`.
 

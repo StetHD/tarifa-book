@@ -2,8 +2,7 @@
 
 ### Configuration attributes
 
-The `wp8` configuration requires at least the following 4 attributes in the `tarifa.json`
-file:
+The `wp8` configuration requires at least the following 4 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {

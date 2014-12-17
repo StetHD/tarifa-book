@@ -2,8 +2,7 @@
 
 ### Configuration attributes
 
-In any browser configuration we need at least the following 3 attributes in the `tarifa.json`
-file:
+In any browser configuration we need at least the following 3 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {

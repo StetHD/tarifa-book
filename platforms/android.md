@@ -3,7 +3,7 @@
 ### Configuration attributes
 
 As with the ios platform, any android configuration needs at least the following
-3 attributes in the `tarifa.json` file:
+3 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {
@@ -42,7 +42,7 @@ By default, `tarifa create` will add `keystore_path` and `keystore_alias` to the
 ### Deploy with hockeyapp
 
 In order to deploy a configuration on hockeyapp, you need to add the `hockeyapp_id`
-to the given configuration. For example in a `private.json` file:
+to the given configuration. For example in a [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {
