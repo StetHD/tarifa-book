@@ -13,9 +13,9 @@ General hockeyapp configuration goes under the `hockeyapp` root key in the [`tar
 }
 ```
 
-This is the minimal configuration to be able to interact with hockeyapp. Of course we suggest to use [`private.json`](../project/index.md#tarifajson-and-privatejson) to store sensitive data like hockeyapp token.
+This is the minimal configuration to be able to interact with hockeyapp. Of course we suggest to use [`private.json`](../project/index.md#tarifajson-and-privatejson) to store sensitive data like the hockeyapp token.
 
-The command `version upload` will perform differenlty depending on what you have in your configuration.
+The command `version upload` will perform differently depending on what you have in your configuration.
 
 If you already have created an application on hockeyapp, then add the `hockeyapp_id` key for the configuration setting you want in your `tarifa.json`. The command will upload the last built package to a new version of your hockeyapp application, using this id.
 
