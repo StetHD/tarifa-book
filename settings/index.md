@@ -2,7 +2,7 @@
 
 tarifa uses [configstore](https://www.npmjs.org/package/configstore) to get user settings.
 User settings are used in [`tarifa create`](../usage/create.md) to prefill questions with default values,
-for extending cordova plugins list and www project templates list.
+for extending Cordova plugins list and www project templates list.
 
 The `~/.config/configstore/tarifa.yml` file has the following items:
 
@@ -14,7 +14,7 @@ author_email: "my@email"
 author_href: "http://myblog"
 ```
 
-#### Tokens, keystore and apple id
+#### Tokens, keystore and Apple ID
 
 ``` yaml
 keystore_path: /my/path/to/my/key.keystore
@@ -23,9 +23,9 @@ apple_id: "myappleid@oops.com"
 apple_developer_team: XXXXXXXXXX
 ```
 
-#### cordova plugins
+#### Cordova plugins
 
-You can add some custom cordova plugins, [`tarifa create`](../usage/create.md) will display them:
+You can add some custom Cordova plugins, [`tarifa create`](../usage/create.md) will display them:
 
 ``` yaml
 plugins:
@@ -53,9 +53,9 @@ templates:
     value: /Users/peutetre/code/react-bootstrap
 ```
 
-#### chrome path
+#### Chrome path
 
-On linux or windows, it's possible to set the chrome path used in `tarifa run browser`:
+On Linux or Windows, it's possible to set the Chrome path used in `tarifa run browser`:
 
 ``` yaml
 chrome:/usr/bin/chromium-browser
