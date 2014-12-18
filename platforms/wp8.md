@@ -24,9 +24,9 @@ variations of it.
 
 To build the app in release mode, add the `release_mode` attribute with the value `true` to your release configuration.
 
-### Sign and Deploy with hockeyapp
+### Sign and Deploy with HockeyApp
 
-To deploy to hockeyapp, wp8 apps need to be signed with a certificate in PFX format and you need an application enrollment token (AET).
+To deploy to HockeyApp, WP8 apps need to be signed with a certificate in PFX format and you need an application enrollment token (AET).
 See [http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx](http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx) for more informations.
 
 To sign the build of a configuration for Company app distribution,
