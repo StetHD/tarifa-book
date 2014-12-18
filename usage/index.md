@@ -9,12 +9,12 @@ tarifa commands may be splitted into the following categories:
 * [`config`](./config.md) configures graphical assets and provisioning files.
 * [`platform`](./platform.md) manages platforms.
 * [`plugin`](./plugin.md) manages plugins.
-* [`update`](./update.md) updates default cordova plugins and cordova platforms.
+* [`update`](./update.md) updates default Cordova plugins and Cordova platforms.
 
 ### build and development tasks
 
-* [`prepare`](./prepare.md) launches the www project builder and copies/links the www folder to the cordova app.
-* [`build`](./build.md) executes the cordova build chain (prepare and compile) and tarifa's extra tasks.
+* [`prepare`](./prepare.md) launches the www project builder and copies/links the www folder to the Cordova app.
+* [`build`](./build.md) executes Cordova's build chain (prepare and compile) and tarifa's extra tasks.
 * [`run`](./run.md) runs the app on the connected devices, will ask which one if more than
 one is available.
 * [`watch`](./watch.md) runs the app in live reload mode.
@@ -23,4 +23,4 @@ one is available.
 
 ### deploy tasks
 
-* [`hockeyapp`](./hockeyapp.md) deploys the app to hockeyapp.
+* [`hockeyapp`](./hockeyapp.md) deploys the app to HockeyApp.
