@@ -19,8 +19,8 @@ will use the **_default_** configuration to run the app, whereas:
 will use the **_dev_** configuration where you can have settings which are specific
 to your dev environment.
 
-By default, the **_stage_** environment is configured for [hockeyapp deployments](../usage/hockeyapp.md)
-(and ad-hoc distribution signing process on ios as well) and the **_prod_** one is configured for release and signing process, but you can change that.
+By default, the **_stage_** environment is configured for [HockeyApp deployments](../usage/hockeyapp.md)
+(and ad-hoc distribution signing process on iOS as well) and the **_prod_** one is configured for release and signing process, but you can change that.
 
 These configurations are just naming conventions. You can add any configuration
 you need and each one allows you to build a unique application.
@@ -69,19 +69,19 @@ Here is the skeleton of a minimal `tarifa.json` file:
 #### attributes
 
 ##### name
-The default app name which is chosen when running [`tarifa create`](../usage/create.md). Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing cordova app folder in a tarifa project and if the names differ tarifa won't run).
+The default app name which is chosen when running [`tarifa create`](../usage/create.md). Tarifa will ensure the chosen name is the same as the one defined in the `app/config.xml` file (this must be checked because you may use an existing Cordova app folder in a tarifa project and if the names differ tarifa won't run).
 
 ##### id
-The default cordova id. If you do not overwrite the id in some configuration tarifa will fallback to using this id.
+The default Cordova id. If you do not overwrite the id in some configuration tarifa will fallback to using this id.
 
 ##### description
-A brief description of the app, which will be inserted into the cordova `config.xml`
+A brief description of the app, which will be inserted into the Cordova `config.xml`
 file.
 
 ##### version
 The version of the project can be overwritten in any configuration. It must
 be a 3 digits version number (e.g. `0.0.0`).
-On windows phone, 4 digits are mandatory, so tarifa will automatically
+On Windows Phone, 4 digits are mandatory, so tarifa will automatically
 append `0` to the specified version.
 
 ##### platforms
@@ -108,7 +108,7 @@ tarifa will add 4 default configurations for each platform you selected: **_defa
 **_dev_**, **_stage_** and **_prod_**.
 
 For instance, the configuration attribute will look like the following on a project
-for which you selected browser and android as platforms:
+for which you selected browser and Android as platforms:
 
 ```json
 {
@@ -161,15 +161,15 @@ for which you selected browser and android as platforms:
 
 Each platform has a minimum of 3 attributes:
 
-* `id` allows to overwrite the default cordova app `id`.
+* `id` allows to overwrite the default Cordova app `id`.
 * `product_name` allows to overwrite the name of the app: the one you read on your
 device's screen.
 * `product_file_name` allows to specify the name of the generated binary (in the
-case of android, a .apk file).
+case of Android, a .apk file).
 
 ##### cordova
 
-Contains a `preferences` attribute allowing to overwrite any cordova `config.xml`
+Contains a `preferences` attribute allowing to overwrite any Cordova `config.xml`
 preference and an `accessOrigin` attribute.
 By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute
 as:
@@ -230,7 +230,7 @@ module.exports = function (msg) {
 
 ##### project_output
 
-Overwrite the default www project output folder. It is relative to the project `tarifa.json` file. It is an optional attribute.
+Overwrite the default `www` project output folder. It is relative to the project `tarifa.json` file. It is an optional attribute.
 
 ##### author
 
@@ -269,6 +269,6 @@ sign apps for release):
 ```
 
 Defining `keystore_path` and `keystore_alias` in a configuration allows tarifa to
-compile this android configuration in release mode and to sign it with the given
+compile this Android configuration in release mode and to sign it with the given
 key alias and key store. The [platforms section](../platforms/index.html) details
 all predefined configurations attributes across platforms.
