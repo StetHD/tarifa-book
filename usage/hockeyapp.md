@@ -2,7 +2,7 @@
 
 `tarifa hockeyapp` allows to interact with [http://hockeyapp.net](hockeyapp.net) for publishing apps to testers.
 
-General hockeyapp configuration goes under the `hockeyapp` root key in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
+General HockeyApp configuration goes under the `hockeyapp` root key in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {
@@ -13,13 +13,13 @@ General hockeyapp configuration goes under the `hockeyapp` root key in the [`tar
 }
 ```
 
-This is the minimal configuration to be able to interact with hockeyapp. Of course we suggest to use [`private.json`](../project/index.md#tarifajson-and-privatejson) to store sensitive data like the hockeyapp token.
+This is the minimal configuration to be able to interact with HockeyApp. Of course we suggest to use [`private.json`](../project/index.md#tarifajson-and-privatejson) to store sensitive data like the HockeyApp token.
 
 The command `version upload` will perform differently depending on what you have in your configuration.
 
-If you already have created an application on hockeyapp, then add the `hockeyapp_id` key for the configuration setting you want in your `tarifa.json`. The command will upload the last built package to a new version of your hockeyapp application, using this id.
+If you already have created an application on HockeyApp, then add the `hockeyapp_id` key for the configuration setting you want in your `tarifa.json`. The command will upload the last built package to a new version of your HockeyApp application, using this id.
 
-If you don't have created an application on hockeyapp, the command `version upload` will create it for you, upload the last built package and append the `hockeyapp_id` in your `tarifa.json`.
+If you don't have created an application on HockeyApp, the command `version upload` will create it for you, upload the last built package and append the `hockeyapp_id` in your `tarifa.json`.
 
 
 ```
