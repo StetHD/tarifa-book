@@ -1,6 +1,6 @@
 # Anatomy of a tarifa project
 
-This is what a tarifa project for ios and android — using the default project template — looks like (**bold for editable files**):
+This is what a tarifa project looks like for iOS and Android — using the default project template (**bold for editable files**):
 
 <pre>
 |-- <b>tarifa.json</b>                     /* project definition */
@@ -41,14 +41,14 @@ and 2 json files:
 * `private.json` consists of private data (typically tokens, IDs...) that you
 don't want to expose.
 
-### The raw cordova app
+### The raw Cordova app
 
-The `app` folder contains a regular cordova application. Any cordova app (version 4.x.x)
-should work with tarifa, thus you can use an existing cordova app folder in a
+The `app` folder contains a regular Cordova application. Any Cordova app (version 4.x.x)
+should work with tarifa, thus you can use an existing Cordova app folder in a
 tarifa project.
 
 At this time, the tarifa build process performs setting replacements in various
-cordova files without undoing them. In a future version of tarifa this won't be
+Cordova files without undoing them. In a future version of tarifa this won't be
 the case anymore.
 
 During the build process and before finishing the [prepare step](../usage/prepare.md), tarifa will copy or link (depending on the OS) the output of the `www` project folder to `app/www`.
@@ -103,7 +103,7 @@ See the [default template www project build script](https://github.com/TarifaToo
 These two files wholly describe a tarifa project and contain everything that is
 needed for building and managing it. This goes from the definition of the various
 configurations to the keystore paths. `tarifa.json` defines most of the data and
-`private.json` contains all the private stuff, such as the Apple ID or the hockeyapp
+`private.json` contains all the private stuff, such as the Apple ID or the HockeyApp
 token, that you don't want to share publicly.
 
 A more detailed description may be found in the [Configurations](../configurations/index.md)

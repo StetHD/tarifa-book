@@ -51,27 +51,27 @@ The **tarifa build** step executes the following extra tasks at the `pre-cordova
 
 **Shared tasks**
 
-* change cordova's `config.xml` according to the configuration
+* change Cordova's `config.xml` according to the configuration
 * copy the configuration's icons
 * copy the configuration's splash screens
 * clean the given platform
 * reset `config.xml`
 
-**wp8 specific tasks**
+**WP8 specific tasks**
 
 * change the assembly info
 * change the manifest
 * change the `.csproj` file
 * run XapSignTool to sign app for Company app distribution
 
-**ios specific tasks**
+**iOS specific tasks**
 
 * change product file name
 * change bundleId
 * set code sign identity for signing app
 * run xcrun for signing app
 
-**android specific tasks**
+**Android specific tasks**
 
 * clean output folder
 * change app activity

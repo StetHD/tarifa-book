@@ -2,7 +2,7 @@
 
 ### Configuration attributes
 
-In any ios configuration we need at least the following 3 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
+In any iOS configuration we need at least the following 3 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
 {

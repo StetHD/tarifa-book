@@ -2,7 +2,7 @@
 
 ### Configuration attributes
 
-As with the ios platform, any android configuration needs at least the following
+As with the iOS platform, any Android configuration needs at least the following
 3 attributes in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
@@ -13,7 +13,7 @@ As with the ios platform, any android configuration needs at least the following
 }
 ```
 
-* `id` the java package of the application.
+* `id` the Java package of the application.
 * `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .apk file.
 
@@ -39,9 +39,9 @@ in release mode. Usually this is stored in the `private.json` file:
 
 By default, `tarifa create` will add `keystore_path` and `keystore_alias` to the `prod` configuration.
 
-### Deploy with hockeyapp
+### Deploy with HockeyApp
 
-In order to deploy a configuration on hockeyapp, you need to add the `hockeyapp_id`
+In order to deploy a configuration on HockeyApp, you need to add the `hockeyapp_id`
 to the given configuration. For example in a [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
 ``` json
