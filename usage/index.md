@@ -4,7 +4,7 @@ tarifa commands may be splitted into the following categories:
 
 ### project management tasks
 
-* [`create`](./create.md) interactively creates a tarifa project.
+* [`create`](./create.md) interactively creates a tarifa project (or a cordova plugin).
 * [`info`](./info.md) gets general data on your host and attached devices.
 * [`config`](./config.md) configures graphical assets and provisioning files.
 * [`platform`](./platform.md) manages platforms.
