@@ -188,7 +188,11 @@ as:
     "KeepRunning": true
   },
   "accessOrigin": [
-    "*"
+    "*",
+    {
+      "origin": "tel:",
+      "external": true
+    }
   ]
 }
 ```
@@ -248,27 +252,89 @@ Defines the following properties:
 
 This optional attribute allows you to overwrite the assets directory, which contains the generated images and splashscreens. By default the `images` directory is used.
 
-### `private.json`
+##### signing
 
-Contains configuration data that you do not want to expose in a source control software.
-
-For instance it is used to set the path to your Android keystore (needed to
-sign apps for release):
+The `signing` attribute defines all _signing labels_ needed in the projet. On a fresh created project it looks like:
 
 ``` json
 {
-  "configurations": {
+  "signing": {
+    "ios": {
+      "adhoc": {
+        "identity": "xxxxxxx",
+        "provisioning_path": "/my/file.mobileprovision",
+        "provisioning_name": "xxxxxxx"
+      },
+      "store": {
+        "identity": "xxxxxxx",
+        "provisioning_path": "/my/file.mobileprovision",
+        "provisioning_name": "xxxxxxx"
+      }
+    },
     "android": {
-      "prod": {
-        "keystore_path": "/path/to/my/key.keystore",
-        "keystore_alias": "myalias"
+      "store": {
+        "keystore_path": "/my/filekeystore",
+        "keystore_alias": "xxxxxxx"
+      }
+    },
+    "wp8": {
+      "company_app_distribution": {
+        "certificate_path": "/my/file.p12"
       }
     }
   }
 }
 ```
 
-Defining `keystore_path` and `keystore_alias` in a configuration allows tarifa to
-compile this Android configuration in release mode and to sign it with the given
-key alias and key store. The [platforms section](../platforms/index.html) details
+On iOS, each _signing label_ needs the following attributes:
+* `identity` defines an apple developer identity
+* `provisioning_path` defines the path of a mobile provisioning file
+* `provisioning_name` defines the name of a mobile provisioning profile
+
+On android, each _siging label_ needs the following attributes:
+* `keystore_path` defines the path of the keystore
+* `keystore_alias` defines the keystore alias
+
+On wp8, each _siging label_ needs the following attribute:
+* `certificate_path` defines the path of the company app distribution certificate
+
+Adding the `sign` attribute on a configuration allows tarifa to sign the app with the appropriate settings, for example:
+
+```json
+{
+  "configurations": {
+    "android": {
+      "prod": {
+        "sign": "store",
+        "release": true
+      }
+    }
+  }
+}
+```
+
+the `release` attribute setted with `true` builds the app in release mode.
+
+##### deploy
+
+the deploy attributes only contains two attributes needed on ios to communicate with the developer center:
+
+* `apple_id` defines the apple id
+* `apple_developer_team` defines the apple developer team used
+
+Usually, this attribute is placed in the following `private.json` file.
+
+### `private.json`
+
+Contains data that you do not want to expose in a source control software.
+
+By default, on `tarifa create` the following keys are stored in the `private.json` file:
+
+* [ios] `identity`, the name of the developer identity used to sign an app for distribution
+* [ios] `deploy$apple_developer_team`, the apple developer team
+* [ios]`deploy$apple_id`, the apple id used to access the provisioning center
+* `hockeyapp$token`, the token used to access hockeyapp
+* [wp8] `certificate_path`, the certificate needed to sign app for company app distribution
+
+The [platforms section](../platforms/index.html) details
 all predefined configurations attributes across platforms.

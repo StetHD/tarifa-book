@@ -25,13 +25,19 @@ If you don't have created an application on HockeyApp, the command `version uplo
 ```
 Usage: tarifa hockeyapp <command>
 
+<platform> argument in each command can also be a wildcard:
+- 'all' match all platforms availables on system
+- 'ios,android' match ios and android platforms
+
 Commands:
 
     version list <platform> <config>
-        Fetch the list of hockeyapp versions of <config> env for given platform.
+        Fetch the list of hockeyapp versions of <config> env for given platform,
+        or all platforms.
 
     version upload <platform> <config> [options]
         Upload a version of <config> env package to hockeyapp for given platform.
+        If no platform specified, upload for all platforms installed.
         Options can be any of 'notes', 'notify', 'status', 'tags', 'teams', 'users',
         'commit_sha', 'build_server_url', 'repository_url'.
         See http://support.hockeyapp.net/kb/api/api-versions#upload-version for details.
@@ -39,6 +45,7 @@ Commands:
     version update <platform> <config> [options]
         Modify last version of given platform for <config> env. You can only
         modify metadatas; you can't upload a new package.
+        If no platform specified, upload for all platforms installed.
         Options can be any of 'notes', 'notify', 'status', 'tags', 'teams', 'users',
         'commit_sha', 'build_server_url', 'repository_url'.
         See http://support.hockeyapp.net/kb/api/api-versions#update-version for details.

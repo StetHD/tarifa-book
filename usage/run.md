@@ -5,15 +5,22 @@
 ```
 Usage: tarifa run <platform> [configuration]
 
-Run the project on your device for the given platform, with no
-configuration 'default' will be used.
+Run the project on your device for the given platform. You can either
+specify names or wildcards.
 
 Options:
 
-    --help, -h     Show this message
-    --verbose, -V  Be more verbose on everything
+    --help, -h              Show this message
+    --verbose, -V           Be more verbose on everything
+    --clean-resources       Clean cached resources (icons and splashscreens) before build,
+                            only for android platform
 
 Examples:
 
-    tarifa run android stage
+    tarifa run android           # will run default conf for android platform
+    tarifa run android dev       # will run dev conf for android platform
+    tarifa run all dev           # will run dev conf for all platforms
+    tarifa run ios dev,stage     # will run dev and stage confs for ios
+    tarifa run ios,android dev   # will run dev conf for ios and android platforms
+    tarifa run all all           # will run all confs for all platforms
 ```

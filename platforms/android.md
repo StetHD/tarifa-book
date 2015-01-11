@@ -16,42 +16,33 @@ As with the iOS platform, any Android configuration needs at least the following
 * `id` the Java package of the application.
 * `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .apk file.
+* `release` set the release mode, `false` by default.
+* `sign` is the signing label.
+* `hockeyapp_id` is the id of the app on kockeyapp.
 
-### Release
+### Signing attributes
 
 To build the project in release mode, you need to tell tarifa where to find the
-keystore and the alias you want to use for signing the apk file. Each configuration
-with the `keystore_path` and `keystore_alias` attributes will be signed and built
-in release mode. Usually this is stored in the `private.json` file:
+keystore and the alias you want to use for signing the apk file.
 
-```json
-{
-  "configurations": {
-    "android": {
-      "prod": {
-        "keystore_path": "path/to/my.keystore",
-        "keystore_alias": "mykeystorealias"
-      }
-    }
-  }
-}
-```
-
-By default, `tarifa create` will add `keystore_path` and `keystore_alias` to the `prod` configuration.
-
-### Deploy with HockeyApp
-
-In order to deploy a configuration on HockeyApp, you need to add the `hockeyapp_id`
-to the given configuration. For example in a [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
+Each configuration
+with the `sign` and `release` attributes will be signed and built
+in release mode with the signing _label_ referenced in `sign`. Usually this is stored in the `private.json` file:
 
 ``` json
 {
-  "configurations": {
+  "signing": {
     "android": {
-      "stage": {
-        "hockeyapp_id": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      "store": {
+        "keystore_path": "/my/path/to/keystore.keystore",
+        "keystore_alias": "xxxxx"
       }
     }
   }
 }
 ```
+
+* `keystore_path` is the path of the keystore
+* `keystore_alias` is the alias used in the keystore
+
+By default, `tarifa create` will add a `store` _signing label_ in the `prod` configuration.

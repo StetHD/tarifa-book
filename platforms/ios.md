@@ -15,22 +15,70 @@ In any iOS configuration we need at least the following 3 attributes in the [`ta
 * `id` the `bundleid` of the application.
 * `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .ipa file.
+* `release` set the release mode, `false` by default.
+* `sign` is the signing label.
+* `hockeyapp_id` is the id of the app on kockeyapp.
 
-On iOS, it is possible to deploy an app via ad-hoc distribution but this requires
-the app to be signed with a certificate and a mobile provisioning file. When
-creating a tarifa project, the `create` command will add signing and deploy information
-on the stage configuration in the `private.json` file.
+### Signing attributes
+
+Deploying for **ad-hoc** or **store** distribution requires to sign the app with a certificate and a mobile provisioning file, which is defined by a _label_ given by the `sign` attribute.
+
+When creating a tarifa project, the [`create`](../usage/create.md) command will add signing and deploy informations
+on the `stage`and the `prod` configuration and on the `signing` attribute in the `tarifa.json` and `private.json` files. Here is an example of the added attributes on the both files:
+
+`tarifa.json`:
 
 ``` json
 {
-  "stage": {
-    "hockeyapp_id": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "apple_developer_identity": "iPhone Distribution: XXXXXXXX (XXXXXXXXXX)",
-    "provisioning_profile_path": "./test.mobileprovision",
-    "provisioning_profile_name": "atestname"
+  "configurations": {
+    "stage": {
+      "release": true,
+      "sign": "adhoc"
+   },
+    "prod": {
+      "release": true,
+      "sign": "store"
+    }
+  },
+  "signing": {
+    "ios": {
+      "adhoc": {
+        "provisioning_path": "/my/file2.mobileprovision",
+        "provisioning_name": "xxxxx"
+      },
+      "store": {
+        "provisioning_path": "/my/file.mobileprovision",
+        "provisioning_name": "xxxxxxx"
+      }
+    }
   }
 }
 ```
+
+`private.json`:
+
+```json
+{
+  "signing": {
+    "ios": {
+      "adhoc": {
+        "identity": "xxxx"
+      },
+      "store": {
+        "identity": "xxxxx"
+      }
+    }
+  },
+  "deploy": {
+    "apple_id": "xxxxx",
+    "apple_developer_team": "xxxxx"
+  }
+}
+```
+
+* `identity` is the apple developer identity
+* `provisioning_path` is the path of the mobile provisioning file
+* `provisioning_name` is the name of the mobile provision
 
 See [`tarifa config`](../usage/config.md) to find commands to help you manage provisioning files and attached devices.
 

@@ -1,6 +1,10 @@
 # check
 
-`tarifa check` needs to be executed after cloning a tarifa project. It will initialize the Android platform, your [front-end project](../project/index.md#the-www-project) — by calling `npm install` in the `project` folder — and execute each possible [user scripts](../configurations/index.md#check) defined in [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) scripts.
+`tarifa check` needs to be executed after cloning a tarifa project. It will:
+* initialize the Android platform if available
+* check each iOS provisioning files if available
+* initialize your [front-end project](../project/index.md#the-www-project) — by calling `npm install` in the `project` folder —
+* execute each possible [user scripts](../configurations/index.md#check) defined in [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) scripts.
 
 ```
 Usage: tarifa check
