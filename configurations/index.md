@@ -291,11 +291,11 @@ On iOS, each _signing label_ needs the following attributes:
 * `provisioning_path` defines the path of a mobile provisioning file
 * `provisioning_name` defines the name of a mobile provisioning profile
 
-On android, each _siging label_ needs the following attributes:
+On android, each _signing label_ needs the following attributes:
 * `keystore_path` defines the path of the keystore
 * `keystore_alias` defines the keystore alias
 
-On wp8, each _siging label_ needs the following attribute:
+On wp8, each _signing label_ needs the following attribute:
 * `certificate_path` defines the path of the company app distribution certificate
 
 Adding the `sign` attribute on a configuration allows tarifa to sign the app with the appropriate settings, for example:
