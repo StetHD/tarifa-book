@@ -27,7 +27,7 @@ keystore and the alias you want to use for signing the apk file.
 
 Each configuration
 with the `sign` and `release` attributes will be signed and built
-in release mode with the signing _label_ referenced in `sign`. Usually this is stored in the `private.json` file:
+in release mode with the _signing label_ referenced in `sign`. Usually this is stored in the `private.json` file:
 
 ``` json
 {

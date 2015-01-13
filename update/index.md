@@ -16,4 +16,4 @@ Right now, when you execute the [`tarifa update`](../usage/update.md) command in
 1. Each installed platform, core plugin and user plugin (defined in the `~/.config/configstore/tarifa.yml` user settings file) gets updated to the latest available version.
 2. The `.tarifa.json` file is overwritten with an updated `current` attribute.
 
-Note that the various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's [CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md#040-12182014) file.
+Note that the various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's [CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md#050-01142015) file.

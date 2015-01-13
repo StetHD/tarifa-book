@@ -30,8 +30,10 @@ Commands:
 
     provisioning list
         List all available provisioning profiles on the current apple developer account
+
     provisioning info <configuration>
         Extract informations from the provisioning profile file linked in the given configuration
+
     provisioning fetch
         Answer questions to fetch provisioning file from apple.com
 

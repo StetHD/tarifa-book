@@ -21,7 +21,7 @@ In any iOS configuration we need at least the following 3 attributes in the [`ta
 
 ### Signing attributes
 
-Deploying for **ad-hoc** or **store** distribution requires to sign the app with a certificate and a mobile provisioning file, which is defined by a _label_ given by the `sign` attribute.
+Deploying for **ad-hoc** or **store** distribution requires to sign the app with a certificate and a mobile provisioning file, which is defined by a _signing label_ given by the `sign` attribute.
 
 When creating a tarifa project, the [`create`](../usage/create.md) command will add signing and deploy informations
 on the `stage`and the `prod` configuration and on the `signing` attribute in the `tarifa.json` and `private.json` files. Here is an example of the added attributes on the both files:

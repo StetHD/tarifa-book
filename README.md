@@ -8,16 +8,16 @@ It aims at simplifying the Apache Cordova workflow and adding features to comple
 * **interactive project bootstrap**: no need to remember every required information while creating a project, tarifa will guide you
 with adequate questions and save the answers in the project files.
 * **deployment to HockeyApp from the terminal**: no need to launch a browser to upload a binary file to HockeyApp, tarifa handles it.
-* **live reload**: no need to rebuild all the app when you do not touch the native code.
+* **live reload**: no need to rebuild all the app when you do not change the native code.
 
 ### Resources
 
-* Repository: [https://github.com/TarifaTools/tarifa.git](https://github.com/TarifaTools/tarifa.git)
-* Issues: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues)
-* Website: [http://tarifa.tools](http://tarifa.tools)
-* Documentation: [http://42loops.gitbooks.io/tarifa/content/index.html](http://42loops.gitbooks.io/tarifa/content/index.html)
-* Changes: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md#040-12182014)
-* Continuous Integration: [http://ci.tarifa.tools](http://ci.tarifa.tools)
+* **Repository**: [https://github.com/TarifaTools/tarifa.git](https://github.com/TarifaTools/tarifa.git)
+* **Issues**: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues)
+* **Website**: [http://tarifa.tools](http://tarifa.tools)
+* **Documentation**: [http://42loops.gitbooks.io/tarifa/content/index.html](http://42loops.gitbooks.io/tarifa/content/index.html)
+* **Changes**: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md#040-12182014)
+* **Continuous Integration**: [http://ci.tarifa.tools](http://ci.tarifa.tools)
 
 ### Document
 

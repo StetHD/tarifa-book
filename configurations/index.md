@@ -291,11 +291,11 @@ On iOS, each _signing label_ needs the following attributes:
 * `provisioning_path` defines the path of a mobile provisioning file
 * `provisioning_name` defines the name of a mobile provisioning profile
 
-On android, each _signing label_ needs the following attributes:
+On android, each _siging label_ needs the following attributes:
 * `keystore_path` defines the path of the keystore
 * `keystore_alias` defines the keystore alias
 
-On wp8, each _signing label_ needs the following attribute:
+On wp8, each _siging label_ needs the following attribute:
 * `certificate_path` defines the path of the company app distribution certificate
 
 Adding the `sign` attribute on a configuration allows tarifa to sign the app with the appropriate settings, for example:
@@ -313,7 +313,7 @@ Adding the `sign` attribute on a configuration allows tarifa to sign the app wit
 }
 ```
 
-the `release` attribute setted with `true` builds the app in release mode.
+will sign the android app with the _signing label_ `store` and the `release` attribute setted with `true` builds the app in release mode.
 
 ##### deploy
 
@@ -326,14 +326,14 @@ Usually, this attribute is placed in the following `private.json` file.
 
 ### `private.json`
 
-Contains data that you do not want to expose in a source control software.
+This JSON file contains data that you do not want to expose in a source control software.
 
 By default, on `tarifa create` the following keys are stored in the `private.json` file:
 
 * [ios] `identity`, the name of the developer identity used to sign an app for distribution
-* [ios] `deploy$apple_developer_team`, the apple developer team
-* [ios]`deploy$apple_id`, the apple id used to access the provisioning center
-* `hockeyapp$token`, the token used to access hockeyapp
+* [ios] `apple_developer_team`, the apple developer team
+* [ios]`apple_id`, the apple id used to access the provisioning center
+* `token`, the token used to access hockeyapp
 * [wp8] `certificate_path`, the certificate needed to sign app for company app distribution
 
 The [platforms section](../platforms/index.html) details
