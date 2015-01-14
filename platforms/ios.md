@@ -15,7 +15,7 @@ In any iOS configuration we need at least the following 3 attributes in the [`ta
 * `id` the `bundleid` of the application.
 * `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .ipa file.
-* `release` set the release mode, `false` by default.
+* `release` toggles the release mode, `false` by default.
 * `sign` is the signing label.
 * `hockeyapp_id` is the id of the app on kockeyapp.
 
@@ -23,8 +23,8 @@ In any iOS configuration we need at least the following 3 attributes in the [`ta
 
 Deploying for **ad-hoc** or **store** distribution requires to sign the app with a certificate and a mobile provisioning file, which is defined by a _signing label_ given by the `sign` attribute.
 
-When creating a tarifa project, the [`create`](../usage/create.md) command will add signing and deploy informations
-on the `stage`and the `prod` configuration and on the `signing` attribute in the `tarifa.json` and `private.json` files. Here is an example of the added attributes on the both files:
+When creating a tarifa project, the [`create`](../usage/create.md) command will add signing and deploy parameters
+to the `stage` and `prod` configurations and to the `signing` attribute in the `tarifa.json` and `private.json` files. Here is an example showing the added attributes on both files:
 
 `tarifa.json`:
 

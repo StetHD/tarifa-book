@@ -4,7 +4,7 @@ the main tarifa workflow:
 
 ```
           +-------------------------+
-          |  choosen configuration  |
+          |  chosen configuration   |
           +-------------------------+
                        |
                        v

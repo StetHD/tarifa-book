@@ -254,7 +254,7 @@ This optional attribute allows you to overwrite the assets directory, which cont
 
 ##### signing
 
-The `signing` attribute defines all _signing labels_ needed in the projet. On a fresh created project it looks like:
+The `signing` attribute defines all _signing labels_ needed in the projet. In a freshly created project it looks like:
 
 ``` json
 {
@@ -287,16 +287,16 @@ The `signing` attribute defines all _signing labels_ needed in the projet. On a 
 ```
 
 On iOS, each _signing label_ needs the following attributes:
-* `identity` defines an apple developer identity
-* `provisioning_path` defines the path of a mobile provisioning file
-* `provisioning_name` defines the name of a mobile provisioning profile
+* `identity` defines an apple developer identity.
+* `provisioning_path` defines the path of a mobile provisioning file.
+* `provisioning_name` defines the name of a mobile provisioning profile.
 
 On android, each _siging label_ needs the following attributes:
-* `keystore_path` defines the path of the keystore
-* `keystore_alias` defines the keystore alias
+* `keystore_path` defines the path of the keystore.
+* `keystore_alias` defines the keystore alias.
 
 On wp8, each _siging label_ needs the following attribute:
-* `certificate_path` defines the path of the company app distribution certificate
+* `certificate_path` defines the path of the company app distribution certificate.
 
 Adding the `sign` attribute on a configuration allows tarifa to sign the app with the appropriate settings, for example:
 
@@ -313,14 +313,14 @@ Adding the `sign` attribute on a configuration allows tarifa to sign the app wit
 }
 ```
 
-will sign the android app with the _signing label_ `store` and the `release` attribute setted with `true` builds the app in release mode.
+will sign the android app with the _signing label_ `store`. The app will be built in release mode as the `release` attribute is set to `true`.
 
 ##### deploy
 
 the deploy attributes only contains two attributes needed on ios to communicate with the developer center:
 
-* `apple_id` defines the apple id
-* `apple_developer_team` defines the apple developer team used
+* `apple_id` defines the apple id.
+* `apple_developer_team` defines the apple developer team to be used.
 
 Usually, this attribute is placed in the following `private.json` file.
 
@@ -330,11 +330,10 @@ This JSON file contains data that you do not want to expose in a source control 
 
 By default, on `tarifa create` the following keys are stored in the `private.json` file:
 
-* [ios] `identity`, the name of the developer identity used to sign an app for distribution
-* [ios] `apple_developer_team`, the apple developer team
-* [ios]`apple_id`, the apple id used to access the provisioning center
-* `token`, the token used to access hockeyapp
-* [wp8] `certificate_path`, the certificate needed to sign app for company app distribution
+* [ios] `identity`, the name of the developer identity used to sign an app for distribution.
+* [ios] `apple_developer_team`, the apple developer team.
+* [ios]`apple_id`, the apple id used to access the provisioning center.
+* `token`, the token used to access hockeyapp.
+* [wp8] `certificate_path`, the certificate needed to sign the app for company app distribution.
 
-The [platforms section](../platforms/index.html) details
-all predefined configurations attributes across platforms.
+The [platforms section](../platforms/index.html) more thoroughly describes the predefined configuration attributes for all platforms.

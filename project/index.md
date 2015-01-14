@@ -59,7 +59,7 @@ The `project` folder is a regular front-end project with the build system of you
 satisfy the following interface:
 
 * having a `package.json`.
-* having a `bin/build.js` node module exposing `build` function starting the build process, `watch` and `close` function to start and stop live reload.
+* having a `bin/build.js` node module exposing the `build`, `watch` and `close` functions that respectively start the build process, start the live reload and stop it.
 * generating output in a folder named `www` or if defined, at the path given by the `project_output` attribute in `tarifa.json`.
 
 More precisely, the `bin/build.js` module must have the following signature:
@@ -91,12 +91,12 @@ where
 * `settings` is an object containing all the project settings (this object is
   simply the result of merging `tarifa.json` and `private.json`).
 * `config` is the name of the configuration chosen by the user.
-* `f` is a function which needs to be called each time a file needs to be reloaded. It takes the path of the changed file as an argument.
+* `f` is a function which shall be called each time a file needs to be reloaded. It takes the path of the changed file as an argument.
 
 In the default tarifa project template, *browserify* is used to embed the settings
 which are specific to a configuration as a global module — named `settings` — that you can require in your js code.
 
-See the [default template www project build script](https://github.com/TarifaTools/tarifa/blob/master/template/project/bin/build.js) for a full example.
+See the [default template www project build script](https://github.com/TarifaTools/tarifa/blob/master/template/project/bin/build.js) for a complete example.
 
 ### `tarifa.json` and `private.json`
 
@@ -106,5 +106,5 @@ configurations to the keystore paths. `tarifa.json` defines most of the data and
 `private.json` contains all the private stuff, such as the Apple ID or the HockeyApp
 token, that you don't want to share publicly.
 
-A more detailed description may be found in the [Configurations](../configurations/index.md)
+A more detailed description can be found in the [Configurations](../configurations/index.md)
 chapter.

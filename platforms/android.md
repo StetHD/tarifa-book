@@ -16,7 +16,7 @@ As with the iOS platform, any Android configuration needs at least the following
 * `id` the Java package of the application.
 * `product_name` the final app name which is shown on your device's OS.
 * `product_file_name` the name of the compiled .apk file.
-* `release` set the release mode, `false` by default.
+* `release` toggles the release mode, `false` by default.
 * `sign` is the signing label.
 * `hockeyapp_id` is the id of the app on kockeyapp.
 
@@ -42,7 +42,7 @@ in release mode with the _signing label_ referenced in `sign`. Usually this is s
 }
 ```
 
-* `keystore_path` is the path of the keystore
-* `keystore_alias` is the alias used in the keystore
+* `keystore_path` is the path of the keystore.
+* `keystore_alias` is the alias used in the keystore.
 
 By default, `tarifa create` will add a `store` _signing label_ in the `prod` configuration.

@@ -1,6 +1,6 @@
 # prepare
 
-`tarifa prepare` is the first step of the [build chain](../workflow/indexhtml.md). It prepares the Cordova `www` folder by calling the [front-end project](../project/index.md#the-www-project) build `project/bin/build.js` with the given configuration and platform then symlinking/copying `project/www` to `app/www`.
+`tarifa prepare` is the first step of the [build chain](../workflow/indexhtml.md). It prepares the Cordova `www` folder by calling the [front-end project](../project/index.md#the-www-project) build `project/bin/build.js` with the given configuration and platform and then by symlinking/copying `project/www` to `app/www`.
 
 ```
 Usage: tarifa prepare <platform> [configuration]

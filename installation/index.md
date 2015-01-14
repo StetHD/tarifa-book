@@ -14,7 +14,7 @@ Depending on your host, you will be able to support the following platforms:
 
 You need to install the proper SDK in order to work with a given platform.
 
-All OS need [ImageMagick](http://www.imagemagick.org/) for icons and splash screens generation.
+All the OS need [ImageMagick](http://www.imagemagick.org/) for icons and splash screens generation.
 tarifa needs [cupertino](https://github.com/nomad/cupertino) on Mac OS X in order to manage mobile provisioning files and to communicate with
 [developer.apple.com](http://developer.apple.com/).
 
@@ -33,7 +33,7 @@ Some optional dependencies may fail depending on your OS
 (e.g., cordova-deploy-windows-phone fails to install on Linux or Mac OS X).
 
 Please note that the current version of tarifa is based on Cordova 4.1.2, which builds Android projects with Gradle.
-Sadly enough you may encounter the following error when building an app for Android: `File '<path-to-android-sdk>/tools/zipalign' specified for property 'zipAlignExe' does not exist.`.
+Sadly enough you may encounter the following error when building an app for Android: `File '<path-to-android-sdk>/tools/zipalign' specified for property 'zipAlignExe' does not exist`.
 If you've installed the `Android SDK Build-tools` that file does exist, but in the `<path-to-android-sdk>/build-tools/<version-of-installed-build-tools>` directory.
 Make sure to copy that `zipalign` file in the `<path-to-android-sdk>/tools` directory prior to building an app for Android.
 

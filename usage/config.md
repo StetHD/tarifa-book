@@ -2,9 +2,9 @@
 
 `tarifa config` gathers iOS project configuration tasks and assets generation tasks.
 
-The iOS project configuration tasks allow to administrate provisioning files without visiting [http://developer.apple.com](http://developer.apple.com).
+The iOS project configuration tasks allow you to administrate provisioning files without visiting [http://developer.apple.com](http://developer.apple.com).
 
-The assets generation part allows to create icons and splaschreens from a color or image file for a given configuration.
+The assets generation tasks allow you to create icons and splaschreens from a color or image file for a given configuration.
 
 ```
 Usage: tarifa config <task>

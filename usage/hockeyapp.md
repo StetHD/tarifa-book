@@ -21,13 +21,12 @@ If you already have created an application on HockeyApp, then add the `hockeyapp
 
 If you don't have created an application on HockeyApp, the command `version upload` will create it for you, upload the last built package and append the `hockeyapp_id` in your `tarifa.json`.
 
-
 ```
 Usage: tarifa hockeyapp <command>
 
 <platform> argument in each command can also be a wildcard:
-- 'all' match all platforms availables on system
-- 'ios,android' match ios and android platforms
+- 'all' matches all available platforms on system
+- 'ios,android' matches ios and android platforms
 
 Commands:
 
@@ -37,15 +36,15 @@ Commands:
 
     version upload <platform> <config> [options]
         Upload a version of <config> env package to hockeyapp for given platform.
-        If no platform specified, upload for all platforms installed.
+        If no platform specified, upload for all installed platforms.
         Options can be any of 'notes', 'notify', 'status', 'tags', 'teams', 'users',
         'commit_sha', 'build_server_url', 'repository_url'.
         See http://support.hockeyapp.net/kb/api/api-versions#upload-version for details.
 
     version update <platform> <config> [options]
         Modify last version of given platform for <config> env. You can only
-        modify metadatas; you can't upload a new package.
-        If no platform specified, upload for all platforms installed.
+        modify metadata; you can't upload a new package.
+        If no platform specified, upload for all installed platforms.
         Options can be any of 'notes', 'notify', 'status', 'tags', 'teams', 'users',
         'commit_sha', 'build_server_url', 'repository_url'.
         See http://support.hockeyapp.net/kb/api/api-versions#update-version for details.

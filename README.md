@@ -3,12 +3,12 @@
 tarifa is a CLI on top of [Apache Cordova](http://cordova.apache.org/).
 It aims at simplifying the Apache Cordova workflow and adding features to complete the Cordova toolchain such as:
 
-* **multiple configurations**: produces white label apps.
+* **multiple configurations**: produces white-label apps.
 * **integration of any front-end build system**: integrates your build process in the Cordova workflow.
 * **interactive project bootstrap**: no need to remember every required information while creating a project, tarifa will guide you
 with adequate questions and save the answers in the project files.
 * **deployment to HockeyApp from the terminal**: no need to launch a browser to upload a binary file to HockeyApp, tarifa handles it.
-* **live reload**: no need to rebuild all the app when you do not change the native code.
+* **live reload**: no need to rebuild the whole app when you do not change the native code.
 
 ### Resources
 

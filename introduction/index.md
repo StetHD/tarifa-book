@@ -21,4 +21,4 @@ lower the barrier of development and project sharing with Cordova.
 Finally, tarifa introduces [configurations](../configurations/index.md). These are
 an important concept as they modify the output of each command; they
 allow to create multiple versions of the same application on a given
-platform (one for each environment), which can for example be usefull for white label apps.
+platform (one for each environment), which can for example be useful for white-label apps.
