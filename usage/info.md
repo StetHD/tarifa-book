@@ -15,8 +15,9 @@ Get some information about your environment and your devices.
 
 Options:
 
-    --help, -h     Show this message
-    --verbose, -V  Be more verbose on everything
+    --help, -h            Show this message
+    --verbose, -V         Be more verbose on everything
+    --dump-configuration  Display the tarifa configuration after the parsing is done
 
 Examples:
 

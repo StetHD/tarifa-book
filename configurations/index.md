@@ -167,6 +167,63 @@ device's screen.
 * `product_file_name` allows to specify the name of the generated binary (in the
 case of Android, a .apk file).
 
+##### configurations_mixins
+
+Defines configurations that can be extended from a configuration by using `extend` attribute.
+An attribute defined in a configuration can override mixin's attributes.
+It can also add attributes that are not present in a mixin.
+
+An example of the extension mechanism in action:
+
+```json
+{
+  "configurations_mixins": {
+    "default": {
+      "id": "org.tarifa.demo",
+      "product_name": "demo",
+      "product_file_name": "demo"
+    }
+  },
+  "configurations": {
+    "android": {
+      "default": {
+        "extend": "default"
+      }
+    },
+    "ios": {
+      "default": {
+        "extend": "default",
+        "product_name": "ios demo",
+        "sign": "store"
+      }
+    }
+  }
+}
+```
+
+Will result in the following configuration:
+
+```json
+  "configurations": {
+    "android": {
+      "default": {
+        "id": "org.tarifa.demo",
+        "product_name": "demo",
+        "product_file_name": "demo"
+      }
+    },
+    "ios": {
+      "default": {
+        "id": "org.tarifa.demo",
+        "product_name": "ios demo",
+        "product_file_name": "demo",
+        "sign": "store"
+      }
+    }
+```
+
+You can see the transformed `configurations` by using [`tarifa info`](../usage/info.md) `--dump-configuration` option.
+
 ##### cordova
 
 Contains a `preferences` attribute allowing to overwrite any Cordova `config.xml`
