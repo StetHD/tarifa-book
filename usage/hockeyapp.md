@@ -1,6 +1,6 @@
 # hockeyapp
 
-`tarifa hockeyapp` allows to interact with [http://hockeyapp.net](hockeyapp.net) for publishing apps to testers.
+`tarifa hockeyapp` allows to interact with [hockeyapp.net](http://hockeyapp.net) for publishing apps to testers.
 
 General HockeyApp configuration goes under the `hockeyapp` root key in the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file:
 
