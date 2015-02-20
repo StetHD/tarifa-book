@@ -36,8 +36,8 @@ Here is the skeleton of a minimal `tarifa.json` file:
   "description": "a simple app description",
   "version": "1.0.0",
   "platforms": [
-    "android",
-    "browser"
+    "android@3.7.1",
+    "browser@3.6.0"
   ],
   "plugins": [
     "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.4"
@@ -86,7 +86,17 @@ append `0` to the specified version.
 
 ##### platforms
 
-A list of platforms which are available for the tarifa project.
+A list of platforms which are available in the project like:
+
+```json
+{
+  "platforms":[
+    "android@3.7.1",
+    "ios@3.7.0",
+    "browser@3.6.0"
+  ]
+}
+```
 
 ##### plugins
 
@@ -169,9 +179,7 @@ case of Android, a .apk file).
 
 ##### configurations_mixins
 
-Defines configurations that can be extended from a configuration by using `extend` attribute.
-An attribute defined in a configuration can override mixin's attributes.
-It can also add attributes that are not present in a mixin.
+Configuration can be extended from one defined in the attribute `configurations_mixins` by using `extend`.
 
 An example of the extension mechanism in action:
 
@@ -204,6 +212,7 @@ An example of the extension mechanism in action:
 Will result in the following configuration:
 
 ```json
+{
   "configurations": {
     "android": {
       "default": {
@@ -220,6 +229,8 @@ Will result in the following configuration:
         "sign": "store"
       }
     }
+  }
+}
 ```
 
 You can see the transformed `configurations` by using [`tarifa info`](../usage/info.md) `--dump-configuration` option.

@@ -17,9 +17,9 @@ This is the minimal configuration to be able to interact with HockeyApp. Of cour
 
 The command `version upload` will perform differently depending on what you have in your configuration.
 
-If you already have created an application on HockeyApp, then add the `hockeyapp_id` key for the configuration setting you want in your `tarifa.json`. The command will upload the last built package to a new version of your HockeyApp application, using this id.
+If you already have created an application on HockeyApp, then add the `hockeyapp_id` key for the configuration setting you want in your [`tarifa.json`](../project/index.md#tarifajson-and-privatejson). The command will upload the last built package to a new version of your HockeyApp application, using this id.
 
-If you don't have created an application on HockeyApp, the command `version upload` will create it for you, upload the last built package and append the `hockeyapp_id` in your `tarifa.json`.
+If you don't have created an application on HockeyApp, the command `version upload` will create it for you, upload the last built package and append the `hockeyapp_id` in your [`tarifa.json`](../project/index.md#tarifajson-and-privatejson).
 
 ```
 Usage: tarifa hockeyapp <command>
