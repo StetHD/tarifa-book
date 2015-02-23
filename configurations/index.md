@@ -86,21 +86,21 @@ append `0` to the specified version.
 
 ##### platforms
 
-A list of platforms which are available in the project like:
+A list of platforms which are available in the project. You can specify an optional version. If you don't tarifa will fetch the latest version available when (re)creating the platform.
 
 ```json
 {
   "platforms":[
     "android@3.7.1",
     "ios@3.7.0",
-    "browser@3.6.0"
+    "browser"
   ]
 }
 ```
 
 ##### plugins
 
-An object mapping plugin ids to plugin uris like:
+An object mapping plugin ids to plugin uris.
 
 ```json
 {

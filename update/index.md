@@ -1,6 +1,6 @@
 # Updating an existing project
 
-When you create a project with the [`tarifa create`](../usage/create.md) a hidden `.tarifa.json` file is written to the project's root. That file holds a JSON object composed of two attributes: the `created` attribute stores the version of tarifa used on project creation and the `current` attribute stores the version of tarifa used upon the latest execution of the [`tarifa update`](../usage/update.md) command.
+When you create a project with [tarifa create](../usage/create.md), a hidden `.tarifa.json` file is written to the project's root. That file holds a JSON object composed of two attributes: the `created` attribute stores the version of tarifa used on project creation and the `current` attribute stores the version of tarifa used upon the latest execution of the [`tarifa update`](../usage/update.md) command.
 
 Here is an example `.tarifa.json` file, which reflects a project created with tarifa version **0.2.5** and updated to **0.3.0**:
 
