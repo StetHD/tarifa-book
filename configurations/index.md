@@ -179,7 +179,7 @@ case of Android, a .apk file).
 
 ##### configurations_mixins
 
-Configuration can be extended from one defined in the attribute `configurations_mixins` by using `extend`.
+A configuration can be extended from one defined in the `configurations_mixins` attribute by using `extend`.
 
 An example of the extension mechanism in action:
 

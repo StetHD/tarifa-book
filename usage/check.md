@@ -1,7 +1,7 @@
 # check
 
 `tarifa check` needs to be executed after cloning a tarifa project. It will:
-* regenerate the cordova app according to the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file if no `app` folder found in the root of the projet.
+* regenerate the cordova app according to the [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) file if no `app` folder was found in the root of the project.
 * initialize the Android platform, if available.
 * check each iOS provisioning files, if available.
 * initialize your [front-end project](../project/index.md#the-www-project) — by calling `npm install` in the `project` folder.
