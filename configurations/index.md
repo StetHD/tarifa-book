@@ -36,8 +36,8 @@ Here is the skeleton of a minimal `tarifa.json` file:
   "description": "a simple app description",
   "version": "1.0.0",
   "platforms": [
-    "android",
-    "browser"
+    "android@3.7.1",
+    "browser@3.6.0"
   ],
   "plugins": [
     "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.4"
@@ -86,11 +86,21 @@ append `0` to the specified version.
 
 ##### platforms
 
-A list of platforms which are available for the tarifa project.
+A list of platforms which are available in the project. You can specify an optional version. If you don't tarifa will fetch the latest version available when (re)creating the platform.
+
+```json
+{
+  "platforms":[
+    "android@3.7.1",
+    "ios@3.7.0",
+    "browser"
+  ]
+}
+```
 
 ##### plugins
 
-An object mapping plugin ids to plugin uris like:
+An object mapping plugin ids to plugin uris.
 
 ```json
 {
@@ -166,6 +176,64 @@ Each platform has a minimum of 3 attributes:
 device's screen.
 * `product_file_name` allows to specify the name of the generated binary (in the
 case of Android, a .apk file).
+
+##### configurations_mixins
+
+A configuration can be extended from one defined in the `configurations_mixins` attribute by using `extend`.
+
+An example of the extension mechanism in action:
+
+```json
+{
+  "configurations_mixins": {
+    "default": {
+      "id": "org.tarifa.demo",
+      "product_name": "demo",
+      "product_file_name": "demo"
+    }
+  },
+  "configurations": {
+    "android": {
+      "default": {
+        "extend": "default"
+      }
+    },
+    "ios": {
+      "default": {
+        "extend": "default",
+        "product_name": "ios demo",
+        "sign": "store"
+      }
+    }
+  }
+}
+```
+
+Will result in the following configuration:
+
+```json
+{
+  "configurations": {
+    "android": {
+      "default": {
+        "id": "org.tarifa.demo",
+        "product_name": "demo",
+        "product_file_name": "demo"
+      }
+    },
+    "ios": {
+      "default": {
+        "id": "org.tarifa.demo",
+        "product_name": "ios demo",
+        "product_file_name": "demo",
+        "sign": "store"
+      }
+    }
+  }
+}
+```
+
+You can see the transformed `configurations` by using [`tarifa info`](../usage/info.md) `--dump-configuration` option.
 
 ##### cordova
 
