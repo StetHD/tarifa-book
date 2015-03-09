@@ -21,7 +21,7 @@ with adequate questions and save the answers in the project files.
 
 ### Document
 
-This document covers version **0.6.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+This document covers version **0.6.0** to **0.7.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
 
 ### History
 
