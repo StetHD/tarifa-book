@@ -10,7 +10,8 @@ Depending on your host, you will be able to support the following platforms:
 | -------------------------------------------|:------:|:-----:|:-----:|
 | [iOS](http://developer.apple.com/)         | ✔      | ✗     | ✗     |
 | [Android](http://developer.android.com/)   | ✔      | ✔     | ✔     |
-| [Windows Phone](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔     |
+| [Windows Phone](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔|
+| [Firefox OS (experimental)](https://www.mozilla.org/en-US/firefox/os/) | ✔      | ✗     | ✗|
 
 You need to install the proper SDK in order to work with a given platform.
 

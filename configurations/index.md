@@ -100,14 +100,21 @@ A list of platforms which are available in the project. You can specify an optio
 
 ##### plugins
 
-An object mapping plugin ids to plugin uris.
+An object mapping plugin ids to plugin uris or plugin configurations if variables are required:
 
 ```json
 {
   "plugins": {
     "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.3",
     "org.apache.cordova.console": "https://github.com/apache/cordova-plugin-console.git#r0.2.11"
-  }
+  },
+  "com.phonegap.plugins.facebookconnect": {
+      "uri": "https://github.com/phonegap/phonegap-facebook-plugin.git#v0.11.0",
+      "variables": {
+        "APP_ID": "appId",
+        "APP_NAME": "appName"
+      }
+    }
 }
 ```
 

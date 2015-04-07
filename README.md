@@ -21,10 +21,11 @@ with adequate questions and save the answers in the project files.
 
 ### Document
 
-This document covers version **0.6.0** to **0.7.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+This document covers version **0.8.0** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
 
 ### History
 
+* [documentation for version **0.6.x** to **0.7.0**](https://github.com/TarifaTools/tarifa-book/tree/0.7.0)
 * [documentation for version **0.5.x**](https://github.com/TarifaTools/tarifa-book/tree/0.5.0)
 * [documentation for version **0.4.0**](https://github.com/TarifaTools/tarifa-book/tree/0.4.0)
 * [documentation for version **0.3.x**](https://github.com/TarifaTools/tarifa-book/tree/0.3.0)

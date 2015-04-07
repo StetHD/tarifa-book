@@ -53,6 +53,8 @@ the case anymore.
 
 During the build process and before finishing the [prepare step](../usage/prepare.md), tarifa will copy or link (depending on the OS) the output of the `www` project folder to `app/www`.
 
+The `app` folder can be regenerated with [`tarifa check --force`](../usage/check.md) command.
+
 ### The www project
 
 The `project` folder is a regular front-end project with the build system of your choice. It must

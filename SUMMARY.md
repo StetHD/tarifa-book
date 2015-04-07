@@ -25,6 +25,7 @@
    * [iOS](platforms/ios.md)
    * [Android](platforms/android.md)
    * [Windows Phone 8](platforms/wp8.md)
+   * [Firefox OS](platforms/ffos.md)
 * [User settings](settings/index.md)
 * [Updating an existing project](update/index.md)
 
