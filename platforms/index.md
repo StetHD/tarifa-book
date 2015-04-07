@@ -8,5 +8,6 @@ tarifa supports the following platforms:
 | [Android](./android.md)   | **3.7.1**, 3.6.4      |
 | [Windows Phone 8](./wp8.md) |  **3.7.1**, 3.7.0 |
 | [Browser](./browser.md) | **3.6.0** |
+| [Firefox OS](./ffos.md) | **3.6.3** |
 
 This section covers the specific parts of each platform.
