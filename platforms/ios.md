@@ -18,6 +18,7 @@ In any iOS configuration we need at least the following 3 attributes in the [`ta
 * `release` toggles the release mode, `false` by default.
 * `sign` is the signing label.
 * `hockeyapp_id` is the id of the app on kockeyapp.
+* `build_number` is the `CFBundleShortVersionString` value which specifies the release version number of the bundle.
 
 ### Signing attributes
 
