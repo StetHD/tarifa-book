@@ -74,10 +74,14 @@ module.exports.build = function (platform, settings, config) {
     return Q.resolve();
 }
 
-module.exports.watch = function watch(f, settings, platform, config) {
+module.exports.watch = function watch(f, settings, platform, config, confEmitter) {
     // init front-end watch
     // then call `f(<changed file path>)`
     // each time the live reload needs to be triggered
+
+    // you may also listen to the `change` event emitted by `confEmitter`
+    // to receive the configuration object for the specified `platform`
+    // and `config` when it is updated in the `tarifa.json` file
 }
 
 module.exports.close = function close() {
