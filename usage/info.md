@@ -5,14 +5,13 @@
 * check the Cordova install.
 * check the required external tools.
 * print version numbers of the Cordova platforms and required tools.
-* print the ids of supported devices (`--verbose` to print human readable strings when available).
 * print whether the command got called from inside a tarifa project.
 * dump project parsed configuration if used with `--dump-configuration` option
 
 ```
 Usage: tarifa info
 
-Get some information about your environment and your devices.
+Get some information about your environment.
 
 Options:
 

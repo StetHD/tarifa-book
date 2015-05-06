@@ -10,14 +10,19 @@ Depending on your host, you will be able to support the following platforms:
 | -------------------------------------------|:------:|:-----:|:-----:|
 | [iOS](http://developer.apple.com/)         | ✔      | ✗     | ✗     |
 | [Android](http://developer.android.com/)   | ✔      | ✔     | ✔     |
-| [Windows Phone](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔|
+| [Windows Phone 8](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔|
+| browser | ✔      | ✔     | ✔|
 | [Firefox OS (experimental)](https://www.mozilla.org/en-US/firefox/os/) | ✔      | ✗     | ✗|
 
 You need to install the proper SDK in order to work with a given platform.
 
 All the OS need [ImageMagick](http://www.imagemagick.org/) for icons and splash screens generation.
-tarifa needs [cupertino](https://github.com/nomad/cupertino) on Mac OS X in order to manage mobile provisioning files and to communicate with
-[developer.apple.com](http://developer.apple.com/).
+
+On Mac OS X, the following dependencies are needed:
+- [cupertino](https://github.com/nomad/cupertino) in order to manage mobile provisioning files and to communicate with [developer.apple.com](http://developer.apple.com/)
+- [ios-webkit-debug-proxy](https://github.com/google/ios-webkit-debug-proxy) for `tarifa test`
+- [libimobiledevice](http://www.libimobiledevice.org/) for `tarifa devices`
+- [ideviceinstaller](http://www.libimobiledevice.org/) for `tarifa test`
 
 On Windows you'll have to ensure that the [PowerShell execution policy](http://technet.microsoft.com/library/hh847748.aspx)
 is not set to `Restricted` nor `AllSigned`. A good value for tarifa is setting the policy to `RemoteSigned` for the

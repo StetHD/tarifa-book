@@ -20,6 +20,8 @@
    * [hockeyapp](usage/hockeyapp.md)
    * [update](usage/update.md)
    * [clean](usage/clean.md)
+   * [test](usage/test.md)
+   * [device](usage/device.md)
 * [Platforms](platforms/index.md)
    * [Browser](platforms/browser.md)
    * [iOS](platforms/ios.md)
