@@ -15,16 +15,21 @@ with adequate questions and save the answers in the project files.
 * **Repository**: [https://github.com/TarifaTools/tarifa.git](https://github.com/TarifaTools/tarifa.git)
 * **Issues**: [https://github.com/TarifaTools/tarifa/issues](https://github.com/TarifaTools/tarifa/issues)
 * **Website**: [http://tarifa.tools](http://tarifa.tools)
-* **Documentation**: [http://doc.tarifa.tools](http://doc.tarifa.tools), [http://book.tarifa.tools](http://book.tarifa.tools)
+* **Documentation**: [http://doc.tarifa.tools](http://doc.tarifa.tools)
 * **Changes**: [https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md)
 * **Continuous Integration**: [http://ci.tarifa.tools](http://ci.tarifa.tools)
 
 ### Document
 
-This document covers version **0.8.0** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+This document covers version **0.9.0** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+
+### Disclamer
+
+It is assumed the reader knows [Apache Cordova](http://cordova.apache.org/) and is aware of stores publication processes.
 
 ### History
 
+* [documentation for version **0.8.x**](https://github.com/TarifaTools/tarifa-book/tree/0.8.0)
 * [documentation for version **0.6.x** to **0.7.0**](https://github.com/TarifaTools/tarifa-book/tree/0.7.0)
 * [documentation for version **0.5.x**](https://github.com/TarifaTools/tarifa-book/tree/0.5.0)
 * [documentation for version **0.4.0**](https://github.com/TarifaTools/tarifa-book/tree/0.4.0)

@@ -18,6 +18,6 @@ Currently only the `product_name` and the `product_file_name` are used in the bu
 
 ### Limitations
 
-* works only on macosx machines
+* works only on macosx
 * `tarifa watch` is not supported
 * the `manifest.webapp` generation is not ready for pushing apps to the marketplace

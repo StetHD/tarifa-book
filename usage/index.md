@@ -4,8 +4,8 @@ tarifa commands may be splitted into the following categories:
 
 ### project management tasks
 
-* [`create`](./create.md) interactively creates a tarifa project (or a cordova plugin).
-* [`info`](./info.md) gets general data on your host and attached devices.
+* [`create`](./create.md) interactively creates a tarifa project or a cordova plugin.
+* [`info`](./info.md) gets general data on your host and current project.
 * [`config`](./config.md) configures graphical assets and provisioning files.
 * [`platform`](./platform.md) manages platforms.
 * [`plugin`](./plugin.md) manages plugins.
@@ -20,6 +20,8 @@ one is available.
 * [`watch`](./watch.md) runs the app in live reload mode.
 * [`check`](./check.md) checks the current tarifa project after clone or host switch.
 * [`clean`](./clean.md) cleans the project.
+* [`device`](./device.md) gets informations on attached devices.
+* [`test`](./test.md) tests project with appium.
 
 ### deploy tasks
 

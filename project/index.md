@@ -24,6 +24,8 @@ This is what a tarifa project looks like for iOS and Android — using the defau
     |-- <b>package.json</b>
     |-- src
     |   `-- <b>app.js</b>
+    |-- test
+        `-- <b>test.js</b> /* end to end tests */
     `-- www                         /* front-end project's output linked/copied to cordova's www */
         |-- <b>style.css</b>
         `-- <b>index.html</b>
@@ -61,7 +63,7 @@ The `project` folder is a regular front-end project with the build system of you
 satisfy the following interface:
 
 * having a `package.json`.
-* having a `bin/build.js` node module exposing the `build`, `watch` and `close` functions that respectively start the build process, start the live reload and stop it.
+* having a `bin/build.js` node module exposing the `build`, `watch`, `close` and `test` functions that respectively start the build process, start the live reload, stop it and launch end to end tests.
 * generating output in a folder named `www` or if defined, at the path given by the `project_output` attribute in `tarifa.json`.
 
 More precisely, the `bin/build.js` module must have the following signature:
@@ -74,16 +76,25 @@ module.exports.build = function (platform, settings, config) {
     return Q.resolve();
 }
 
-module.exports.watch = function watch(f, settings, platform, config) {
+module.exports.watch = function watch(f, settings, platform, config, confEmitter) {
     // init front-end watch
     // then call `f(<changed file path>)`
     // each time the live reload needs to be triggered
+
+    // you may also listen to the `change` event emitted by `confEmitter`
+    // to receive the configuration object for the specified `platform`
+    // and `config` when it is updated in the `tarifa.json` file
 }
 
 module.exports.close = function close() {
     // close all watch handlers used in `watch()`
     // called by tarifa on ^C
 }
+
+module.exports.test = function (platform, settings, config, caps, appium, verbose) {
+    // launch tests then
+    return Q.resolve();
+};
 
 ```
 
@@ -94,8 +105,14 @@ where
   simply the result of merging `tarifa.json` and `private.json`).
 * `config` is the name of the configuration chosen by the user.
 * `f` is a function which shall be called each time a file needs to be reloaded. It takes the path of the changed file as an argument.
+* `caps` is an object representing the appium server capabilities needed to launch the tests
+* `appium` is an object describing the appium server configuration:
+``` js
+{ host: 'localhost', port: 4723 }
+```
+* `verbose` is a boolean representing the `--verbose` option
 
-In the default tarifa project template, *browserify* is used to embed the settings
+In the default tarifa project template, [browserify](http://browserify.org/) is used to embed the settings
 which are specific to a configuration as a global module — named `settings` — that you can require in your js code.
 
 See the [default template www project build script](https://github.com/TarifaTools/tarifa/blob/master/template/project/bin/build.js) for a complete example.
