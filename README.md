@@ -9,6 +9,7 @@ It aims at simplifying the Apache Cordova workflow and adding features to comple
 with adequate questions and save the answers in the project files.
 * **deployment to HockeyApp from the terminal**: no need to launch a browser to upload a binary file to HockeyApp, tarifa handles it.
 * **live reload**: no need to rebuild the whole app when you do not change the native code.
+* **end-to-end tests**: use appium to test apps.
 
 ### Resources
 
