@@ -370,6 +370,11 @@ On android, each _siging label_ needs the following attributes:
 * `keystore_path` defines the path of the keystore.
 * `keystore_alias` defines the keystore alias.
 
+and the following attributes are optional:
+
+* `keystore_password` defines the main keystore password
+* `alias_password` defines the alias password
+
 On wp8, each _siging label_ needs the following attribute:
 * `certificate_path` defines the path of the company app distribution certificate.
 

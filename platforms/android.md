@@ -37,7 +37,9 @@ in release mode with the _signing label_ referenced in `sign`. Usually this is s
     "android": {
       "store": {
         "keystore_path": "/my/path/to/keystore.keystore",
-        "keystore_alias": "xxxxx"
+        "keystore_alias": "xxxxx",
+        "keystore_password": "xxxx",
+        "alias_password": "xxxxx"
       }
     }
   }
@@ -46,5 +48,7 @@ in release mode with the _signing label_ referenced in `sign`. Usually this is s
 
 * `keystore_path` is the path of the keystore.
 * `keystore_alias` is the alias used in the keystore.
+* `keystore_password` defines the main keystore password. This attribute is optional.
+* `alias_password` defines the alias password. This attribute is optional.
 
 By default, `tarifa create` will add a `store` _signing label_ in the `prod` configuration.
