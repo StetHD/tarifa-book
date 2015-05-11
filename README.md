@@ -25,7 +25,7 @@ This document covers version **0.9.x** of tarifa. You can contribute to this doc
 
 ### Disclamer
 
-It is assumed the reader knows [Apache Cordova](http://cordova.apache.org/) and is aware of stores publication processes.
+It is assumed the reader has experience with [Apache Cordova](http://cordova.apache.org/) and knows how to distribute apps on stores.
 
 ### History
 

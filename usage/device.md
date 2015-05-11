@@ -1,6 +1,6 @@
 # device
 
-`tarifa device` print ids of your connected devices. The `--verbose` option allows to output more informations.
+`tarifa device` prints the identifiers of your connected devices. The `--verbose` option allows to output more data.
 
 ```
 Usage: tarifa device

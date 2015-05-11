@@ -25,7 +25,7 @@ This is what a tarifa project looks like for iOS and Android — using the defau
     |-- src
     |   `-- <b>app.js</b>
     |-- test
-        `-- <b>test.js</b> /* end to end tests */
+        `-- <b>test.js</b>                 /* end-to-end tests */
     `-- www                         /* front-end project's output linked/copied to cordova's www */
         |-- <b>style.css</b>
         `-- <b>index.html</b>
@@ -55,7 +55,7 @@ the case anymore.
 
 During the build process and before finishing the [prepare step](../usage/prepare.md), tarifa will copy or link (depending on the OS) the output of the `www` project folder to `app/www`.
 
-The `app` folder can be regenerated with [`tarifa check --force`](../usage/check.md) command.
+The `app` folder can be regenerated with [`tarifa check --force`](../usage/check.md).
 
 ### The www project
 
@@ -63,7 +63,7 @@ The `project` folder is a regular front-end project with the build system of you
 satisfy the following interface:
 
 * having a `package.json`.
-* having a `bin/build.js` node module exposing the `build`, `watch`, `close` and `test` functions that respectively start the build process, start the live reload, stop it and launch end to end tests.
+* having a `bin/build.js` node module exposing the `build`, `watch`, `close` and `test` functions that respectively start the build process, start the live reload, stop it and launch end-to-end tests.
 * generating output in a folder named `www` or if defined, at the path given by the `project_output` attribute in `tarifa.json`.
 
 More precisely, the `bin/build.js` module must have the following signature:
@@ -105,12 +105,12 @@ where
   simply the result of merging `tarifa.json` and `private.json`).
 * `config` is the name of the configuration chosen by the user.
 * `f` is a function which shall be called each time a file needs to be reloaded. It takes the path of the changed file as an argument.
-* `caps` is an object representing the appium server capabilities needed to launch the tests
+* `caps` is an object representing the appium server capabilities needed to launch the tests.
 * `appium` is an object describing the appium server configuration:
 ``` js
 { host: 'localhost', port: 4723 }
 ```
-* `verbose` is a boolean representing the `--verbose` option
+* `verbose` is a boolean representing the `--verbose` option.
 
 In the default tarifa project template, [browserify](http://browserify.org/) is used to embed the settings
 which are specific to a configuration as a global module — named `settings` — that you can require in your js code.
