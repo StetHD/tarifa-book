@@ -28,4 +28,4 @@ variants of it.
 To be deployed to HockeyApp, WP8 apps need to be signed with a certificate in the PFX format and you need an application enrollment token (AET).
 Refer to [http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx](http://msdn.microsoft.com/en-us/library/windows/apps/jj206943.aspx) for the specifics.
 
-To sign an app for company app distribution you need to assign the `certificate_path` attribute with the path of the certificate in the _signing label_ and to toggle the `release` attribute to true.
+To sign an app for company app distribution you need to assign the `certificate_path` attribute with the path of the certificate in the _signing label_ and to toggle the `release` attribute to true. Adding `certificate_password` in the _siging label_ removes password prompts.

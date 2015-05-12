@@ -378,6 +378,8 @@ and the following attributes are optional:
 On wp8, each _siging label_ needs the following attribute:
 * `certificate_path` defines the path of the company app distribution certificate.
 
+and `certificate_password` is optional and defines the password of the app distribution certificate.
+
 Adding the `sign` attribute on a configuration allows tarifa to sign the app with the appropriate settings, for example:
 
 ```json
