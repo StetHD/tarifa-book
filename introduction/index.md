@@ -13,7 +13,7 @@ to add a `release.properties` file containing the path to the keystore and the
 keystore alias. Or on iOS, to produce a signed IPA for adhoc distribution, you need to
 change the `CODE_SIGN_IDENTITY` in your `build-release.xcconfig` file if you have multiples identities.
 
-Tarifa aims at taking care of all the little things you need to know/do to build
+tarifa aims at taking care of all the little things you need to know/do to build
 a Cordova app, so you can focus on creating content. We started the
 project with the idea of making a practical tool for our dev team and to
 lower the barrier of development and project sharing with Cordova.
