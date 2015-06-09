@@ -1,11 +1,11 @@
 # Platforms
 
-tarifa supports the following platforms:
+tarifa supports the following cordova platforms:
 
 | platforms      | cordova versions |
 | ---------------|:------:|
 | [iOS](./ios.md)         |  **3.8.0**, 3.7.0     |
-| [Android](./android.md)   | **3.7.1**, 3.6.4      |
+| [Android](./android.md)   | **4.0.2**, 3.7.2, 3.7.1, 3.6.4      |
 | [Windows Phone 8](./wp8.md) |  **3.7.1**, 3.7.0 |
 | [Browser](./browser.md) | **3.6.0** |
 | [Firefox OS](./ffos.md) | **3.6.3** |
