@@ -12,11 +12,10 @@ Options:
 
     --help, -h              Show this message
     --verbose, -V           Be more verbose on everything
-    --clean-resources       Clean cached resources (icons and splashscreens) before build,
-                            only for android platform
     --all                   Run on all available devices
     --nobuild               Skip build process if build available
-    --debug, -d             Output app debug logs, only for single build
+    --log, -l               Output app debug logs, only for single build
+    --debug, -d             Debug app with vorlon.js
 
 Examples:
 
@@ -26,4 +25,12 @@ Examples:
     tarifa run ios dev,stage     # will run dev and stage confs for ios
     tarifa run ios,android dev   # will run dev conf for ios and android platforms
     tarifa run all all           # will run all confs for all platforms
+```
+
+### debug
+
+With the `--debug` option, `tarifa run` will spawn `vorlonjs` server. You need to add the `vorlon` script in your main `index.html` file (default `project/www/index.html`):
+
+```html
+<script src="http://yourhost:1337/vorlon.js"></script>
 ```
