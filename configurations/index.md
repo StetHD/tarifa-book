@@ -244,6 +244,12 @@ You can see the transformed `configurations` by using [`tarifa info`](../usage/i
 
 ##### cordova
 
+<b style="background:yellow;">FIXME</b>
+
+- <b style="background:yellow;">change whitelist plugin</b>
+- <b style="background:yellow;">add regions attribute</b>
+- <b style="background:yellow;">add settings attribute</b>
+
 Contains a `preferences` attribute allowing to overwrite any Cordova `config.xml`
 preference and an `accessOrigin` attribute.
 By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute
