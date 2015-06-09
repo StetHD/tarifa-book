@@ -1,5 +1,8 @@
 # User settings
 
+<b style="background:yellow">TODO</b>
+<b style="background:yellow">no more yaml file -> now, it's a json file since configstore@1.0.0</b>
+
 tarifa uses [configstore](https://www.npmjs.org/package/configstore) to get user settings.
 User settings are used in [`tarifa create`](../usage/create.md) to prefill questions with default values,
 for extending Cordova plugins list and www project templates list.
