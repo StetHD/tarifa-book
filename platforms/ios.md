@@ -82,8 +82,3 @@ to the `stage` and `prod` configurations and to the `signing` attribute in the `
 * `provisioning_name` is the name of the mobile provision
 
 See [`tarifa config`](../usage/config.md) to find commands to help you manage provisioning files and attached devices.
-
-### Limitations
-
-* [`tarifa run`](../usage/run.md) won't be able - like with other platforms - to automatically launch
-the app on the device.
