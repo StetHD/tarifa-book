@@ -55,7 +55,6 @@ The **tarifa build** step executes the following extra tasks at the `pre-cordova
 * copy the configuration's icons
 * copy the configuration's splash screens
 * clean the given platform
-* reset `config.xml`
 
 **WP8 specific tasks**
 
