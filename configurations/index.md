@@ -246,14 +246,11 @@ You can see the transformed `configurations` by using [`tarifa info`](../usage/i
 
 <b style="background:yellow;">FIXME</b>
 
-- <b style="background:yellow;">change whitelist plugin</b>
 - <b style="background:yellow;">add regions attribute</b>
 - <b style="background:yellow;">add settings attribute</b>
 
-Contains a `preferences` attribute allowing to overwrite any Cordova `config.xml`
-preference and an `accessOrigin` attribute.
-By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute
-as:
+Contains a `preferences` attribute (that may also be defined in any configuration) allowing to overwrite any Cordova `config.xml` preference and a `whitelist` attribute.
+By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute as:
 
 ```json
 {
@@ -268,17 +265,54 @@ as:
     "KeyboardShrinksView": true,
     "KeepRunning": true
   },
-  "accessOrigin": [
-    "*",
-    {
-      "origin": "tel:",
-      "external": true
-    }
-  ]
+  "whitelist": {
+    "shared": [
+      {
+        "type": "access-origin",
+        "origin": [ "*" ]
+      },
+      {
+        "type": "allow-intent",
+        "origin": [
+          "http://*/*",
+          "https://*/*",
+          "tel:*",
+          "sms:*",
+          "mailto:*",
+          "geo:*"
+        ]
+      }
+    ],
+    "android": [
+      {
+        "type": "allow-intent",
+        "origin": [ "market:*" ]
+      },
+      {
+        "type": "allow-navigation",
+        "origin": [ "*" ]
+      }
+    ],
+    "ios": [
+      {
+        "type": "allow-intent",
+        "origin": [
+          "itms:*",
+          "itms-apps:*"
+        ]
+      }
+    ]
+  }
 }
 ```
 
-You may also define this attribute in any configuration.
+The following table shows how whitelist objects are written to cordova's `config.xml` file:
+
+|    object type   |                                 description                                 |             android platform            |                          other platforms                        |
+|------------------|:---------------------------------------------------------------------------:|:---------------------------------------:|:---------------------------------------------------------------:|
+| access-origin    | Controls which network requests (images, XHRs, etc) are allowed to be made. | `<access origin="${origin}" />`         | `<access origin="${origin}" launchExternal="false" />`          |
+| allow-intent     | Controls which URLs the app is allowed to ask the system to open.           | `<allow-intent href="${origin}" />`     | `<access origin="${origin}" launchExternal="true" />`           |
+| allow-navigation | Controls which URLs the WebView itself can be navigated to.                 | `<allow-navigation href="${origin}" />` | not written (controlled by `<access launchExternal="false" />`) |
 
 ##### check
 
