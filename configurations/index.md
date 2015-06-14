@@ -36,11 +36,12 @@ Here is the skeleton of a minimal `tarifa.json` file:
   "description": "a simple app description",
   "version": "1.0.0",
   "platforms": [
-    "android@3.7.1",
+    "android@4.0.2",
     "browser@3.6.0"
   ],
   "plugins": [
-    "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.4"
+    "cordova-plugin-splashscreen": "cordova-plugin-splashscreen@1.0.0",
+    "cordova-plugin-whitelist": "cordova-plugin-whitelist@1.0.0"
   ],
   "configurations": {
     "android": {
@@ -60,7 +61,7 @@ Here is the skeleton of a minimal `tarifa.json` file:
   },
   "cordova": {
     "preferences": {},
-    "accessOrigin": []
+    "whitelist": {}
   },
   "author": {}
 }
@@ -91,7 +92,7 @@ A list of platforms which are available in the project. You can specify an optio
 ```json
 {
   "platforms":[
-    "android@3.7.1",
+    "android@4.0.2",
     "ios@3.7.0",
     "browser"
   ]
@@ -105,8 +106,8 @@ An object mapping plugin ids to plugin uris or plugin configurations if variable
 ```json
 {
   "plugins": {
-    "org.apache.cordova.splashscreen": "https://github.com/apache/cordova-plugin-splashscreen.git#r0.3.3",
-    "org.apache.cordova.console": "https://github.com/apache/cordova-plugin-console.git#r0.2.11"
+    "cordova-plugin-splashscreen": "cordova-plugin-splashscreen@1.0.0",
+    "cordova-plugin-whitelist": "cordova-plugin-whitelist@1.0.0"
   },
   "com.phonegap.plugins.facebookconnect": {
       "uri": "https://github.com/phonegap/phonegap-facebook-plugin.git#v0.11.0",

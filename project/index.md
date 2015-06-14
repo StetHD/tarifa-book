@@ -49,10 +49,6 @@ The `app` folder contains a regular Cordova application. Any Cordova app (versio
 should work with tarifa, thus you can use an existing Cordova app folder in a
 tarifa project.
 
-At this time, the tarifa build process performs setting replacements in various
-Cordova files without undoing them. In a future version of tarifa this won't be
-the case anymore.
-
 During the build process and before finishing the [prepare step](../usage/prepare.md), tarifa will copy or link (depending on the OS) the output of the `www` project folder to `app/www`.
 
 The `app` folder can be regenerated with [`tarifa check --force`](../usage/check.md).

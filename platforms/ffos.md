@@ -22,11 +22,11 @@ Currently only the `product_name` and the `product_file_name` are used in the bu
 * `tarifa watch` is not supported
 * the `manifest.webapp` generation is not ready for pushing apps to the marketplace
 
-### Setting up developpement device
+### Setting up development device
 
 #### Remove user prompt on device while installing app
 
-By default, user gets prompted on the device twice while installing an app. It's possible to avoid this behavior by editing b2g the `prefs.js` user preference file on the device (firefoxos >= 2.0):
+By default, the user gets prompted on the device twice while installing an app. It's possible to avoid this behavior by configuring b2g with the `prefs.js` user preference file on the device (firefoxos >= 2.0):
 
 
 ```sh
@@ -58,6 +58,6 @@ To allow debugging app with vorlonjs, you need to add the following line in `pre
 ```js
 user_pref("security.apps.privileged.CSP.default", "default-src *; script-src *; object-src 'none'; style-src *");
 ```
-It allows any remote scripts to be added in any packaged app, so **do this only your developpement devices.**
+It allows any remote scripts to be added in any packaged app, so **do this only on your development devices.**
 
 

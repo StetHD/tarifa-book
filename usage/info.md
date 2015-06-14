@@ -6,7 +6,7 @@
 * check the required external tools.
 * print version numbers of the Cordova platforms and required tools.
 * print whether the command got called from inside a tarifa project.
-* dump project parsed configuration if used with `--dump-configuration` option
+* dump the parsed project configuration if used with the `--dump-configuration` option
 
 ```
 Usage: tarifa info
