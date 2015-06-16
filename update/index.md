@@ -18,23 +18,23 @@ Right now, when you execute the [`tarifa update`](../usage/update.md) command in
 
 The following cordova plugins are available on `tarifa create` and also get updated:
 
-* org.apache.cordova.battery-status
-* org.apache.cordova.camera
-* org.apache.cordova.console
-* org.apache.cordova.contacts
-* org.apache.cordova.device
-* org.apache.cordova.device-motion
-* org.apache.cordova.device-orientation
-* org.apache.cordova.dialogs
-* org.apache.cordova.file-transfer
-* org.apache.cordova.geolocation
-* org.apache.cordova.globalization
-* org.apache.cordova.inappbrowser
-* org.apache.cordova.media
-* org.apache.cordova.media-capture
-* org.apache.cordova.network-information
-* org.apache.cordova.splashscreen
-* org.apache.cordova.vibration
-* org.apache.cordova.file
+* cordova-plugin-battery-status
+* cordova-plugin-camera
+* cordova-plugin-console
+* cordova-plugin-contacts
+* cordova-plugin-device
+* cordova-plugin-device-motion
+* cordova-plugin-device-orientation
+* cordova-plugin-dialogs
+* cordova-plugin-file-transfer
+* cordova-plugin-geolocation
+* cordova-plugin-globalization
+* cordova-plugin-inappbrowser
+* cordova-plugin-media
+* cordova-plugin-network-information
+* cordova-plugin-splashscreen
+* cordova-plugin-vibration
+* cordova-plugin-file
+* cordova-plugin-whitelist
 
 Note that the various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's [CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md) file.

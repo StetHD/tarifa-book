@@ -245,11 +245,6 @@ You can see the transformed `configurations` by using [`tarifa info`](../usage/i
 
 ##### cordova
 
-<b style="background:yellow;">FIXME</b>
-
-- <b style="background:yellow;">add regions attribute</b>
-- <b style="background:yellow;">add settings attribute</b>
-
 Contains a `preferences` attribute (that may also be defined in any configuration) allowing to overwrite any Cordova `config.xml` preference and a `whitelist` attribute.
 By default [`tarifa create`](../usage/create.md) will generate the contents of the `cordova` attribute as:
 
@@ -314,6 +309,55 @@ The following table shows how whitelist objects are written to cordova's `config
 | access-origin    | Controls which network requests (images, XHRs, etc) are allowed to be made. | `<access origin="${origin}" />`         | `<access origin="${origin}" launchExternal="false" />`          |
 | allow-intent     | Controls which URLs the app is allowed to ask the system to open.           | `<allow-intent href="${origin}" />`     | `<access origin="${origin}" launchExternal="true" />`           |
 | allow-navigation | Controls which URLs the WebView itself can be navigated to.                 | `<allow-navigation href="${origin}" />` | not written (controlled by `<access launchExternal="false" />`) |
+
+`cordova` attribute also contains a `settings` attribute (that may also be defined in any configuration) allowing to overwrite the ios project plist ([reference](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html)) and the android manifest ([reference](http://developer.android.com/guide/topics/manifest/manifest-intro.html)) like:
+
+```json
+{
+  "cordova": {
+    "settings": {
+      "ios": {
+        "UISupportedInterfaceOrientations" : [
+          "UIInterfaceOrientationPortrait",
+          "UIInterfaceOrientationPortraitUpsideDown"
+        ]
+      },
+     "android": {
+        "manifest": {
+          "supports-screens": [{
+            "$": {
+              "android:xlargeScreens": false,
+              "android:smallScreens": false,
+              "android:anyDensity": false,
+              "android:largeScreens": false,
+              "android:normalScreens": false,
+              "android:resizeable": false
+            }
+          }],
+          "uses-permission": [
+            { "$": { "android:name":"android.permission.ACCESS_WIFI_STATE" } },
+            { "$": { "android:name":"android.permission.BATTERY_STATS" } }
+          ]
+        }
+      }
+    }
+  }
+}
+
+```
+
+The last `cordova` attribute is `regions` allowing to overwrite the known regions of the ios and windows phone 8 platform like :
+
+```json
+{
+  "cordova": {
+    "regions": {
+      "ios": ["English"],
+      "wp8": ["en"]
+    }
+  }
+}
+```
 
 ##### check
 
@@ -449,7 +493,7 @@ Usually, this attribute is placed in the following `private.json` file.
 
 ### `private.json`
 
-This JSON file contains data that you do not want to expose in a source control software.
+This JSON file contains data that you do not want to expose in a source control software and is merged with `tarifa.json` on runtime.
 
 By default, on `tarifa create` the following keys are stored in the `private.json` file:
 
