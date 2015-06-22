@@ -75,4 +75,10 @@ You can also configure the webview in `tarifa.json`. You can set the version of 
 }
 ```
 
+**Warning:** to set the app's background with crosswalk you can't use the default "BackgroundColor" preference of cordova, because it doesn't work (tested with version 1.2.0 of cordova-plugin-crosswalk-webview). You should set it like this instead:
 
+``` json
+{
+    "backgroundColor": "#0000ff"
+}
+```
