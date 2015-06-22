@@ -63,7 +63,7 @@ All you need to do to use crosswalk webview into your android platform is to ins
 
 Then by default, it will build for both architectures *armv7* and *x86*. Since *armv7* is by far the most used, when you `tarifa run` it will choose by default the *armv7* APK to install on your device. You can still run for *x86* with a command flag: `tarifa run android --arch x86`.
 
-You can also configure the webview in `tarifa.json`. You can set the version of crosswalk with `xwalkVersion` preference or use command line flags with `xwalkCommandLine` preference. Example:
+You can also configure the webview in `tarifa.json`. You can set the version of crosswalk with `xwalkVersion` preference or use [command line flags](http://peter.sh/experiments/chromium-command-line-switches/) with `xwalkCommandLine` preference. Example:
 
 ``` json
 {
