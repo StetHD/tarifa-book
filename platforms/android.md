@@ -52,3 +52,27 @@ in release mode with the _signing label_ referenced in `sign`. Usually this is s
 * `alias_password` defines the alias password. This attribute is optional.
 
 By default, `tarifa create` will add a `store` _signing label_ in the `prod` configuration.
+
+### Crosswalk webview
+
+Tarifa integrates well with [crosswalk project](https://crosswalk-project.org/).
+
+All you need to do to use crosswalk webview into your android platform is to install the cordova plugin for crosswalk:
+
+    $ tarifa plugin add cordova-plugin-crosswalk-webview
+
+Then by default, it will build for both architectures *armv7* and *x86*. Since *armv7* is by far the most used, when you `tarifa run` it will choose by default the *armv7* APK to install on your device. You can still run for *x86* with a command flag: `tarifa run android --arch x86`.
+
+You can also configure the webview in `tarifa.json`. You can set the version of crosswalk with `xwalkVersion` preference or use command line flags with `xwalkCommandLine` preference. Example:
+
+``` json
+{
+  "cordova": {
+    "preferences": {
+      "xwalkCommandLine" : "--disable-pull-to-refresh-effect --show-fps-counter"
+    }
+  }
+}
+```
+
+
