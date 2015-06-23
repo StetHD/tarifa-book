@@ -21,6 +21,7 @@ As with the iOS platform, any Android configuration needs at least the following
 * `hockeyapp_id` is the id of the app on kockeyapp.
 * `versionCode` is usefull to overwrite the `AndroidManifest.xml` versionCode.
 * `min_sdk_version` is the `android:minSdkVersion` attribute value of all the `uses-sdk` elements in the `AndroidManifest.xml` file.
+* `arch` is useful if you use crosswalk and you which to upload an x86 package to hockeyapp (default is *armv7* if you omit this attribute.)
 
 ### Signing attributes
 
