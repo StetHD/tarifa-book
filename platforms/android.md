@@ -83,3 +83,5 @@ You can also configure the webview in `tarifa.json`. You can set the version of 
     "backgroundColor": "#0000ff"
 }
 ```
+
+**Warning:** appium does not support crosswalk: [`tarifa test`](./test.md) will not work.
