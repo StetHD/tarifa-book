@@ -8,11 +8,15 @@
 * execute every [user script](../configurations/index.md#check) defined in [`tarifa.json`](../project/index.md#tarifajson-and-privatejson) scripts.
 
 ```
-Check the current working project after cloning and regenerate the cordova app if not found.
+Usage: tarifa check
+
+Check the current working project after cloning and regenerate the cordova
+app if not found.
 
 Options:
 
     --help, -h     Show this message
     --force        Force cordova app regenerate
     --verbose, -V  Be more verbose on everything
+    --debug, -d    Print helpful stack trace on error
 ```

@@ -9,7 +9,23 @@ The assets generation tasks allow you to create icons and splaschreens from a co
 ```
 Usage: tarifa config <task>
 
+Options:
+
+    --help, -h     Show this message
+    --verbose, -V  Be more verbose on everything
+    --debug, -d    Print helpful stack trace on error
+
 Commands:
+
+    icons generate <color> <configuration>
+        Generate all icons with the given color in the given configuration
+
+    icons file <path> <configuration>
+        Generate all icons from given file in the given configuration
+
+    splashscreens <color> <configuration>
+        Generate all splash screens with the given color in the given configuration
+
 
     ios devices list
         List all devices attached to the apple developer account
@@ -36,23 +52,4 @@ Commands:
 
     provisioning fetch
         Answer questions to fetch provisioning file from apple.com
-
-
-    icons generate <color> <configuration>
-        Generate all icons with the given color in the given configuration
-
-    icons file <path> <configuration>
-        Generate all icons from given file in the given configuration
-
-    splashscreens <color> <configuration>
-        Generate all splash screens with the given color in the given configuration
-
-Options:
-
-    --help, -h     Show this message
-    --verbose, -V  Be more verbose on everything
-
-Examples:
-
-    tarifa config ios devices list stage
 ```

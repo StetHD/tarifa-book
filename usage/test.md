@@ -12,4 +12,5 @@ Options:
 
     --help, -h            Show this message
     --verbose, -V         Be more verbose on everything
+    --debug, -d           Print helpful stack trace on error
 ```
