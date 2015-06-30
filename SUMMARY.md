@@ -30,4 +30,5 @@
    * [Firefox OS](platforms/ffos.md)
 * [User settings](settings/index.md)
 * [Updating an existing project](update/index.md)
+* [Mobile apps made with tarifa](apps/index.md)
 
