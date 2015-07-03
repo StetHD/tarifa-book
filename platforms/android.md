@@ -19,7 +19,7 @@ As with the iOS platform, any Android configuration needs at least the following
 * `release` toggles the release mode, `false` by default.
 * `sign` is the signing label.
 * `hockeyapp_id` is the id of the app on kockeyapp.
-* `versionCode` is usefull to overwrite the `AndroidManifest.xml` versionCode.
+* `version_code` is usefull to overwrite the `AndroidManifest.xml` versionCode.
 * `min_sdk_version` is the `android:minSdkVersion` attribute value of all the `uses-sdk` elements in the `AndroidManifest.xml` file.
 
 ### Signing attributes
