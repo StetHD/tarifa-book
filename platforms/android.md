@@ -56,7 +56,7 @@ By default, `tarifa create` will add a `store` _signing label_ in the `prod` con
 
 ### Crosswalk webview
 
-Tarifa integrates well with [crosswalk project](https://crosswalk-project.org/).
+tarifa integrates well with [crosswalk project](https://crosswalk-project.org/).
 
 All you need to do to use crosswalk webview into your android platform is to install the cordova plugin for crosswalk:
 

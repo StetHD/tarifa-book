@@ -30,13 +30,13 @@ It is assumed the reader has experience with [Apache Cordova](http://cordova.apa
 
 ### History
 
-* [documentation for version **0.10.x**](https://github.com/TarifaTools/tarifa-book/tree/0.10.0)
-* [documentation for version **0.9.x**](https://github.com/TarifaTools/tarifa-book/tree/0.9.0)
-* [documentation for version **0.8.x**](https://github.com/TarifaTools/tarifa-book/tree/0.8.0)
-* [documentation for version **0.6.x** to **0.7.0**](https://github.com/TarifaTools/tarifa-book/tree/0.7.0)
-* [documentation for version **0.5.x**](https://github.com/TarifaTools/tarifa-book/tree/0.5.0)
-* [documentation for version **0.4.0**](https://github.com/TarifaTools/tarifa-book/tree/0.4.0)
-* [documentation for version **0.3.x**](https://github.com/TarifaTools/tarifa-book/tree/0.3.0)
+* [**0.10.x**](https://github.com/TarifaTools/tarifa-book/tree/0.10.0)
+* [**0.9.x**](https://github.com/TarifaTools/tarifa-book/tree/0.9.0)
+* [**0.8.x**](https://github.com/TarifaTools/tarifa-book/tree/0.8.0)
+* [**0.6.x** and **0.7.0**](https://github.com/TarifaTools/tarifa-book/tree/0.7.0)
+* [**0.5.x**](https://github.com/TarifaTools/tarifa-book/tree/0.5.0)
+* [**0.4.0**](https://github.com/TarifaTools/tarifa-book/tree/0.4.0)
+* [**0.3.x**](https://github.com/TarifaTools/tarifa-book/tree/0.3.0)
 
 ### License
 
