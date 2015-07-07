@@ -45,4 +45,3 @@ tarifa-book is licensed under Apache version 2.0
 ### Sponsors
 
 * [zengularity](http://zengularity.com)
-
