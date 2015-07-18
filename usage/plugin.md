@@ -4,17 +4,19 @@
 installed plugins and their configuration like id, version, uri or variables as described in [`tarifa.json`'s plugin description](../configurations/index.md#plugins).
 
 ```
-Usage: tarifa plugin <cmd> [platform]
+Usage: tarifa plugin <cmd>
 
 Add, remove or list cordova plugins in your project.
 
 Available commands:
 
     add <plugin>
-        Add a new plugin identified by <platform>
-    remove <pluginId>
+        Add a new plugin identified by <plugin>
+    install <plugin>
+        Alias add command
+    remove <plugin>
         Remove the plugin
-    reload <pluginId>
+    reload <plugin>
         Reinstall the plugin
     list
         List installed plugins
