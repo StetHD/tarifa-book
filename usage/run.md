@@ -15,7 +15,6 @@ Options:
     --all                   Run on all available devices
     --nobuild               Skip build process if build available
     --log, -l               Output app debug logs, only for single build
-    --vorlon, -D            Debug app with vorlon.js
     --arch <ARCH>           Android only: choose your device architecture. Can
                             be either 'armv7' or 'x86'. It is mainly useful when
                             developing with the crosswalk-webview-plugin.
@@ -31,12 +30,4 @@ Examples:
     tarifa run ios dev,stage     # will run dev and stage confs for ios
     tarifa run ios,android dev   # will run dev conf for ios and android platforms
     tarifa run all all           # will run all confs for all platforms
-```
-
-### debug
-
-With the `--vorlon` option, `tarifa run` will spawn `vorlonjs` server. You need to add the `vorlon` script in your main `index.html` file (default `project/www/index.html`):
-
-```html
-<script src="http://yourhost:1337/vorlon.js"></script>
 ```
