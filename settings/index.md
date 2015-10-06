@@ -64,13 +64,3 @@ You can also add custom www project templates, [`tarifa create`](../usage/create
   ]
 }
 ```
-
-#### Chrome path
-
-On Linux or Windows, it's possible to set the Chrome path used in `tarifa run browser`:
-
-``` json
-{
-  "chrome":"/usr/bin/chromium-browser"
-}
-```
