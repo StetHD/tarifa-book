@@ -52,12 +52,4 @@ adb shell stop b2g
 adb shell start b2g
 ```
 
-#### Debug app with vorlonjs
-
-To allow debugging app with vorlonjs, you need to add the following line in `prefs.js`:
-```js
-user_pref("security.apps.privileged.CSP.default", "default-src *; script-src *; object-src 'none'; style-src *");
-```
-It allows any remote scripts to be added in any packaged app, so **do this only on your development devices.**
-
 
