@@ -29,7 +29,8 @@ This document covers version **0.12.x** of tarifa. You can contribute to this do
 It is assumed the reader has experience with [Apache Cordova](http://cordova.apache.org/) and knows how to distribute apps on stores.
 
 ### History
-* [**0.10.x**](https://github.com/TarifaTools/tarifa-book/tree/0.11.0)
+
+* [**0.11.x**](https://github.com/TarifaTools/tarifa-book/tree/0.11.0)
 * [**0.10.x**](https://github.com/TarifaTools/tarifa-book/tree/0.10.0)
 * [**0.9.x**](https://github.com/TarifaTools/tarifa-book/tree/0.9.0)
 * [**0.8.x**](https://github.com/TarifaTools/tarifa-book/tree/0.8.0)
