@@ -29,10 +29,3 @@ tarifa run browser --verbose
 
 in a tarifa project should open the `app/platforms/browser/www/index.html` file in your Chrome browser
 after building it with the default configuration and the build process defined in the [front-end project](../project/index.md#the-www-project) build system module `project/bin/build.js`.
-
-### Limitations
-
-`tarifa run browser` may fail if the Chrome executable is not found. Defining the path of your Chrome executable
-in `~/.config/configstore/tarifa.json` should fix it (See [user settings](../settings/index.md) for defining the Chrome path).
-
-`tarifa watch browser` fails to open Chrome pointing to the right url.
