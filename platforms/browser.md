@@ -18,14 +18,3 @@ In any browser configuration we need at least the following 3 attributes in the 
 
 These three keys are not that useful for the browser platform, but you must assign them values
 otherwise tarifa won't let you build & run the project for that platform.
-
-### Execution
-
-Running
-
-```
-tarifa run browser --verbose
-```
-
-in a tarifa project should open the `app/platforms/browser/www/index.html` file in your Chrome browser
-after building it with the default configuration and the build process defined in the [front-end project](../project/index.md#the-www-project) build system module `project/bin/build.js`.
