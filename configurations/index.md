@@ -187,7 +187,7 @@ case of Android, a .apk file).
 
 ##### configurations_mixins
 
-A configuration can be extended from one defined in the `configurations_mixins` attribute by using `extend`.
+A configuration can be extended from some defined in the `configurations_mixins` attributes by using `extend`.
 
 An example of the extension mechanism in action:
 
@@ -198,6 +198,9 @@ An example of the extension mechanism in action:
       "id": "org.tarifa.demo",
       "product_name": "demo",
       "product_file_name": "demo"
+    },
+    "test": {
+      "test": "a test"
     }
   },
   "configurations": {
@@ -208,7 +211,7 @@ An example of the extension mechanism in action:
     },
     "ios": {
       "default": {
-        "extend": "default",
+        "extend": ["default", "test"],
         "product_name": "ios demo",
         "sign": "store"
       }
@@ -234,7 +237,8 @@ Will result in the following configuration:
         "id": "org.tarifa.demo",
         "product_name": "ios demo",
         "product_file_name": "demo",
-        "sign": "store"
+        "sign": "store",
+        "test": "a test"
       }
     }
   }
@@ -345,6 +349,37 @@ The following table shows how whitelist objects are written to cordova's `config
 }
 
 ```
+
+`cordova` attribute contains a `build` attribute (that may also be defined in any configuration) allowing to overwrite build variables of the ios project `build.xcconfig`. for Example:
+
+``` json
+{
+  "cordova": {
+    "build": {
+      "ios": {
+        "ENABLE_BITCODE": "True"
+      }
+    }
+  }
+}
+```
+
+will set `ENABLE_BITCODE` to true for any configuration and:
+
+``` json
+{
+  "configurations": {
+    "ios": {
+      "myconfiguration": {
+        "build": {
+          "ENABLE_BITCODE": "False"
+        }
+      }
+    }
+  }
+}
+```
+will overwriting it in `myconfiguration` configuration.
 
 The last `cordova` attribute is `regions` allowing to overwrite the known regions of the ios and windows phone 8 platform like :
 
