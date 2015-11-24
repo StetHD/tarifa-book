@@ -36,5 +36,6 @@ The following cordova plugins are available on `tarifa create` and also get upda
 * cordova-plugin-vibration
 * cordova-plugin-file
 * cordova-plugin-whitelist
+* phonegap-plugin-push
 
 Note that the various tarifa files are not automatically updated, but we provide detailed instructions in tarifa's [CHANGES.md](https://github.com/TarifaTools/tarifa/blob/master/CHANGES.md) file.
