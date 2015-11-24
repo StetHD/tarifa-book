@@ -22,7 +22,7 @@ with adequate questions and save the answers in the project files.
 
 ### Document
 
-This document covers version **0.12.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
+This document covers version **0.13.x** of tarifa. You can contribute to this document on [TarifaTools/tarifa-book](https://github.com/TarifaTools/tarifa-book.git).
 
 ### Disclamer
 
@@ -30,6 +30,7 @@ It is assumed the reader has experience with [Apache Cordova](http://cordova.apa
 
 ### History
 
+* [**0.12.x**](https://github.com/TarifaTools/tarifa-book/tree/0.12.0)
 * [**0.11.x**](https://github.com/TarifaTools/tarifa-book/tree/0.11.0)
 * [**0.10.x**](https://github.com/TarifaTools/tarifa-book/tree/0.10.0)
 * [**0.9.x**](https://github.com/TarifaTools/tarifa-book/tree/0.9.0)
