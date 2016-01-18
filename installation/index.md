@@ -10,9 +10,8 @@ Depending on your host, you will be able to support the following platforms:
 | -------------------------------------------|:------:|:-----:|:-----:|
 | [iOS](http://developer.apple.com/)         | ✔      | ✗     | ✗     |
 | [Android](http://developer.android.com/)   | ✔      | ✔     | ✔     |
-| [Windows Phone 8](http://dev.windows.com/en-us/develop/download-phone-sdk) | ✗      | ✗     | ✔|
+| [Windows](https://www.visualstudio.com/products/visual-studio-community-vs) | ✗      | ✗     | ✔|
 | browser | ✔      | ✔     | ✔|
-| [Firefox OS (experimental)](https://www.mozilla.org/en-US/firefox/os/) | ✔      | ✗     | ✗|
 
 You need to install the proper SDK in order to work with a given platform.
 
@@ -24,11 +23,6 @@ On Mac OS X, the following dependencies are needed:
 - [ios-webkit-debug-proxy](https://github.com/google/ios-webkit-debug-proxy) for `tarifa test`
 - [ideviceinstaller](http://www.libimobiledevice.org/) for `tarifa test`
 
-On Windows you'll have to ensure that the [PowerShell execution policy](http://technet.microsoft.com/library/hh847748.aspx)
-is not set to `Restricted` nor `AllSigned`. A good value for tarifa is setting the policy to `RemoteSigned` for the
-`CurrentUser` scope which can be achieved by running
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` as an administrator in some PowerShell.
-
 When the SDKs are properly installed you can install tarifa with *npm*:
 
 ```
@@ -36,6 +30,6 @@ npm install -g tarifa
 ```
 
 Some optional dependencies may fail depending on your OS
-(e.g., cordova-deploy-windows-phone fails to install on Linux or Mac OS X).
+(e.g., ios-deploy fails to install on Linux or Windows).
 
 Running [`tarifa info`](../usage/info.md) checks if all needed tools are available.

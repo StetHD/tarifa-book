@@ -26,9 +26,9 @@
    * [Browser](platforms/browser.md)
    * [iOS](platforms/ios.md)
    * [Android](platforms/android.md)
-   * [Windows Phone 8](platforms/wp8.md)
-   * [Firefox OS](platforms/ffos.md)
+   * [Windows](platforms/windows.md)
 * [User settings](settings/index.md)
 * [Updating an existing project](update/index.md)
 * [Working with notifications](notifications/index.md)
 * [Mobile apps made with tarifa](apps/index.md)
+

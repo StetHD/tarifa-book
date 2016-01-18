@@ -56,12 +56,9 @@ The **tarifa build** step executes the following extra tasks at the `pre-cordova
 * copy the configuration's splash screens
 * clean the given platform
 
-**WP8 specific tasks**
+**Windows specific tasks**
 
-* change the assembly info
 * change the manifest
-* change the `.csproj` file
-* run XapSignTool to sign app for Company app distribution
 
 **iOS specific tasks**
 
