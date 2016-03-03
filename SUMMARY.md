@@ -22,6 +22,7 @@
    * [clean](usage/clean.md)
    * [test](usage/test.md)
    * [device](usage/device.md)
+   * [version](usage/version.md)
 * [Platforms](platforms/index.md)
    * [Browser](platforms/browser.md)
    * [iOS](platforms/ios.md)
