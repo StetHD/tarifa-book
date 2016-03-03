@@ -10,6 +10,7 @@ tarifa commands may be splitted into the following categories:
 * [`platform`](./platform.md) manages platforms.
 * [`plugin`](./plugin.md) manages plugins.
 * [`update`](./update.md) updates default Cordova plugins and Cordova platforms.
+* [`version`](./version.md) will either return the version number or set the current version number.
 
 ### build and development tasks
 
