@@ -419,9 +419,11 @@ module.exports = function (msg) {
     // else
     return msg;
 
-    // where `msg` is an object with 2 attributes:
+    // where `msg` is an object with 3 attributes:
     // • the object representing the tarifa.json and the private.json file
     // msg.settings
+    // • the root path of the tarifa project
+    // msg.root
     // • a boolean
     // msg.verbose
 };
