@@ -185,6 +185,10 @@ device's screen.
 * `product_file_name` allows to specify the name of the generated binary (in the
 case of Android, a .apk file).
 
+Optional attributes:
+
+* `content` allows to overwrite the app's starting page, the default is `index.html`.
+
 ##### configurations_mixins
 
 A configuration can be extended from some defined in the `configurations_mixins` attributes by using `extend`.

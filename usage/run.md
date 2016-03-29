@@ -21,6 +21,8 @@ Options:
                             If you're using crosswalk, tarifa will assume 'armv7'
                             as default arch, so this flag is optional.
     --debug, -d             Print helpful stack trace on error
+    --device <DEVICE>       Choose what device to use.
+                            Can be any device name like "Simulator: iPhone-6, 9.2"
 
 Examples:
 
